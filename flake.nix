@@ -16,7 +16,11 @@
         [ pkgs.vim
         ];
 
-      nix.settings.experimental-features = "nix-command flakes";
+      nix.settings = {
+        experimental-features = "nix-command flakes";
+        max-jobs = 8;
+        trusted-users = [ "root" "kazuhiko" ];
+      };
 
       system.configurationRevision = self.rev or self.dirtyRev or null;
 
