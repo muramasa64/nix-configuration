@@ -50,6 +50,7 @@
         onActivation.autoUpdate = true;
         caskArgs.no_quarantine = true;
         casks = [
+          "firefox"
           "ghostty"
           "karabiner-elements"
         ];
