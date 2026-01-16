@@ -43,6 +43,31 @@
       system.stateVersion = 6;
       system.primaryUser = "kazuhiko";
 
+      system.defaults.dock = {
+        autohide = true;
+        persistent-apps = [
+          { app = "/System/Applications/Mail.app"; }
+          { app = "/System/Applications/Calendar.app"; }
+          { app = "/System/Applications/Reminders.app"; }
+          { app = "/System/Applications/Home.app"; }
+          { app = "/Applications/Firefox.app"; }
+          { app = "/Applications/Ghostty.app"; }
+          { app = "/System/Applications/Messages.app"; }
+          { app = "/System/Applications/Books.app"; }
+        ];
+        persistent-others = [
+          {
+            folder = {
+              path = "/Users/kazuhiko/Downloads";
+              arrangement = "date-added";
+              displayas = "stack";
+              showas = "fan";
+            };
+          }
+        ];
+      };
+
+
       nixpkgs.hostPlatform = "aarch64-darwin";
 
       homebrew = {
