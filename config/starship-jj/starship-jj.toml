@@ -1,0 +1,87 @@
+module_separator = " "
+reset_color = false
+
+[bookmarks]
+search_depth = 100
+exclude = []
+
+[[module]]
+type = "Symbol"
+symbol = " 󱗆 "
+color = "Blue"
+bg_color.TrueColor = [57, 66, 96]
+
+[[module]]
+type = "Bookmarks"
+separator = " "
+color = "Magenta"
+behind_symbol = "⇡"
+surround_with_quotes = true
+bg_color.TrueColor = [57, 66, 96]
+
+[[module]]
+type = "Commit"
+max_length = 24
+empty_text = "(no desc)"
+surround_with_quotes = true
+bg_color.TrueColor = [57, 66, 96]
+
+[[module]]
+type = "State"
+separator = " "
+bg_color.TrueColor = [57, 66, 96]
+
+[module.conflict]
+disabled = false
+text = "(CONFLICT)"
+color = "Red"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.divergent]
+disabled = false
+text = "(DIVERGENT)"
+color = "Cyan"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.empty]
+disabled = false
+text = "(EMPTY)"
+color = "Yellow"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.immutable]
+disabled = false
+text = "(IMMUTABLE)"
+color = "Yellow"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.hidden]
+disabled = false
+text = "(HIDDEN)"
+color = "Yellow"
+bg_color.TrueColor = [57, 66, 96]
+
+[[module]]
+type = "Metrics"
+template = "[{changed} {added}{removed}]"
+color = "Magenta"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.changed_files]
+prefix = ""
+suffix = ""
+color = "Cyan"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.added_lines]
+prefix = "+"
+suffix = ""
+color = "Green"
+bg_color.TrueColor = [57, 66, 96]
+
+[module.removed_lines]
+prefix = "-"
+suffix = ""
+color = "Red"
+bg_color.TrueColor = [57, 66, 96]
+

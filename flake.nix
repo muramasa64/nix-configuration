@@ -11,6 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+    starship-jj = {
+      url = "gitlab:lanastara_foss/starship-jj";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{
@@ -18,7 +22,9 @@
      nix-darwin,
      nixpkgs,
      home-manager,
-     nix-homebrew
+     nix-homebrew,
+     starship-jj,
+     ...
   }:
   let
     configuration = { pkgs, ... }: {
@@ -44,6 +50,7 @@
         onActivation.autoUpdate = true;
         caskArgs.no_quarantine = true;
         casks = [
+          "ghostty"
           "karabiner-elements"
         ];
       };
@@ -58,6 +65,15 @@
           nix-homebrew = {
             enable = true;
             user = "kazuhiko";
+          };
+        }
+        home-manager.darwinModules.home-manager {
+          users.users.kazuhiko.home = "/Users/kazuhiko";
+          home-manager = {
+            extraSpecialArgs.starship-jj-pkg = starship-jj.packages."aarch64-darwin".default;
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.kazuhiko = import ./home.nix;
           };
         }
       ];
