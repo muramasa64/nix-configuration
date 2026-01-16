@@ -7,9 +7,16 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
+  outputs = inputs@{
+    self,
+     nix-darwin,
+     nixpkgs,
+     home-manager,
+     nix-homebrew
+  }:
   let
     configuration = { pkgs, ... }: {
       environment.systemPackages =
@@ -25,6 +32,7 @@
       system.configurationRevision = self.rev or self.dirtyRev or null;
 
       system.stateVersion = 6;
+      system.primaryUser = "kazuhiko";
 
       nixpkgs.hostPlatform = "aarch64-darwin";
     };
@@ -32,7 +40,15 @@
   {
     # darwin-rebuild build --flake .#test-macbook-air
     darwinConfigurations."test-macbook-air" = nix-darwin.lib.darwinSystem {
-      modules = [ configuration ];
+      modules = [
+        configuration
+        nix-homebrew.darwinModules.nix-homebrew {
+          nix-homebrew = {
+            enable = true;
+            user = "kazuhiko";
+          };
+        }
+      ];
     };
   };
 }
