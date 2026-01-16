@@ -35,6 +35,15 @@
       system.primaryUser = "kazuhiko";
 
       nixpkgs.hostPlatform = "aarch64-darwin";
+
+      homebrew = {
+        enable = true;
+        onActivation.autoUpdate = true;
+        caskArgs.no_quarantine = true;
+        casks = [
+          "karabiner-elements"
+        ];
+      };
     };
   in
   {
