@@ -48,6 +48,10 @@
         InitialKeyRepeat = 25;
       };
 
+      system.defaults.trackpad = {
+        TrackpadThreeFingerDrag = true;
+      };
+
       system.defaults.dock = {
         autohide = true;
         persistent-apps = [
