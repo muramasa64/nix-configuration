@@ -46,6 +46,8 @@
       system.defaults.NSGlobalDomain = {
         KeyRepeat = 2;
         InitialKeyRepeat = 25;
+        AppleScrollerPagingBehavior = true;
+        AppleShowScrollBars = "Always";
       };
 
       system.defaults.trackpad = {
