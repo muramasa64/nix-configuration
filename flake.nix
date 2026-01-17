@@ -43,6 +43,11 @@
       system.stateVersion = 6;
       system.primaryUser = "kazuhiko";
 
+      system.defaults.NSGlobalDomain = {
+        KeyRepeat = 2;
+        InitialKeyRepeat = 25;
+      };
+
       system.defaults.dock = {
         autohide = true;
         persistent-apps = [
