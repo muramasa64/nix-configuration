@@ -86,6 +86,10 @@
         reduceMotion = true;
       };
 
+      system.defaults.CustomSystemPreferences = {
+        "com.apple.Accessibility".ReduceMotionEnabled = 1;
+      };
+
       security.pam.services.sudo_local.touchIdAuth = true;
 
       nixpkgs.hostPlatform = "aarch64-darwin";
