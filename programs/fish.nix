@@ -53,6 +53,8 @@
       set -x EDITOR nvim
       set -x MANPAGER "nvim +Man!"
 
+      direnv hook fish | source
+
       # OrbStack統合
       source ~/.orbstack/shell/init2.fish 2>/dev/null || :
     '';
