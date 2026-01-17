@@ -79,6 +79,13 @@
       };
 
       system.defaults.menuExtraClock.Show24Hour = true;
+
+      system.defaults.universalaccess = {
+        closeViewScrollWheelToggle = true;
+        mouseDriverCursorSize = 3.0;
+        reduceMotion = true;
+      };
+
       security.pam.services.sudo_local.touchIdAuth = true;
 
       nixpkgs.hostPlatform = "aarch64-darwin";
