@@ -57,7 +57,7 @@
 
   system.defaults.universalaccess = {
     closeViewScrollWheelToggle = true;
-    mouseDriverCursorSize = 3.0;
+    mouseDriverCursorSize = 1.5;
     reduceMotion = true;
   };
 
