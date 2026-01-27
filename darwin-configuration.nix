@@ -23,6 +23,7 @@
     InitialKeyRepeat = 25;
     AppleScrollerPagingBehavior = true;
     AppleShowScrollBars = "Always";
+    ApplePressAndHoldEnabled = false;
   };
 
   system.defaults.trackpad = {
