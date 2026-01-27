@@ -2,6 +2,7 @@
   description = "Example nix-darwin system flake";
 
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin = {
       url = "github:nix-darwin/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -10,6 +11,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flake-parts.url = "github:hercules-ci/flake-parts";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     starship-jj = {
       url = "gitlab:lanastara_foss/starship-jj";
@@ -17,116 +19,31 @@
     };
   };
 
-  outputs = inputs@{
-    self,
-     nix-darwin,
-     nixpkgs,
-     home-manager,
-     nix-homebrew,
-     starship-jj,
+  outputs = {
+     flake-parts,
      ...
-  }:
-  let
-    configuration = { pkgs, ... }: {
-      environment.systemPackages =
-        [ pkgs.vim
-        ];
-
-      nix.settings = {
-        experimental-features = "nix-command flakes";
-        max-jobs = 8;
-        trusted-users = [ "root" "kazuhiko" ];
-      };
-
-      system.configurationRevision = self.rev or self.dirtyRev or null;
-
-      system.stateVersion = 6;
-      system.primaryUser = "kazuhiko";
-
-      system.defaults.NSGlobalDomain = {
-        KeyRepeat = 2;
-        InitialKeyRepeat = 25;
-        AppleScrollerPagingBehavior = true;
-        AppleShowScrollBars = "Always";
-      };
-
-      system.defaults.trackpad = {
-        TrackpadThreeFingerDrag = true;
-      };
-
-      system.defaults.dock = {
-        autohide = true;
-        persistent-apps = [
-          { app = "/System/Applications/Mail.app"; }
-          { app = "/System/Applications/Calendar.app"; }
-          { app = "/System/Applications/Reminders.app"; }
-          { app = "/System/Applications/Home.app"; }
-          { app = "/Applications/Firefox.app"; }
-          { app = "/Applications/Ghostty.app"; }
-          { app = "/System/Applications/Messages.app"; }
-          { app = "/System/Applications/Books.app"; }
-        ];
-        persistent-others = [
-          {
-            folder = {
-              path = "/Users/kazuhiko/Downloads";
-              arrangement = "date-added";
-              displayas = "stack";
-              showas = "fan";
-            };
-          }
-        ];
-      };
-
-      system.defaults.menuExtraClock.Show24Hour = true;
-
-      system.defaults.universalaccess = {
-        closeViewScrollWheelToggle = true;
-        mouseDriverCursorSize = 3.0;
-        reduceMotion = true;
-      };
-
-      system.defaults.CustomSystemPreferences = {
-        "com.apple.Accessibility".ReduceMotionEnabled = 1;
-      };
-
-      security.pam.services.sudo_local.touchIdAuth = true;
-
-      nixpkgs.hostPlatform = "aarch64-darwin";
-
-      homebrew = {
-        enable = true;
-        onActivation.autoUpdate = true;
-        caskArgs.no_quarantine = true;
-        casks = [
-          "firefox"
-          "ghostty"
-          "karabiner-elements"
-        ];
-      };
-    };
-  in
-  {
-    # darwin-rebuild build --flake .#test-macbook-air
-    darwinConfigurations."test-macbook-air" = nix-darwin.lib.darwinSystem {
-      modules = [
-        configuration
-        nix-homebrew.darwinModules.nix-homebrew {
-          nix-homebrew = {
-            enable = true;
-            user = "kazuhiko";
-          };
-        }
-        home-manager.darwinModules.home-manager {
-          users.users.kazuhiko.home = "/Users/kazuhiko";
-          home-manager = {
-            extraSpecialArgs.starship-jj-pkg = starship-jj.packages."aarch64-darwin".default;
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.kazuhiko = import ./home.nix;
-          };
-        }
+  }@inputs:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      debug = true;
+      systems = [
+        "aarch64-darwin"
       ];
+
+      flake = {
+        # darwin-rebuild build --flake .#test-macbook-air
+        darwinConfigurations."test" = inputs.nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          specialArgs = {
+            inherit inputs;
+            username = "kazuhiko";
+          };
+          modules = [
+            ./darwin-configuration.nix
+          ];
+        };
+      };
+
+      perSystem = { config, pkgs, system, ... }: {
+      };
     };
-  };
 }
