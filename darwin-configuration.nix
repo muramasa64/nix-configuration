@@ -82,6 +82,7 @@
       "firefox"
       "ghostty"
       "karabiner-elements"
+      "obsidian"
     ];
   };
 
