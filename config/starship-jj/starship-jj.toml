@@ -8,80 +8,106 @@ exclude = []
 [[module]]
 type = "Symbol"
 symbol = " 󱗆 "
-color = "Blue"
-bg_color.TrueColor = [57, 66, 96]
+# color = "Blue"
+# bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [[module]]
 type = "Bookmarks"
 separator = " "
-color = "Magenta"
+#color = "Magenta"
 behind_symbol = "⇡"
 surround_with_quotes = true
-bg_color.TrueColor = [57, 66, 96]
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [[module]]
 type = "Commit"
 max_length = 24
 empty_text = "(no desc)"
 surround_with_quotes = true
-bg_color.TrueColor = [57, 66, 96]
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [[module]]
 type = "State"
 separator = " "
-bg_color.TrueColor = [57, 66, 96]
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.conflict]
 disabled = false
 text = "(CONFLICT)"
-color = "Red"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Red"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.divergent]
 disabled = false
 text = "(DIVERGENT)"
-color = "Cyan"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Cyan"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.empty]
 disabled = false
 text = "(EMPTY)"
-color = "Yellow"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Yellow"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.immutable]
 disabled = false
 text = "(IMMUTABLE)"
-color = "Yellow"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Yellow"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.hidden]
 disabled = false
 text = "(HIDDEN)"
-color = "Yellow"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Yellow"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [[module]]
 type = "Metrics"
 template = "[{changed} {added}{removed}]"
-color = "Magenta"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Magenta"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.changed_files]
 prefix = ""
 suffix = ""
-color = "Cyan"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Cyan"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.added_lines]
 prefix = "+"
 suffix = ""
-color = "Green"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Green"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
 [module.removed_lines]
 prefix = "-"
 suffix = ""
-color = "Red"
-bg_color.TrueColor = [57, 66, 96]
+#color = "Red"
+#bg_color.TrueColor = [57, 66, 96]
+color.TrueColor = [17, 17, 27]
+bg_color.TrueColor = [249, 226, 175]
 
