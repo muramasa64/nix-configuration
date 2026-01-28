@@ -29,21 +29,46 @@
         "aarch64-darwin"
       ];
 
-      flake = {
-        # darwin-rebuild build --flake .#test-macbook-air
-        darwinConfigurations."test" = inputs.nix-darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          specialArgs = {
-            inherit inputs;
+      flake = let
+        mkDarwinSystem = { hostname, username, system ? "aarch64-darwin" }:
+          inputs.nix-darwin.lib.darwinSystem {
+            inherit system;
+            specialArgs = {
+              inherit inputs hostname username;
+            };
+
+            modules = [
+              ./modules/darwin/common.nix
+              ./hosts/${hostname}/default.nix
+              inputs.nix-homebrew.darwinModules.nix-homebrew
+              inputs.home-manager.darwinModules.home-manager
+              {
+                users.users.${username}.home = "/Users/${username}";
+                home-manager = {
+                  extraSpecialArgs = {
+                    inherit inputs hostname username;
+                    starship-jj-pkg = inputs.starship-jj.packages.${system}.default;
+                  };
+                  useGlobalPkgs = true;
+                  useUserPackages = true;
+                  users.${username} = import ./hosts/${hostname}/home.nix;
+                };
+              }
+            ];
+          };
+      in {
+        # sudo darwin-rebuild build --flake .#test
+        darwinConfigurations = {
+          "test" = mkDarwinSystem {
+            hostname = "test";
             username = "kazuhiko";
           };
-          modules = [
-            ./darwin-configuration.nix
-          ];
-        };
-      };
 
-      perSystem = { config, pkgs, system, ... }: {
+          "work" = mkDarwinSystem {
+            hostname = "work";
+            username = "isobe";
+          };
+        };
       };
     };
 }

@@ -1,8 +1,6 @@
-{ config, pkgs, starship-jj-pkg, username, ... }:
+{ config, pkgs, starship-jj-pkg, ... }:
 {
   home.stateVersion = "25.11";
-   home.username = username;
-   home.homeDirectory = "/Users/${username}";
 
   home.packages = with pkgs; [
     bash

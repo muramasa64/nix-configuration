@@ -1,10 +1,5 @@
 { pkgs, inputs, username, ... }:
 {
-  imports = [
-    inputs.nix-homebrew.darwinModules.nix-homebrew
-    inputs.home-manager.darwinModules.home-manager
-  ];
-
   environment.systemPackages = [ pkgs.vim ];
 
   nix.settings = {
@@ -32,16 +27,6 @@
 
   system.defaults.dock = {
     autohide = true;
-    persistent-apps = [
-      { app = "/System/Applications/Mail.app"; }
-      { app = "/System/Applications/Calendar.app"; }
-      { app = "/System/Applications/Reminders.app"; }
-      { app = "/System/Applications/Home.app"; }
-      { app = "/Applications/Firefox.app"; }
-      { app = "/Applications/Ghostty.app"; }
-      { app = "/System/Applications/Messages.app"; }
-      { app = "/System/Applications/Books.app"; }
-    ];
     persistent-others = [
       {
         folder = {
@@ -68,33 +53,4 @@
 
   security.pam.services.sudo_local.touchIdAuth = true;
 
-  nixpkgs.hostPlatform = "aarch64-darwin";
-
-  nix-homebrew = {
-    enable = true;
-    user = username;
-  };
-
-  homebrew = {
-    enable = true;
-    onActivation.autoUpdate = true;
-    caskArgs.no_quarantine = true;
-    casks = [
-      "firefox"
-      "ghostty"
-      "karabiner-elements"
-      "obsidian"
-    ];
-  };
-
-  users.users.${username}.home = "/Users/${username}";
-  home-manager = {
-    extraSpecialArgs = {
-      inherit username;
-      starship-jj-pkg = inputs.starship-jj.packages."aarch64-darwin".default;
-    };
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.${username} = import ./home.nix;
-  };
 }
