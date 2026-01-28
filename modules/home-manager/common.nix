@@ -1,6 +1,18 @@
 { config, pkgs, starship-jj-pkg, ... }:
 {
+  programs.home-manager.enable = true;
+
   home.stateVersion = "25.11";
+
+  imports = [
+    ./programs/fish.nix
+    ./programs/fzf.nix
+    ./programs/ghostty.nix
+    ./programs/git.nix
+    ./programs/jj.nix
+    ./programs/neovim.nix
+    ./programs/starship.nix
+  ];
 
   home.packages = with pkgs; [
     bash
@@ -38,16 +50,4 @@
     source = config/karabiner;
     recursive = true;
   };
-
-  programs.home-manager.enable = true;
-
-  imports = [
-    ./programs/fish.nix
-    ./programs/fzf.nix
-    ./programs/ghostty.nix
-    ./programs/git.nix
-    ./programs/jj.nix
-    ./programs/neovim.nix
-    ./programs/starship.nix
-  ];
 }
