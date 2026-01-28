@@ -33,6 +33,7 @@
 
   system.defaults.dock = {
     autohide = true;
+    orientation = "bottom";
     persistent-others = [
       {
         folder = {
