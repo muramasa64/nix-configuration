@@ -1,8 +1,7 @@
 { pkgs, hostname, username, ... }:
 {
-  security.pam.services.sudo_local.touchId
   security.pki.certificateFiles = [
-    ../../config/nscacert.pem
+    ../../config/certs/nscacert.pem
   ];
 
   system.defaults.dock = {
