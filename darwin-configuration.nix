@@ -89,7 +89,10 @@
 
   users.users.${username}.home = "/Users/${username}";
   home-manager = {
-    extraSpecialArgs.starship-jj-pkg = inputs.starship-jj.packages."aarch64-darwin".default;
+    extraSpecialArgs = {
+      inherit username;
+      starship-jj-pkg = inputs.starship-jj.packages."aarch64-darwin".default;
+    };
     useGlobalPkgs = true;
     useUserPackages = true;
     users.${username} = import ./home.nix;

@@ -1,8 +1,8 @@
-{ config, pkgs, starship-jj-pkg, ... }:
+{ config, pkgs, starship-jj-pkg, username, ... }:
 {
   home.stateVersion = "25.11";
-   home.username = "kazuhiko";
-   home.homeDirectory = "/Users/kazuhiko";
+   home.username = username;
+   home.homeDirectory = "/Users/${username}";
 
   home.packages = with pkgs; [
     awscli2
