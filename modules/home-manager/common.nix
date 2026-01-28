@@ -28,6 +28,7 @@
     git
     hackgen-font
     hackgen-nf-font
+    mas
     nix-direnv
     nix-output-monitor
     nixd

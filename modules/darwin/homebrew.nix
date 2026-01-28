@@ -18,5 +18,11 @@
       "nani"
       "menumeters"
     ];
+    masApps = {
+      "Reeder Classic." = 1529448980;
+      "OmniFocus 4" = 1542143627;
+      "Snip : Snippets Manager" = 1527428847;
+      "辞書 by 物書堂" = 1380563956;
+    };
   };
 }
