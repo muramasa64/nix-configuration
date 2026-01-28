@@ -19,6 +19,12 @@
     AppleScrollerPagingBehavior = true;
     AppleShowScrollBars = "Always";
     ApplePressAndHoldEnabled = false;
+    AppleShowAllExtensions = true;
+  };
+
+  system.defaults.finder = {
+    AppleShowAllFiles = false;
+    AppleShowAllExtensions = true;
   };
 
   system.defaults.trackpad = {
