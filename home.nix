@@ -5,7 +5,6 @@
    home.homeDirectory = "/Users/${username}";
 
   home.packages = with pkgs; [
-    awscli2
     bash
     bat
     bitwarden-cli
@@ -13,22 +12,18 @@
     delta
     diffnav
     direnv
-    duckdb
     eza
     fd
     fzf
     git
     hackgen-font
     hackgen-nf-font
-    lua-language-server
     nix-direnv
     nix-output-monitor
     nixd
     nixfmt
-    nushell
     nvd
     ripgrep
-    saml2aws
     sd
     starship-jj-pkg
     tree-sitter
