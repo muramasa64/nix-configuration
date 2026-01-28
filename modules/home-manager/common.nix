@@ -43,12 +43,12 @@
   ];
 
   xdg.configFile = {
-    "direnv".source = config/direnv;
-    "starship-jj".source = config/starship-jj;
+    "direnv".source = ../../config/direnv;
+    "starship-jj".source = ../../config/starship-jj;
   };
 
   home.file.".config/karabiner" = {
-    source = config/karabiner;
+    source = ../../config/karabiner;
     recursive = true;
   };
 }
