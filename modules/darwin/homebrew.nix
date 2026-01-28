@@ -10,10 +10,13 @@
     onActivation.autoUpdate = true;
     caskArgs.no_quarantine = true;
     casks = [
+      "bitwarden"
       "firefox"
       "ghostty"
       "karabiner-elements"
       "obsidian"
+      "nani"
+      "menumeters"
     ];
   };
 }
