@@ -11,11 +11,6 @@
     awscli2
     devenv
     duckdb
-    nix-direnv
-    nix-output-monitor
-    nixd
-    nixfmt
-    ripgrep
     utm
   ];
 
