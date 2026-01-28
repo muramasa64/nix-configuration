@@ -1,5 +1,9 @@
 { pkgs, inputs, username, ... }:
 {
+  imports = [
+    ./homebrew.nix
+  ];
+
   environment.systemPackages = [ pkgs.vim ];
 
   nix.settings = {
