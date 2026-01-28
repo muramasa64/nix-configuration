@@ -52,7 +52,7 @@
                       inherit inputs hostname username starship-jj-pkg;
                     };
                     useGlobalPkgs = true;
-                    useUserPackages = true;
+                    useUserPackages = false;
                     backupFileExtension = "backup";
                     users.${username} = import ./hosts/${hostname}/home.nix;
                   };

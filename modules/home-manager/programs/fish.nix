@@ -29,15 +29,15 @@
     # shellInit: 全てのfishセッションで実行される初期化処理
     shellInit = ''
       # Nix daemon
-      if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
-        source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
-      end
+      # if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+      #   source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+      # end
 
-      for p in /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin
-        if not contains $p $fish_user_paths
-          set -gx fish_user_paths $p $fish_user_paths
-        end
-      end
+      # for p in /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin
+      #   if not contains $p $fish_user_paths
+      #     set -gx fish_user_paths $p $fish_user_paths
+      #   end
+      # end
 
       fish_add_path /opt/homebrew/bin
       fish_add_path /opt/homebrew/sbin
