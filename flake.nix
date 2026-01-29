@@ -41,7 +41,6 @@
               };
 
               modules = [
-                ./modules/darwin/common.nix
                 ./hosts/${hostname}/default.nix
                 inputs.nix-homebrew.darwinModules.nix-homebrew
                 inputs.home-manager.darwinModules.home-manager

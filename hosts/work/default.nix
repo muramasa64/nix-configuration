@@ -1,5 +1,9 @@
 { pkgs, hostname, username, ... }:
 {
+  imports = [
+    ../../modules/darwin/common.nix
+  ];
+
   security.pki.certificateFiles = [
     ../../config/certs/nscacert.pem
   ];

@@ -1,5 +1,9 @@
 { pkgs, hostname, username, ... }:
 {
+  imports = [
+    ../../modules/darwin/common.nix
+  ];
+
   system.defaults.dock = {
     persistent-apps = [
       { app = "/System/Applications/Mail.app"; }
