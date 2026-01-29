@@ -1,4 +1,4 @@
-{ config, pkgs, starship-jj-pkg, ... }:
+{ inputs, config, pkgs, ... }:
 {
   programs.home-manager.enable = true;
 
@@ -15,6 +15,8 @@
   ];
 
   home.packages = with pkgs; [
+    inputs.arto.packages.${system}.default
+    inputs.starship-jj.packages.${system}.default
     bash
     bat
     bitwarden-cli
@@ -36,7 +38,6 @@
     nvd
     ripgrep
     sd
-    starship-jj-pkg
     tree-sitter
     udev-gothic
     udev-gothic-nf
