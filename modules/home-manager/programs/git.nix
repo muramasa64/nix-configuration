@@ -111,6 +111,7 @@
       ".jj"
       ".envrc"
       ".direnv/**"
+      ".devenv/**"
     ];
   };
 }
