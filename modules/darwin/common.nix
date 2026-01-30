@@ -62,6 +62,9 @@
 
   system.defaults.CustomSystemPreferences = {
     "com.apple.Accessibility".ReduceMotionEnabled = 1;
+    NSGlobalDomain = {
+      NSAutoFillHeuristicControllerEnabled = 0;
+    };
   };
 
   security.pam.services.sudo_local.touchIdAuth = true;
