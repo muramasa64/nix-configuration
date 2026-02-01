@@ -5,6 +5,7 @@
   home.stateVersion = "25.11";
 
   imports = [
+    ./programs/direnv.nix
     ./programs/fish.nix
     ./programs/fzf.nix
     ./programs/ghostty.nix
@@ -32,7 +33,6 @@
     hackgen-font
     hackgen-nf-font
     mas
-    nix-direnv
     nix-output-monitor
     nixd
     nixfmt
@@ -45,7 +45,6 @@
   ];
 
   xdg.configFile = {
-    "direnv".source = ../../config/direnv;
     "starship-jj".source = ../../config/starship-jj;
   };
 

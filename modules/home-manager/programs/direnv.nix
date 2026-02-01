@@ -2,11 +2,12 @@
 {
   programs.direnv = {
     enable = true;
+    nix-direnv.enable = true;
     enableFishIntegration = true;
     config = {
       global = {
-        log_format = "-";
-        log_filter = "^$";
+        log_format = "";
+        log_filter = "^direnv: export";
       };
     };
   };
