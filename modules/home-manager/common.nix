@@ -32,6 +32,7 @@
     git
     hackgen-font
     hackgen-nf-font
+    lua-language-server
     mas
     nix-output-monitor
     nixd
