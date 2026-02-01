@@ -22,6 +22,7 @@
     bitwarden-cli
     curl
     delta
+    devenv
     diffnav
     direnv
     eza
