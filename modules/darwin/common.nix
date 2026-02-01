@@ -67,6 +67,32 @@
     };
   };
 
+  system.defaults.CustomUserPreferences = {
+    "com.apple.symbolichotkeys" = {
+      AppleSymbolicHotKeys = {
+        # Spotlightの検索ウィンドウを space + ctrl で開くショートカット
+        "64" = {
+          enabled = true;
+          value = {
+            type = "standard";
+            parameters = [
+              65535
+              49     # Space (key code)
+              262144 # Modifier key (ctrl)
+            ];
+          };
+        };
+        # 入力ソースの切り替えを無効化
+        "60" = {
+          enabled = false;
+        };
+        "61" = {
+          enabled = false;
+        };
+      };
+    };
+  };
+
   security.pam.services.sudo_local.touchIdAuth = true;
 
 }
