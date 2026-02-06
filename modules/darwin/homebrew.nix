@@ -11,6 +11,7 @@
     onActivation.autoUpdate = true;
     caskArgs.no_quarantine = true;
     casks = [
+      "aquaskk"
       "bitwarden"
       "firefox"
       "ghostty"
