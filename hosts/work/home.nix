@@ -11,6 +11,7 @@
     awscli2
     duckdb
     utm
+    claude-code
   ];
 
   home.file = {
