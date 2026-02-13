@@ -6,6 +6,8 @@
 
   environment.systemPackages = [ pkgs.vim ];
 
+  nixpkgs.config.allowUnfree = true;
+
   nix.enable = true;
   nix.package = pkgs.nix;
   nix.settings = {
