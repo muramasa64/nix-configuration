@@ -9,9 +9,11 @@
 
   home.packages = with pkgs; [
     awscli2
-    duckdb
-    utm
     claude-code
+    duckdb
+    gh
+    lemminx
+    utm
   ];
 
   home.file = {
