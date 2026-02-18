@@ -43,6 +43,7 @@
     tree-sitter
     udev-gothic
     udev-gothic-nf
+    vscode-json-languageserver
   ];
 
   xdg.configFile = {
