@@ -21,6 +21,7 @@
       { app = "/Applications/Nani.app"; }
       { app = "/Applications/Obsidian.app"; }
       { app = "/Applications/Ghostty.app"; }
+      { app = "/Applications/zoom.us.app"; }
       { app = "/System/Applications/Messages.app"; }
       { app = "/System/Applications/Books.app"; }
     ];
