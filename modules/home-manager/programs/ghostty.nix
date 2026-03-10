@@ -6,7 +6,7 @@
     package = lib.mkIf pkgs.stdenv.isDarwin pkgs.emptyDirectory;
     enableFishIntegration = true;
     settings = {
-      command = "/Users/$USER/.nix-profile/bin/fish --login --interactive";
+      command = "${config.home.homeDirectory}/.nix-profile/bin/fish --login --interactive";
       shell-integration = "fish";
       shell-integration-features = "no-cursor";
 
