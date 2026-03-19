@@ -103,10 +103,6 @@
 
     plugins = [
       {
-        name = "fifc";
-        src = pkgs.fishPlugins.fifc.src;
-      }
-      {
         name = "fzf-fish";
         src = pkgs.fetchFromGitHub {
           owner = "PatrickF1";
