@@ -22,7 +22,8 @@
       window-height = 60;
 
       keybind = [
-        "unconsumed:ctrl+shift+.=reload_config"
+        "unconsumed:ctrl+shift+.=reload_config" # Ctrl+Shift+. で、設定をリロードする
+        "super+c=copy_to_clipboard:plain" # Command+C で、プレーンテキストでクリップボードにコピーする
       ];
     };
   };
