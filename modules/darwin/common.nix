@@ -24,27 +24,28 @@
   system.defaults.NSGlobalDomain = {
     KeyRepeat = 2;
     InitialKeyRepeat = 25;
-    AppleScrollerPagingBehavior = true;
-    AppleShowScrollBars = "Always";
-    ApplePressAndHoldEnabled = false;
-    AppleShowAllExtensions = true;
+    AppleScrollerPagingBehavior = true; # スクロールバーをクリックした位置に移動する
+    AppleShowScrollBars = "Always"; # スクロールバーを常に表示する
+    ApplePressAndHoldEnabled = false; # キー長押しでアクセント入力する機能を無効にする
+    AppleShowAllFiles = true; # Finderで隠しファイルを表示する
+    AppleShowAllExtensions = true; # Finderですべての拡張子を表示する
   };
 
   system.defaults.finder = {
-    AppleShowAllFiles = false;
-    AppleShowAllExtensions = true;
+    AppleShowAllFiles = true; # Finderで隠しファイルを表示する
+    AppleShowAllExtensions = true; # Finderですべての拡張子を表示する
   };
 
   system.defaults.trackpad = {
-    TrackpadThreeFingerDrag = true;
+    TrackpadThreeFingerDrag = true; # Trackpadの3本指でドラッグを有効にする
   };
 
   system.defaults.dock = {
-    autohide = true;
+    autohide = true; # Dockを自動非表示をオン
     orientation = "bottom";
     persistent-others = [
       {
-        folder = {
+        folder = { # ダウンロードフォルダの設定
           path = "/Users/${username}/Downloads";
           arrangement = "date-added";
           displayas = "stack";
@@ -95,6 +96,6 @@
     };
   };
 
-  security.pam.services.sudo_local.touchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true; # sudoをパスワードではなくTouch IDで承認する
 
 }
