@@ -12,7 +12,7 @@
   nix.package = pkgs.nix;
   nix.settings = {
     experimental-features = "nix-command flakes";
-    max-jobs = 8;
+    max-jobs = 18;
     trusted-users = [ "root" username ];
   };
 
