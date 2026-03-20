@@ -11,7 +11,6 @@
     ./programs/ghostty.nix
     ./programs/git.nix
     ./programs/jj.nix
-    ./programs/neovim.nix
     ./programs/starship.nix
   ];
 
@@ -35,6 +34,7 @@
     hackgen-nf-font
     lua-language-server
     mas
+    neovim
     nix-output-monitor
     nixd
     nixfmt
@@ -49,6 +49,7 @@
 
   xdg.configFile = {
     "starship-jj".source = ../../config/starship-jj;
+    "nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles-nvim";
   };
 
   home.file.".config/karabiner" = {
