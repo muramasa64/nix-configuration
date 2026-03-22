@@ -13,8 +13,18 @@
       theme = "TokyoNight Storm";
 
       font-family = "UDEV Gothic 35NF";
-      font-style = "Reguler";
+      font-style = "Regular";
       font-size = 14;
+
+      font-codepoint-map = [
+        "U+3040-U+309F=UDEV Gothic 35NF"  # ひらがな
+        "U+30A0-U+30FF=UDEV Gothic 35NF"  # カタカナ
+        "U+3000-U+303F=UDEV Gothic 35NF"  # CJK記号・句読点
+        "U+4E00-U+9FFF=UDEV Gothic 35NF"  # CJK統合漢字
+        "U+F900-U+FAFF=UDEV Gothic 35NF"  # CJK互換漢字
+        "U+FF00-U+FFEF=UDEV Gothic 35NF"  # 全角英数字・記号
+      ];
+      font-feature = "-dlig"; # 合字のバグ対策
 
       cursor-style = "block";
 
