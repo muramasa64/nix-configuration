@@ -21,6 +21,9 @@
       window-width = 190;
       window-height = 60;
 
+      window-inherit-working-directory = false;
+      working-directory = "${config.home.homeDirectory}/";
+
       keybind = [
         "unconsumed:ctrl+shift+.=reload_config" # Ctrl+Shift+. で、設定をリロードする
         "super+c=copy_to_clipboard:plain" # Command+C で、プレーンテキストでクリップボードにコピーする
