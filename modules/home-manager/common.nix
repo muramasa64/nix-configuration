@@ -24,6 +24,7 @@
     curl
     delta
     devenv
+    diffedit3
     diffnav
     direnv
     eza
