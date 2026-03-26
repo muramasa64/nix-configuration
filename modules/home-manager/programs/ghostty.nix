@@ -21,8 +21,8 @@
       window-width = 190;
       window-height = 60;
 
-      window-inherit-working-directory = false;
-      working-directory = "${config.home.homeDirectory}/";
+      window-inherit-working-directory = false; # 新規にwindowを開いた時の作業ディレクトリを継承しない
+      working-directory = "home"; # デフォルトで開く作業ディレクトリ
 
       keybind = [
         "unconsumed:ctrl+shift+.=reload_config" # Ctrl+Shift+. で、設定をリロードする
