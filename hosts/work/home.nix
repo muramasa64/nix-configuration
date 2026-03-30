@@ -15,10 +15,4 @@
     lemminx
     utm
   ];
-
-  home.file = {
-    ".pingcli/config.yml" = {
-      source = config.lib.file.mkOutOfStoreSymlink ../../config/pingctl/config.yml;
-    };
-  };
 }
