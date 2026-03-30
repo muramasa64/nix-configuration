@@ -9,7 +9,6 @@
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
-    caskArgs.no_quarantine = true;
     casks = [
       "aquaskk"
       "bitwarden"
