@@ -112,6 +112,7 @@
       ".envrc"
       ".direnv/**"
       ".devenv/**"
+      "*.zip"
     ];
   };
 }
