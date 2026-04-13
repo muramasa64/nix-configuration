@@ -5,6 +5,7 @@
   home.stateVersion = "25.11";
 
   imports = [
+    ./programs/arto.nix
     ./programs/direnv.nix
     ./programs/fish.nix
     ./programs/fzf.nix
@@ -15,7 +16,6 @@
   ];
 
   home.packages = with pkgs; [
-    inputs.arto.packages.${system}.default
     inputs.starship-jj.packages.${system}.default
     bash
     bat
