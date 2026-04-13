@@ -75,30 +75,6 @@
           end
         '';
       };
-
-      # cat →bat
-      cat = {
-        wraps = "bat";
-        body = ''
-          if type -q bat
-            bat --paging=never $argv
-          else
-            command cat $argv
-          end
-        '';
-      };
-
-      # grep →ripgrep
-      grep = {
-        wraps = "rg";
-        body = ''
-          if type -q rg
-            rg $argv
-          else
-            command grep $argv
-          end
-        '';
-      };
     };
 
     plugins = [
