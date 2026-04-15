@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Read(//Users/isobe/.local/state/home-manager/**)",
+      "Read(//nix/store/nvrlp5h6yfzzdlbb5vva0zr1gci39sy4-user-environment/**)"
+    ]
+  }
+}
