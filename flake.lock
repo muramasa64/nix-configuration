@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775307040,
-        "narHash": "sha256-ZF7bRDeb3K9Y5b1TtEM8+KXX9GU/n2ikAoK/xrqSJ9Q=",
+        "lastModified": 1776158616,
+        "narHash": "sha256-7jrlYbc/47kjKyA2/tmxi5FpuQXKZ4B8kVT3a6g2HHs=",
         "owner": "arto-app",
         "repo": "Arto",
-        "rev": "3ee147b7bd1a26cdcde3a3ca37b3465ec06fb08e",
+        "rev": "e0663d4beadd66ae79e06a5b6d262edbae7674d7",
         "type": "github"
       },
       "original": {
@@ -121,11 +121,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776030105,
-        "narHash": "sha256-b4cNpWPDSH+/CTTiw8++yGh1UYG2kQNrbIehV2iGoeo=",
+        "lastModified": 1776184304,
+        "narHash": "sha256-No6QGBmIv5ChiwKCcbkxjdEQ/RO2ZS1gD7SFy6EZ7rc=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "49088dc2e7a876e338e510c5f5f60f659819c650",
+        "rev": "3c7524c68348ef79ce48308e0978611a050089b2",
         "type": "github"
       },
       "original": {
