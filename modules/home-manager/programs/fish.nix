@@ -63,6 +63,45 @@
     };
 
     functions = {
+      # nix flake update → switch → パッケージ変更差分表示
+      nix-update = {
+        description = "Update flake inputs, switch nix-darwin config, and show package version changes";
+        body = ''
+          # フレークのターゲットを決定（引数 > ユーザー名で自動検出）
+          if test -n "$argv[1]"
+              set flake_target $argv[1]
+          else if test "$USER" = "isobe"
+              set flake_target "work"
+          else
+              set flake_target "test"
+          end
+
+          # 現在のシステムクロージャを保存
+          set old_system (readlink /run/current-system)
+
+          # flake.lock を更新
+          echo "==> Updating flake inputs..."
+          nix flake update
+          or return 1
+
+          # 新しい設定に切り替え
+          echo "==> Switching to .#$flake_target..."
+          sudo nix run nix-darwin --extra-experimental-features 'flakes nix-command' -- switch --flake ".#$flake_target"
+          or return 1
+
+          # バージョン変更を表示
+          set new_system (readlink /run/current-system)
+          if test "$old_system" != "$new_system"
+              echo ""
+              echo "==> Package changes:"
+              nix store diff-closures $old_system $new_system
+          else
+              echo ""
+              echo "==> No package changes."
+          end
+        '';
+      };
+
       # ls →eza
       # https://syu-m-5151.hatenablog.com/entry/2025/12/14/132552
       ls = {
