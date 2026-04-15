@@ -55,5 +55,6 @@
   home.file.".config/karabiner" = {
     source = ../../config/karabiner;
     recursive = true;
+    force = true;
   };
 }
