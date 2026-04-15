@@ -1,5 +1,8 @@
 { lib, config, pkgs, ... }:
 {
+  # ghosttyはdarwinでインストールできないのでonChangeフックを無効化する
+  xdg.configFile."ghostty/config".onChange = lib.mkForce "";
+
   programs.ghostty = {
     enable = true;
     # ghosttyはdarwinでインストールできないので設定だけ管理する
