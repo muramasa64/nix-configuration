@@ -30,8 +30,6 @@
     fd
     fzf
     git
-    hackgen-font
-    hackgen-nf-font
     lua-language-server
     mas
     neovim
@@ -43,8 +41,6 @@
     ripgrep
     sd
     tree-sitter
-    udev-gothic
-    udev-gothic-nf
     vscode-json-languageserver
   ];
 

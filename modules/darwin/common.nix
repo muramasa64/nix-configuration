@@ -98,4 +98,15 @@
 
   security.pam.services.sudo_local.touchIdAuth = true; # sudoをパスワードではなくTouch IDで承認する
 
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-color-emoji
+      hackgen-nf-font
+      source-han-sans
+      udev-gothic
+      udev-gothic-nf
+    ];
+  };
 }
