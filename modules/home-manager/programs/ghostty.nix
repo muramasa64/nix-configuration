@@ -40,6 +40,10 @@
       keybind = [
         "unconsumed:ctrl+shift+.=reload_config" # Ctrl+Shift+. で、設定をリロードする
         "super+c=copy_to_clipboard:plain" # Command+C で、プレーンテキストでクリップボードにコピーする
+        "super+arrow_left=goto_split:left"
+        "super+arrow_right=goto_split:right"
+        "super+arrow_up=goto_split:up"
+        "super+arrow_down=goto_split:down"
       ];
     };
   };
