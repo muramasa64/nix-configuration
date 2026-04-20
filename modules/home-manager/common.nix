@@ -36,7 +36,7 @@
     nix-output-monitor
     nixd
     nixfmt
-    nushell
+    # nushell
     nvd
     ripgrep
     sd
