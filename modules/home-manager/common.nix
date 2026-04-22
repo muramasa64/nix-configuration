@@ -30,6 +30,7 @@
     fd
     fzf
     git
+    jd-diff-patch
     lua-language-server
     mas
     neovim
