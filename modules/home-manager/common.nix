@@ -19,7 +19,6 @@
     inputs.starship-jj.packages.${system}.default
     bash
     bat
-    bitwarden-cli
     curl
     delta
     devenv
