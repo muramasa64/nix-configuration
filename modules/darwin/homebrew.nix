@@ -9,6 +9,9 @@
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
+    brews = [
+      "mac-cleanup-go"
+    ];
     casks = [
       "aquaskk"
       "bitwarden"
@@ -16,8 +19,8 @@
       "ghostty"
       "karabiner-elements"
       "obsidian"
-      "nani"
       "menumeters"
+      "nani"
     ];
     # masAppsでインストールできなくなったっぽい
     # 1. mas 6.x で signin コマンドが削除された
