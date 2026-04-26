@@ -1,0 +1,1492 @@
+{
+  "default": [
+    {
+      "expression": "*.account.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ilRuAwBkx"
+    },
+    {
+      "expression": "*.accounts.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4ukoAn-aR"
+    },
+    {
+      "expression": "*.app.asana.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "aehAOSfAZq"
+    },
+    {
+      "expression": "*.app.getmoneytree.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SZks48z4S"
+    },
+    {
+      "expression": "*.app.scaleft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "REks4prWH"
+    },
+    {
+      "expression": "*.app.slack.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "VxkM6YvCT"
+    },
+    {
+      "expression": "*.app.smarthr.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Y9LiLF3a-K"
+    },
+    {
+      "expression": "*.app.workato.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "GW7lIqstA"
+    },
+    {
+      "expression": "*.apple.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pbBLIMdh_B"
+    },
+    {
+      "expression": "*.asahi.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "YMwFV7hGW"
+    },
+    {
+      "expression": "*.auth.cloudnative.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Hy_lBmkt8f"
+    },
+    {
+      "expression": "*.auth0app.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ghvhKHupi"
+    },
+    {
+      "expression": "*.aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "GVKYkg3ZX"
+    },
+    {
+      "expression": "*.awsapps.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SGnxhDNtS"
+    },
+    {
+      "expression": "*.backstage.forgerock.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "fnRLLSS18"
+    },
+    {
+      "expression": "*.barefootinc.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Bg0kWEIi4q"
+    },
+    {
+      "expression": "*.bing.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "KpQSQG1h4"
+    },
+    {
+      "expression": "*.box.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "NWTL5hH3wU"
+    },
+    {
+      "expression": "*.bsky.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "2yup9JAFm"
+    },
+    {
+      "expression": "*.candyhouse.co",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "yq3WZJjhL"
+    },
+    {
+      "expression": "*.cloudnative-co.awsapps.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "hVuOVzv2eH"
+    },
+    {
+      "expression": "*.cloudnative-corp.okta.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vpC4ycN3G"
+    },
+    {
+      "expression": "*.cloudnative.app.box.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "aO2bILNAy"
+    },
+    {
+      "expression": "*.console.aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "yo84SYics"
+    },
+    {
+      "expression": "*.console.pingone.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5hU_z0Qkn"
+    },
+    {
+      "expression": "*.costco.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "f_NdHL8fg"
+    },
+    {
+      "expression": "*.daimaru-matsuzakaya.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "455BgFaxj"
+    },
+    {
+      "expression": "*.davinci.pingidentity.cloud",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "98MShDtMaX"
+    },
+    {
+      "expression": "*.demo-cyan-dove-62204.oktapreview.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "kREPpcfq9h"
+    },
+    {
+      "expression": "*.docs.aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "sQixtnrZt"
+    },
+    {
+      "expression": "*.ec.nintendo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "lpN5xsmUrr"
+    },
+    {
+      "expression": "*.education.pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "iUcziXK3N"
+    },
+    {
+      "expression": "*.evernote.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5-ugTo7K3"
+    },
+    {
+      "expression": "*.forgerock.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "bkTl6uGQt"
+    },
+    {
+      "expression": "*.github.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "eZsBGQDnc"
+    },
+    {
+      "expression": "*.glitch.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "LUr0PncGx"
+    },
+    {
+      "expression": "*.hozan.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "fSSkpm9Bt5"
+    },
+    {
+      "expression": "*.icloud.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "atpN2C6ek"
+    },
+    {
+      "expression": "*.id.sonyentertainmentnetwork.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "LafC4xJdq"
+    },
+    {
+      "expression": "*.jp.candyhouse.co",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "bMsnQpMK9"
+    },
+    {
+      "expression": "*.jp.quora.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vbql_a6Pg"
+    },
+    {
+      "expression": "*.kagi.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "sEK0h3KVt"
+    },
+    {
+      "expression": "*.keepersecurity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "aiJYozJuD"
+    },
+    {
+      "expression": "*.keepersecurity.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "7NhZfvceR"
+    },
+    {
+      "expression": "*.learn.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ZgEBJk3zC6"
+    },
+    {
+      "expression": "*.live.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "WRanRuYlvf"
+    },
+    {
+      "expression": "*.login.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "gPhp51fVO"
+    },
+    {
+      "expression": "*.lucid.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "bVgqDgSd8"
+    },
+    {
+      "expression": "*.mail.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "FcWgWqWe8"
+    },
+    {
+      "expression": "*.make.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5pUaN2Jsa"
+    },
+    {
+      "expression": "*.manage.cic-demo-platform.auth0app.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "PYyPki1kyT"
+    },
+    {
+      "expression": "*.members.subaru.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Fw3w9qHO7g"
+    },
+    {
+      "expression": "*.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Op1HDzKMA"
+    },
+    {
+      "expression": "*.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "32KJFhqA8"
+    },
+    {
+      "expression": "*.miro.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "xfiIs4gRe"
+    },
+    {
+      "expression": "*.mstdn.guru",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "kujVTOjtl"
+    },
+    {
+      "expression": "*.my.account.sony.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "UtUAm4iBZJ"
+    },
+    {
+      "expression": "*.myaccess.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "MqoKYg-IIX"
+    },
+    {
+      "expression": "*.nintendo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nAA6pYpLS"
+    },
+    {
+      "expression": "*.notion.so",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nes1q0WJs"
+    },
+    {
+      "expression": "*.okta.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "dwZEpQdGGs"
+    },
+    {
+      "expression": "*.oktapreview.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "tF8qsAdcK"
+    },
+    {
+      "expression": "*.outlook.live.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "-ytG6J_xi"
+    },
+    {
+      "expression": "*.parongo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "KtQdBPNoD"
+    },
+    {
+      "expression": "*.partnerportal.make.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "cd2F2dT6T"
+    },
+    {
+      "expression": "*.paypal.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vwSQMzAVX"
+    },
+    {
+      "expression": "*.perplexity.ai",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "tSEATtLIQ"
+    },
+    {
+      "expression": "*.ping.sudoadmin.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ksVtChahxk"
+    },
+    {
+      "expression": "*.pingidentity.cloud",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "w79zJTwg6"
+    },
+    {
+      "expression": "*.pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "c3livXLgE"
+    },
+    {
+      "expression": "*.pingidentitypartners.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ihQfI7EuV"
+    },
+    {
+      "expression": "*.pingone.asia",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "dKeMEyodJ"
+    },
+    {
+      "expression": "*.pingone.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "wamU5gnqs"
+    },
+    {
+      "expression": "*.pinterest.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "p9mTY9TSW"
+    },
+    {
+      "expression": "*.portal.azure.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "jPc6rDJWn"
+    },
+    {
+      "expression": "*.quora.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "B3CACXn89"
+    },
+    {
+      "expression": "*.read.amazon.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4hI3m9Pb1h"
+    },
+    {
+      "expression": "*.scaleft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "CwyFpLMfZ"
+    },
+    {
+      "expression": "*.scrapbox.io",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "_bJ80PPUBZ"
+    },
+    {
+      "expression": "*.sdi-lab.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vsRq7n43Lr"
+    },
+    {
+      "expression": "*.slack.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "U0NC4a6CS"
+    },
+    {
+      "expression": "*.smarthr.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pjDE4H0vz"
+    },
+    {
+      "expression": "*.smbc-card.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "WV5hgMNf1"
+    },
+    {
+      "expression": "*.sonyentertainmentnetwork.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Op6LHSOv6"
+    },
+    {
+      "expression": "*.sso.auth.pokemon.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "FvodQGcBJ"
+    },
+    {
+      "expression": "*.steampowered.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vNU4Z-6Zv"
+    },
+    {
+      "expression": "*.store-jp.nintendo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "aP32iaI9Y"
+    },
+    {
+      "expression": "*.store.playstation.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Yq5xTngpk"
+    },
+    {
+      "expression": "*.store.steampowered.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "f6hdPheD_"
+    },
+    {
+      "expression": "*.subaru.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "YqAwzYFZs"
+    },
+    {
+      "expression": "*.support.pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ts_CLEJtx"
+    },
+    {
+      "expression": "*.sync-tube.de",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ZDSRkMRXo"
+    },
+    {
+      "expression": "*.twitter.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "oIGbQv3np"
+    },
+    {
+      "expression": "*.wikipedia.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "WZZ7qcnkb"
+    },
+    {
+      "expression": "*.xbox.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "40CPPL6_Z"
+    },
+    {
+      "expression": "*.yesod.io",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "L6EDfomHs"
+    },
+    {
+      "expression": "*.youtube.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "YPcSIH-8U"
+    },
+    {
+      "expression": "*.zapier.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "LNaf_N2dVL"
+    },
+    {
+      "expression": "account.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "qmJ3QUH3f"
+    },
+    {
+      "expression": "accounts.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "NY3magpYcB"
+    },
+    {
+      "expression": "app.asana.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "KBqcn31ee"
+    },
+    {
+      "expression": "app.getmoneytree.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "TGUR_lWQG"
+    },
+    {
+      "expression": "app.scaleft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "U7GvpbOyt"
+    },
+    {
+      "expression": "app.slack.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "0Pex17nkv"
+    },
+    {
+      "expression": "app.smarthr.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "86i_NSGHY"
+    },
+    {
+      "expression": "app.workato.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "csbBbJRTO"
+    },
+    {
+      "expression": "apple.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Y0vkUXIbk"
+    },
+    {
+      "expression": "auth.cloudnative.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4P9Vo6h1t"
+    },
+    {
+      "expression": "aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4ZJ4NBiEo"
+    },
+    {
+      "expression": "backstage.forgerock.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "eim86wPtn"
+    },
+    {
+      "expression": "barefootinc.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "RCQqQgdjJ"
+    },
+    {
+      "expression": "bing.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "z7tqvQ8R_"
+    },
+    {
+      "expression": "bsky.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "qAvSdb-KU"
+    },
+    {
+      "expression": "cloudnative-co.awsapps.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "OTkcutXcx"
+    },
+    {
+      "expression": "cloudnative-corp.okta.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "329eCCyJp"
+    },
+    {
+      "expression": "cloudnative.app.box.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "oJF3JkBrr"
+    },
+    {
+      "expression": "console.aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ENOTsRw47"
+    },
+    {
+      "expression": "console.cloud.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "-96jdMn5A"
+    },
+    {
+      "expression": "console.pingone.asia",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "8eMGPZ2ua"
+    },
+    {
+      "expression": "console.pingone.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "715DOPBTM6"
+    },
+    {
+      "expression": "costco.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "j3QAa35ok"
+    },
+    {
+      "expression": "daimaru-matsuzakaya.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "DoZ8VNBGwU"
+    },
+    {
+      "expression": "davinci.pingidentity.cloud",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "8sEwRYlGW"
+    },
+    {
+      "expression": "demo-cyan-dove-62204.oktapreview.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4pKM9Em8S"
+    },
+    {
+      "expression": "demo.okta.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Ph0rQR8Jz"
+    },
+    {
+      "expression": "digital.asahi.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "68_caw6ceN"
+    },
+    {
+      "expression": "docs.aws.amazon.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "IJpB7yfv4"
+    },
+    {
+      "expression": "docs.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "wHEDGFrio"
+    },
+    {
+      "expression": "ec.nintendo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "VVqKQgKSO"
+    },
+    {
+      "expression": "education.pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "tH8s-CPSA"
+    },
+    {
+      "expression": "evernote.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "JzuIw3T8E"
+    },
+    {
+      "expression": "github.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nG3l8KG1L"
+    },
+    {
+      "expression": "glitch.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pv9x40a17"
+    },
+    {
+      "expression": "hozan.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "lC7Z0I9W8"
+    },
+    {
+      "expression": "icloud.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "XSKStVxOI"
+    },
+    {
+      "expression": "id.sonyentertainmentnetwork.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "RiL-YdwZg"
+    },
+    {
+      "expression": "jp.candyhouse.co",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "4WSsxYfWV"
+    },
+    {
+      "expression": "jp.quora.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "rwBWU1MJU"
+    },
+    {
+      "expression": "kagi.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "1vxi68A5H"
+    },
+    {
+      "expression": "keepersecurity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "82AUh4HSm"
+    },
+    {
+      "expression": "keepersecurity.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "wAYB_j5Qz"
+    },
+    {
+      "expression": "learn.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "QWvNY4Sqs"
+    },
+    {
+      "expression": "localhost",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "TCv1KSsQa"
+    },
+    {
+      "expression": "login.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "o7D0yWEQT5"
+    },
+    {
+      "expression": "lucid.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "WTMl-vABW"
+    },
+    {
+      "expression": "mail.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5cYfSMbtA"
+    },
+    {
+      "expression": "manage.cic-demo-platform.auth0app.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "cA61MLURr"
+    },
+    {
+      "expression": "members.subaru.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "NPMgetWq2"
+    },
+    {
+      "expression": "miro.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5Z4-Ld-AF"
+    },
+    {
+      "expression": "mstdn.guru",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "xOp8GDd2z"
+    },
+    {
+      "expression": "my.account.sony.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Lp-p_8983"
+    },
+    {
+      "expression": "myaccess.microsoft.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "iByU9MV-A"
+    },
+    {
+      "expression": "notion.so",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "rBhEUtyJz"
+    },
+    {
+      "expression": "openwebui.sudoadmin.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "O4aeNL7XP"
+    },
+    {
+      "expression": "outlook.live.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "2JeQutUKNN"
+    },
+    {
+      "expression": "parongo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "B23QDhGww"
+    },
+    {
+      "expression": "partnerportal.make.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nwmaw5I4E"
+    },
+    {
+      "expression": "paypal.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "-P63mz6Pc9"
+    },
+    {
+      "expression": "perplexity.ai",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "YTAmkL16O"
+    },
+    {
+      "expression": "ping.sudoadmin.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "CyKblGOvC"
+    },
+    {
+      "expression": "pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "LV2wGPsGy"
+    },
+    {
+      "expression": "pingidentitypartners.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "zq9qWdbDZ"
+    },
+    {
+      "expression": "pingone.sudoadmin.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "toyguxfEJ"
+    },
+    {
+      "expression": "pinterest.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "T4SsFksgf"
+    },
+    {
+      "expression": "portal.azure.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "yqYbnICJB"
+    },
+    {
+      "expression": "read.amazon.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "_X5WW_OmF"
+    },
+    {
+      "expression": "scrapbox.io",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "eCHZ1evTb"
+    },
+    {
+      "expression": "sdi-lab.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "95Nit_2q3"
+    },
+    {
+      "expression": "smbc-card.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ghubK1da9f"
+    },
+    {
+      "expression": "sso.auth.pokemon.co.jp",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "RKeS80ElU"
+    },
+    {
+      "expression": "store-jp.nintendo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "6Y7U5tnKK"
+    },
+    {
+      "expression": "store.playstation.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "UYUy2j4rG"
+    },
+    {
+      "expression": "store.steampowered.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "EhUUehzxr"
+    },
+    {
+      "expression": "support.pingidentity.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "dZYxkMqwu"
+    },
+    {
+      "expression": "sync-tube.de",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ACD6DbVvNO"
+    },
+    {
+      "expression": "twitter.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "gi0y5WWX8"
+    },
+    {
+      "expression": "xbox.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "jTGgmdn3j"
+    },
+    {
+      "expression": "yesod.io",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "dw8kxD5TI"
+    },
+    {
+      "expression": "youtube.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "k8JQ8i9if"
+    },
+    {
+      "expression": "zapier.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SdLQn9JSm"
+    },
+    {
+      "expression": "*.eki-net.com",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "MzQD2xbPe"
+    },
+    {
+      "expression": "*.google.com",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "sR_aeu4hr"
+    },
+    {
+      "expression": "*.mirai-compass.net",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SLclZ8FTj"
+    },
+    {
+      "expression": "eki-net.com",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "30kolzZqS"
+    },
+    {
+      "expression": "google.com",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nDtVj3eHZ"
+    },
+    {
+      "expression": "mirai-compass.net",
+      "listType": "GREY",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "uygBgy0fC"
+    }
+  ]
+}
