@@ -3,7 +3,13 @@
     "allow": [
       "Bash(wc:*)",
       "Read(//Users/isobe/.local/state/home-manager/**)",
-      "Read(//nix/store/nvrlp5h6yfzzdlbb5vva0zr1gci39sy4-user-environment/**)"
+      "Read(//nix/store/nvrlp5h6yfzzdlbb5vva0zr1gci39sy4-user-environment/**)",
+      "WebFetch(domain:github.com)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(nix eval *)",
+      "Bash(nix-instantiate --eval -E '\\(import <nixpkgs> {}\\).direnv.src')"
     ]
   }
 }

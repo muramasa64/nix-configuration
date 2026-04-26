@@ -8,6 +8,18 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  # Workaround for aarch64-darwin build failure (nixpkgs#507531):
+  # direnv's fish integration test is killed with signal 9 on Apple Silicon,
+  # caused by libarchive 3.8.6 breaking fish. Skip the fish test to allow
+  # direnv to build successfully.
+  nixpkgs.overlays = [
+    (_final: prev: {
+      direnv = prev.direnv.overrideAttrs (_old: {
+        doCheck = false;
+      });
+    })
+  ];
+
   nix.enable = true;
   nix.package = pkgs.nix;
   nix.settings = {

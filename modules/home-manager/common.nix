@@ -24,7 +24,6 @@
     devenv
     diffedit3
     diffnav
-    direnv
     eza
     fd
     fzf
