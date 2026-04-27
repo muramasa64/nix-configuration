@@ -8,6 +8,8 @@
     ../../config/certs/nscacert.pem
   ];
 
+  nix.settings.ssl-cert-file = /etc/ssl/certs/ca-certificates.crt;
+
   system.defaults.dock = {
     persistent-apps = [
       { app = "/System/Applications/Mail.app"; }
