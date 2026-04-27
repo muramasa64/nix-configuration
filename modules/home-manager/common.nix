@@ -32,6 +32,7 @@
     lua-language-server
     mas
     neovim
+    neovim-remote
     nix-output-monitor
     nixd
     nixfmt
