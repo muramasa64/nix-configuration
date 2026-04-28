@@ -101,6 +101,8 @@
       "*~"
       "/vendor/bundle/"
       "*-py-venv/*"
+      ".venv/"
+      "venv/"
       "terraform.tfstate*"
       ".terraform"
       "*.tfvars"
@@ -110,9 +112,15 @@
       ".mise.toml"
       ".jj"
       ".envrc"
+      ".env"
+      ".pem"
+      ".key"
       ".direnv/**"
       ".devenv/**"
       "*.zip"
+      ".claude/*.log"
+      ".claude/settings.local.json"
+      "CLAUDE.local.md"
     ];
   };
 }
