@@ -84,10 +84,12 @@
           nix flake update
           or return 1
 
-          # 新しい設定に切り替え
+          # 新しい設定に切り替え（nix-output-monitor で進捗表示）
           echo "==> Switching to .#$flake_target..."
-          sudo nix run nix-darwin --extra-experimental-features 'flakes nix-command' -- switch --flake ".#$flake_target"
-          or return 1
+          sudo nix run nix-darwin --extra-experimental-features 'flakes nix-command' -- switch --flake ".#$flake_target" --log-format internal-json -v 2>&1 | nom --json
+          if test $pipestatus[1] -ne 0
+              return 1
+          end
 
           # バージョン変更を表示
           set new_system (readlink /run/current-system)
