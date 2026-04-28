@@ -19,6 +19,7 @@
     inputs.starship-jj.packages.${system}.default
     bash
     bat
+    comma
     curl
     delta
     devenv
