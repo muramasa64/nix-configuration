@@ -25,6 +25,7 @@
     devenv
     diffedit3
     diffnav
+    dust
     eza
     fd
     fzf
