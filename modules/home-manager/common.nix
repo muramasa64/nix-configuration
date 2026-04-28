@@ -41,7 +41,8 @@
     ripgrep
     sd
     tree-sitter
-    vscode-json-languageserver
+    typescript-language-server
+    vscode-langservers-extracted
   ];
 
   xdg.configFile = {
