@@ -37,6 +37,8 @@
       window-inherit-working-directory = false; # 新規にwindowを開いた時の作業ディレクトリを継承しない
       working-directory = "home"; # デフォルトで開く作業ディレクトリ
 
+      scrollback-limit = 104857600;
+
       keybind = [
         "unconsumed:ctrl+shift+.=reload_config" # Ctrl+Shift+. で、設定をリロードする
         "super+c=copy_to_clipboard:plain" # Command+C で、プレーンテキストでクリップボードにコピーする
