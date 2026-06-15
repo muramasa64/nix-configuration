@@ -16,7 +16,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     starship-jj = {
       url = "gitlab:lanastara_foss/starship-jj";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,7 +46,6 @@
 
             modules = [
               ./hosts/${hostname}/default.nix
-              inputs.nix-homebrew.darwinModules.nix-homebrew
               inputs.home-manager.darwinModules.home-manager
               inputs.nix-index-database.darwinModules.nix-index
               {

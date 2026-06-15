@@ -1,11 +1,5 @@
-{ pkgs, inputs, username, ... }:
+{ ... }:
 {
-  nix-homebrew = {
-    enable = true;
-    user = username;
-    autoMigrate = true;
-  };
-
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
@@ -13,7 +7,6 @@
       "mac-cleanup-go"
     ];
     casks = [
-      "aquaskk"
       "bitwarden"
       "firefox"
       "ghostty"
