@@ -24,37 +24,13 @@
           end
         )'
       end
+
+      # OrbStack統合
+      source ~/.orbstack/shell/init2.fish 2>/dev/null || :
     '';
 
     # shellInit: 全てのfishセッションで実行される初期化処理
     shellInit = ''
-      # Nix daemon
-      # if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
-      #   source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
-      # end
-
-      # for p in /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin
-      #   if not contains $p $fish_user_paths
-      #     set -gx fish_user_paths $p $fish_user_paths
-      #   end
-      # end
-
-      fish_add_path /opt/homebrew/bin
-      fish_add_path /opt/homebrew/sbin
-      fish_add_path ~/bin
-      # fish_add_path ~/.nix-profile/bin
-      # fish_add_path /run/current-system/sw/bin
-
-      set -gx LANG ja_JP.UTF-8
-      set -gx XDG_CONFIG_HOME $HOME/.config
-      set -gx PIP_CERT "/Library/Application Support/Netskope/STAgent/data/nscacert.pem"
-      set -gx devbox_no_prompt true
-
-      set -x EDITOR nvim
-      set -x MANPAGER "nvim +Man!"
-
-      # OrbStack統合
-      source ~/.orbstack/shell/init2.fish 2>/dev/null || :
     '';
 
     shellAbbrs = {

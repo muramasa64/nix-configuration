@@ -15,6 +15,22 @@
     ./programs/starship.nix
   ];
 
+  home.sessionPath = [
+    "/opt/homebrew/bin"
+    "/opt/homebrew/sbin"
+    "$HOME/.local/bin"
+    "$HOME/bin"
+  ];
+
+  home.sessionVariables = {
+    LANG = "ja_JP.UTF-8";
+    XDG_CONFIG_HOME = "$HOME/.config";
+    PIP_CERT = "/Library/Application Support/Netskope/STAgent/data/nscacert.pem";
+    devbox_no_prompt = "true";
+    EDITOR = "nvim";
+    MANPAGER = "nvim +Man!";
+  };
+
   home.packages = with pkgs; [
     inputs.starship-jj.packages.${system}.default
     bash
