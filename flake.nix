@@ -55,7 +55,7 @@
                     inherit inputs hostname username;
                   };
                   useGlobalPkgs = true;
-                  useUserPackages = false;
+                  useUserPackages = true;
                   backupFileExtension = "backup";
                   users.${username} = import ./hosts/${hostname}/home.nix;
                 };
