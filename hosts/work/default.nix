@@ -32,7 +32,6 @@
   homebrew = {
     taps = [
       "nikitabobko/tap"
-      "pingidentity/tap"
     ];
     casks = [
       "bruno"
@@ -46,7 +45,6 @@
       "xca"
     ];
     brews = [
-      "pingcli"
       "resterm"
     ];
   };
