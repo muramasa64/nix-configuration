@@ -18,17 +18,10 @@
         doCheck = false;
       });
     })
-    (_final: prev: {
-      inherit (prev.lixPackageSets.stable)
-        nixpkgs-review
-        nix-eval-jobs
-        nix-fast-build
-        colmena;
-    })
   ];
 
   nix.enable = true;
-  nix.package = pkgs.lixPackageSets.stable.lix;
+  nix.package = pkgs.nix;
   nix.nixPath = [
     "nixpkgs=${inputs.nixpkgs}"
   ];
