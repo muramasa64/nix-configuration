@@ -29,10 +29,6 @@
       source ~/.orbstack/shell/init2.fish 2>/dev/null || :
     '';
 
-    # shellInit: 全てのfishセッションで実行される初期化処理
-    shellInit = ''
-    '';
-
     shellAbbrs = {
       rm = "trash";
       diff = "delta";
