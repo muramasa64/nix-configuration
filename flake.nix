@@ -39,12 +39,12 @@
       flake = let
         mkDarwinSystem = { hostname, username, system ? "aarch64-darwin" }:
           inputs.nix-darwin.lib.darwinSystem {
-            inherit system;
             specialArgs = {
               inherit inputs hostname username;
             };
 
             modules = [
+              { nixpkgs.hostPlatform = system; }
               ./hosts/${hostname}/default.nix
               inputs.home-manager.darwinModules.home-manager
               inputs.nix-index-database.darwinModules.nix-index

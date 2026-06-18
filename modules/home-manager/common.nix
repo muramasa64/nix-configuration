@@ -32,7 +32,7 @@
   };
 
   home.packages = with pkgs; [
-    inputs.starship-jj.packages.${system}.default
+    inputs.starship-jj.packages.${pkgs.stdenv.hostPlatform.system}.default
     bash
     bat
     comma

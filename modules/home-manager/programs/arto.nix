@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
   artoFixed =
-    inputs.arto.packages.${pkgs.system}.default.overrideAttrs (old: {
+    inputs.arto.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (old: {
       installPhase = ''
         runHook preInstall
 
