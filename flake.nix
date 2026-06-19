@@ -46,20 +46,8 @@
             modules = [
               { nixpkgs.hostPlatform = system; }
               ./hosts/${hostname}/default.nix
-              inputs.home-manager.darwinModules.home-manager
+              ./modules/darwin/home-manager.nix
               inputs.nix-index-database.darwinModules.nix-index
-              {
-                users.users.${username}.home = "/Users/${username}";
-                home-manager = {
-                  extraSpecialArgs = {
-                    inherit inputs hostname username;
-                  };
-                  useGlobalPkgs = true;
-                  useUserPackages = true;
-                  backupFileExtension = "backup";
-                  users.${username} = import ./hosts/${hostname}/home.nix;
-                };
-              }
             ];
           };
       in {
