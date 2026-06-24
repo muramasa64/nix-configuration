@@ -20,10 +20,6 @@
       url = "gitlab:lanastara_foss/starship-jj";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    arto = {
-      url = "github:arto-app/Arto";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {

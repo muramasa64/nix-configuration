@@ -3,10 +3,17 @@
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
+    taps = [
+      {
+        name = "arto-app/tap";
+        trusted = true;
+      }
+    ];
     brews = [
       "mac-cleanup-go"
     ];
     casks = [
+      "arto"
       "bitwarden"
       "firefox"
       "ghostty"

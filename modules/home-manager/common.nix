@@ -31,7 +31,6 @@
   };
 
   home.packages = with pkgs; [
-    inputs.arto.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.starship-jj.packages.${pkgs.stdenv.hostPlatform.system}.default
     bash
     bat
