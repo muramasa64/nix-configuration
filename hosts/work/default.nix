@@ -15,6 +15,7 @@
       { app = "/System/Applications/Mail.app"; }
       { app = "/System/Applications/Calendar.app"; }
       { app = "/System/Applications/Reminders.app"; }
+      { app = "/Applications/OmniFocus.app"; }
       { app = "/System/Applications/Home.app"; }
       { app = "/Applications/Reeder.app"; }
       { app = "/Applications/Firefox.app"; }
