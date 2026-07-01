@@ -2,7 +2,10 @@
 {
   homebrew = {
     enable = true;
-    onActivation.autoUpdate = true;
+    onActivation = {
+      autoUpdate = true;
+      upgrade = true;
+    };
     taps = [
       {
         name = "arto-app/tap";
