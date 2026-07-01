@@ -45,6 +45,7 @@
     fd
     fzf
     git
+    git-filter-repo
     jd-diff-patch
     lua-language-server
     mas
