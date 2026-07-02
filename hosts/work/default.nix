@@ -41,7 +41,6 @@
       "firefox@nightly"
       "microsoft-edge"
       "orbstack"
-      "visual-studio-code"
       "windows-app"
       "xca"
     ];
