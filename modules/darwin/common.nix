@@ -31,6 +31,10 @@
     trusted-users = [ "root" username ];
   };
 
+  # Workaround for build failed at 2026-07-06
+  documentation.enable = false;
+  system.tools.darwin-uninstaller.enable = false;
+
   system.configurationRevision = inputs.self.rev or inputs.self.dirtyRev or null;
 
   system.stateVersion = 6;
