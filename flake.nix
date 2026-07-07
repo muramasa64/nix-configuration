@@ -20,6 +20,10 @@
       url = "gitlab:lanastara_foss/starship-jj";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    asana-omnifocus-sync = {
+      url = "github:muramasa64/asana-omnifocus-sync";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

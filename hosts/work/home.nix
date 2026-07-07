@@ -1,4 +1,4 @@
-{ config, pkgs, hostname, username, ... }:
+{ inputs, config, pkgs, hostname, username, ... }:
 {
   imports = [
     ../../modules/home-manager/common.nix
@@ -15,5 +15,6 @@
     gh
     lemminx
     utm
+    inputs.asana-omnifocus-sync.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
