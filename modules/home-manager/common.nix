@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 {
   programs.home-manager.enable = true;
 
@@ -73,4 +73,8 @@
     recursive = true;
     force = true;
   };
+
+  home.activation.setConfigDirPermissions = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    chmod 700 "$HOME/.config"
+  '';
 }

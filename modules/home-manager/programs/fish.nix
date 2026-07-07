@@ -9,6 +9,11 @@
     interactiveShellInit = ''
       set fish_greeting ""
 
+      # secrets
+      if test -f ~/.config/fish/secrets.fish
+        source ~/.config/fish/secrets.fish
+      end
+
       # jj補完
       if type -q jj
         jj util completion fish | source
