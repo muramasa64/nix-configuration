@@ -50,7 +50,7 @@
           else if test "$USER" = "isobe"
               set flake_target "work"
           else
-              set flake_target "test"
+              set flake_target "home"
           end
 
           # 現在のシステムクロージャを保存

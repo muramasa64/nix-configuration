@@ -65,6 +65,12 @@
             hostname = "work";
             username = "isobe";
           };
+
+          "home" = mkDarwinSystem {
+            hostname = "home";
+            username = "kazuhiko";
+          };
+
         };
       };
     };
