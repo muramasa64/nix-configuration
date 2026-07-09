@@ -22,6 +22,7 @@
       "mac-cleanup-go"
     ];
     casks = [
+      "arto"
       "bitwarden"
       "firefox"
       "ghostty"
