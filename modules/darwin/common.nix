@@ -90,6 +90,27 @@
   };
 
   system.defaults.CustomUserPreferences = {
+    "com.apple.finder" = {
+      DesktopViewSettings = {
+        GroupBy = "Kind"; # デスクトップでスタックを使用する（種類ごとにグループ化）
+        IconViewSettings = {
+          arrangeBy = "dateAdded";
+          backgroundColorBlue = 1.0;
+          backgroundColorGreen = 1.0;
+          backgroundColorRed = 1.0;
+          backgroundType = 0;
+          gridOffsetX = 0.0;
+          gridOffsetY = 0.0;
+          gridSpacing = 54.0;
+          iconSize = 64.0;
+          labelOnBottom = true;
+          showIconPreview = true;
+          showItemInfo = false;
+          textSize = 12.0;
+          viewOptionsVersion = 1;
+        };
+      };
+    };
     "com.apple.symbolichotkeys" = {
       AppleSymbolicHotKeys = {
         # Spotlightの検索ウィンドウを space + ctrl で開くショートカット
