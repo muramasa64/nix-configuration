@@ -25,6 +25,8 @@
       "arto"
       "bitwarden"
       "firefox"
+      "firefox@developer-edition"
+      "firefox@nightly"
       "ghostty"
       "karabiner-elements"
       "obsidian"

@@ -11,6 +11,8 @@
       { app = "/System/Applications/Reminders.app"; }
       { app = "/System/Applications/Home.app"; }
       { app = "/Applications/Firefox.app"; }
+      { app = "/Applications/Firefox Developer Edition.app"; }
+      { app = "/Applications/Firefox Nightly.app"; }
       { app = "/Applications/Ghostty.app"; }
       { app = "/System/Applications/Messages.app"; }
       { app = "/System/Applications/Books.app"; }

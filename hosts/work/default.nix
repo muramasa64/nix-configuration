@@ -37,8 +37,6 @@
     casks = [
       "bruno"
       "devtoys"
-      "firefox@developer-edition"
-      "firefox@nightly"
       "microsoft-edge"
       "orbstack"
       "windows-app"
