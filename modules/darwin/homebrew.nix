@@ -39,11 +39,11 @@
     # brew bundle が root として実行される
     # sudo nix run nix-darwin -- switch で動かすため、brew bundle が root コンテキストで実行される
     # root は App Store のユーザーセッションにアクセスできないため、mas install が失敗する
-    # masApps = {
-    #   "Reeder Classic." = 1529448980;
-    #   "OmniFocus 4" = 1542143627;
-    #   "Snip : Snippets Manager" = 1527428847;
-    #   "辞書 by 物書堂" = 1380563956;
-    # };
+    masApps = {
+      "Reeder Classic." = 1529448980;
+      "OmniFocus 4" = 1542143627;
+      "Snip : Snippets Manager" = 1527428847;
+      "辞書 by 物書堂" = 1380563956;
+    };
   };
 }
