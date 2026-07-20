@@ -56,6 +56,7 @@
   };
 
   system.defaults.trackpad = {
+    Clicking = false; # Trackpadのタップでクリックを無効にする
     TrackpadThreeFingerDrag = true; # Trackpadの3本指でドラッグを有効にする
   };
 

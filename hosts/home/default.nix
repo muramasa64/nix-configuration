@@ -13,6 +13,9 @@
       { app = "/Applications/Firefox.app"; }
       { app = "/Applications/Firefox Developer Edition.app"; }
       { app = "/Applications/Firefox Nightly.app"; }
+      { app = "/Applications/Nani.app"; }
+      { app = "/Applications/Obsidian.app"; }
+      { app = "/Applications/OmniFocus.app"; }
       { app = "/Applications/Ghostty.app"; }
       { app = "/System/Applications/Messages.app"; }
       { app = "/System/Applications/Books.app"; }
