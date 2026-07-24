@@ -15,6 +15,7 @@
     duckdb
     gh
     lemminx
+    tart
     utm
     inputs.asana-omnifocus-sync.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
