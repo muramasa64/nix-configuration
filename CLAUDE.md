@@ -37,20 +37,19 @@ This is a Nix flake configuration managing several macOS (aarch64-darwin) machin
      - `home-manager.nix`: Wires home-manager into the Darwin system
    - `modules/nixos/` — NixOS system-level
      - `home-manager.nix`: Wires home-manager into the NixOS system
-     - `niri.nix`: niri compositor, greetd + tuigreet login, polkit agent, swaylock PAM, xwayland-satellite
 
 2. **Home-manager layer** (`modules/home-manager/`) — user-level packages and dotfiles
    - `base.nix`: Cross-platform core (neovim, fish, git, jj, ripgrep, bat, eza, etc.) and symlinks for external configs
    - `darwin.nix`: `base.nix` plus macOS-only bits (Homebrew paths, mas, Karabiner config)
    - `programs/`: Per-program configuration modules (fish, git, ghostty, jj, starship, direnv, fzf, claude)
-     - `niri.nix` is the Linux desktop bundle: it pulls in `waybar.nix` / `fuzzel.nix` / `mako.nix`, swaylock/swayidle, and the `config/niri/config.kdl` symlink
+     - `niri.nix` installs niri plus `waybar.nix` / `fuzzel.nix` and symlinks `config/niri/config.kdl`. On `nixos-tart` niri runs **nested inside the GNOME session** (winit backend), because Tart gives no 3D acceleration and niri's TTY backend refuses software EGL
 
 ### Host-Specific Configs (`hosts/`)
 
 - `hosts/work/` — MacBook Pro M1, user `isobe`; adds work-specific tools: awscli2, claude-code, duckdb, gh, utm
 - `hosts/test/` — MacBook Air M1, user `kazuhiko`; lighter setup
 - `hosts/home/` — MacBook Pro M1, user `kazuhiko`
-- `hosts/nixos-tart/` — NixOS guest on Tart, user `kazuhiko`; niri (Wayland), fcitx5-mozc, xremap. Has `hardware-configuration.nix` and imports `modules/home-manager/base.nix` + `modules/home-manager/programs/niri.nix` (not `darwin.nix`, which is macOS-only)
+- `hosts/nixos-tart/` — NixOS guest on Tart, user `kazuhiko`; GNOME, fcitx5-mozc, xremap, plus niri run nested inside GNOME. Has `hardware-configuration.nix` and imports `modules/home-manager/base.nix` + `modules/home-manager/programs/niri.nix` (not `darwin.nix`, which is macOS-only)
 
 Each host has `default.nix` (system config) and `home.nix` (home-manager user config) that import the common modules and add machine-specific overrides. `hostname` / `username` are passed down via `specialArgs`.
 

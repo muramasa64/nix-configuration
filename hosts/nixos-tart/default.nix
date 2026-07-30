@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/nixos/niri.nix
       inputs.xremap.nixosModules.default
     ];
 
@@ -58,10 +57,22 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
-  # デスクトップ環境は niri (Wayland)。X11 アプリは xwayland-satellite が処理する。
-  # 設定は modules/nixos/niri.nix にある。
-  # キーボードは ANSI (US) 配列。仮想コンソール用と config/niri/config.kdl の xkb で個別に指定する。
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
+
+  # Enable the GNOME Desktop Environment.
+  # Tart (Apple Virtualization.framework) は Linux ゲストに 3D アクセラレーションを提供せず
+  # Mesa が llvmpipe になるため、software EGL を拒否する niri は TTY セッションとしては動かない。
+  # niri は GNOME セッションの中でネスト起動して使う (modules/home-manager/programs/niri.nix)。
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
+
+  # キーボードは ANSI (US) 配列
   console.keyMap = "us";
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -146,10 +157,7 @@
   services.xremap = {
     enable = true;
     userName = username;
-    # withNiri は niri の IPC ソケット ($NIRI_SOCKET) からアクティブウィンドウを取得するため、
-    # root ではなくユーザーセッションで動かす必要がある
-    serviceMode = "user";
-    withNiri = true;
+    serviceMode = "system";
     config = {
       modmap = [
         {
@@ -165,9 +173,8 @@
           remap = {
             C-h = "Backspace";
           };
-          # niri から取得できるのは app-id なので app-id で除外する
           application = {
-            not = ["Alacritty" "kitty" "org.wezfurlong.wezterm" "com.mitchellh.ghostty"];
+            not = ["Alacritty" "Kitty" "Wezterm" "Ghostty"];
           };
         }
       ];
@@ -177,11 +184,7 @@
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
-    fcitx5 = {
-      addons = [pkgs.fcitx5-mozc];
-      # niri は text-input-v3 / input-method-v2 に対応しているので Wayland フロントエンドを使う
-      waylandFrontend = true;
-    };
+    fcitx5.addons = [pkgs.fcitx5-mozc];
   };
 
   fonts = {
