@@ -2,7 +2,9 @@
 {
   programs.waybar = {
     enable = true;
-    systemd.enable = true;
+    # GNOME セッションの graphical-session.target に釣られて起動しないよう systemd 連携は使わず、
+    # ネストした niri の spawn-at-startup から起動する
+    systemd.enable = false;
 
     settings.mainBar = {
       layer = "top";

@@ -1,5 +1,8 @@
 // niri (scrollable-tiling Wayland compositor) の設定
 // リファレンス: https://niri-wm.github.io/niri/Configuration:-Introduction
+//
+// nixos-tart では GNOME セッションの中でウィンドウとして起動する (winit バックエンド)。
+// このとき "Mod" は Super ではなく Alt になる。
 
 input {
     keyboard {
@@ -56,11 +59,7 @@ layout {
     }
 }
 
-// 日本語入力 (fcitx5) は systemd user service を持たないのでここから起動する
-spawn-at-startup "fcitx5" "-d" "--replace"
-
-// waybar / mako / swayidle は home-manager の systemd user service で起動する
-// xwayland-satellite は niri が X11 クライアント接続時に自動起動する
+spawn-at-startup "waybar"
 
 prefer-no-csd
 
@@ -79,19 +78,12 @@ window-rule {
     open-floating true
 }
 
-// fcitx5 の設定ウィンドウはフローティングで開く
-window-rule {
-    match app-id=r#"^org\.fcitx\."#
-    open-floating true
-}
-
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+B hotkey-overlay-title="Open a Browser: firefox" { spawn "firefox"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // 音量 (PipeWire / WirePlumber)
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
