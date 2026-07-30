@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/nixos/niri.nix
       inputs.xremap.nixosModules.default
     ];
 
@@ -57,18 +58,10 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "jp";
-    variant = "";
-  };
+  # デスクトップ環境は niri (Wayland)。X11 アプリは xwayland-satellite が処理する。
+  # 設定は modules/nixos/niri.nix にある。
+  # キーボードは ANSI (US) 配列。仮想コンソール用と config/niri/config.kdl の xkb で個別に指定する。
+  console.keyMap = "us";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -97,7 +90,7 @@
     isNormalUser = true;
     description = username;
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -105,6 +98,10 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # ログインシェルは zsh。fish は ghostty から起動する (darwin ホストと同じ構成)
+  programs.zsh.enable = true;
+  programs.fish.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -149,7 +146,10 @@
   services.xremap = {
     enable = true;
     userName = username;
-    serviceMode = "system";
+    # withNiri は niri の IPC ソケット ($NIRI_SOCKET) からアクティブウィンドウを取得するため、
+    # root ではなくユーザーセッションで動かす必要がある
+    serviceMode = "user";
+    withNiri = true;
     config = {
       modmap = [
         {
@@ -165,8 +165,9 @@
           remap = {
             C-h = "Backspace";
           };
+          # niri から取得できるのは app-id なので app-id で除外する
           application = {
-            not = ["Alacritty" "Kitty" "Wezterm" "Ghostty"];
+            not = ["Alacritty" "kitty" "org.wezfurlong.wezterm" "com.mitchellh.ghostty"];
           };
         }
       ];
@@ -176,7 +177,11 @@
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
-    fcitx5.addons = [pkgs.fcitx5-mozc];
+    fcitx5 = {
+      addons = [pkgs.fcitx5-mozc];
+      # niri は text-input-v3 / input-method-v2 に対応しているので Wayland フロントエンドを使う
+      waylandFrontend = true;
+    };
   };
 
   fonts = {
