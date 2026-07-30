@@ -1,8 +1,8 @@
 { config, pkgs, hostname, username, ... }:
 {
   imports = [
-    ../../modules/home-manager/darwin.nix
+    ../../modules/home-manager/base.nix
   ];
   home.username = username;
-  home.homeDirectory = "/Users/${username}";
+  home.homeDirectory = "/home/${username}";
 }

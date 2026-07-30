@@ -1,5 +1,5 @@
 {
-  description = "Example nix-darwin system flake";
+  description = "nix-darwin / NixOS system flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -25,6 +25,10 @@
       url = "github:muramasa64/asana-omnifocus-sync";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    xremap = {
+      url = "github:xremap/nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -35,6 +39,7 @@
       debug = true;
       systems = [
         "aarch64-darwin"
+        "aarch64-linux"
       ];
 
       flake = let
@@ -51,6 +56,20 @@
               inputs.nix-homebrew.darwinModules.nix-homebrew
               inputs.home-manager.darwinModules.home-manager
               inputs.nix-index-database.darwinModules.nix-index
+            ];
+          };
+
+        mkNixosSystem = { hostname, username, system ? "aarch64-linux" }:
+          inputs.nixpkgs.lib.nixosSystem {
+            specialArgs = {
+              inherit inputs hostname username;
+            };
+
+            modules = [
+              { nixpkgs.hostPlatform = system; }
+              ./hosts/${hostname}/default.nix
+              ./modules/nixos/home-manager.nix
+              inputs.nix-index-database.nixosModules.nix-index
             ];
           };
       in {
@@ -70,7 +89,14 @@
             hostname = "home";
             username = "kazuhiko";
           };
+        };
 
+        # sudo nixos-rebuild switch --flake .#nixos-tart
+        nixosConfigurations = {
+          "nixos-tart" = mkNixosSystem {
+            hostname = "nixos-tart";
+            username = "kazuhiko";
+          };
         };
       };
     };

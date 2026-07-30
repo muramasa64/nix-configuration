@@ -15,8 +15,6 @@
   ];
 
   home.sessionPath = [
-    "/opt/homebrew/bin"
-    "/opt/homebrew/sbin"
     "$HOME/.local/bin"
     "$HOME/bin"
   ];
@@ -24,7 +22,6 @@
   home.sessionVariables = {
     LANG = "ja_JP.UTF-8";
     XDG_CONFIG_HOME = "$HOME/.config";
-    PIP_CERT = "/Library/Application Support/Netskope/STAgent/data/nscacert.pem";
     devbox_no_prompt = "true";
     EDITOR = "nvim";
     MANPAGER = "nvim +Man!";
@@ -48,7 +45,6 @@
     git-filter-repo
     jd-diff-patch
     lua-language-server
-    mas
     neovim
     neovim-remote
     nix-output-monitor
@@ -66,12 +62,6 @@
   xdg.configFile = {
     "starship-jj".source = ../../config/starship-jj;
     "nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles-nvim";
-  };
-
-  home.file.".config/karabiner" = {
-    source = ../../config/karabiner;
-    recursive = true;
-    force = true;
   };
 
   home.activation.setConfigDirPermissions = lib.hm.dag.entryAfter [ "writeBoundary" ] ''

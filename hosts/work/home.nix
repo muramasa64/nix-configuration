@@ -1,12 +1,16 @@
 { inputs, config, pkgs, hostname, username, ... }:
 {
   imports = [
-    ../../modules/home-manager/common.nix
+    ../../modules/home-manager/darwin.nix
     ../../modules/home-manager/programs/claude.nix
   ];
 
   home.username = username;
   home.homeDirectory = "/Users/${username}";
+
+  home.sessionVariables = {
+    PIP_CERT = "/Library/Application Support/Netskope/STAgent/data/nscacert.pem";
+  };
 
   home.packages = with pkgs; [
     awscli2
