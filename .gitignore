@@ -1,0 +1,12 @@
+# cclens が生成する解析ストア。全セッションのエラー抜粋（顧客名を含むパス等）が入るため
+# public リポジトリには絶対に入れない
+cclens.db
+cclens.db-shm
+cclens.db-wal
+
+# direnv
+.direnv/
+
+# nix build の結果シンボリックリンク
+result
+result-*

@@ -13,5 +13,48 @@
       }
     }
   },
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "permissions": {
+    "allow": [
+      "Bash(rg:*)",
+      "Bash(eza:*)",
+      "Bash(fd:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(stat:*)",
+      "Bash(file:*)",
+      "Bash(jj st:*)",
+      "Bash(jj status:*)",
+      "Bash(jj log:*)",
+      "Bash(jj diff:*)",
+      "Bash(jj show:*)",
+      "Bash(jj file list:*)",
+      "Bash(jj op log:*)",
+      "Bash(jj commit:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(nix eval:*)",
+      "Bash(nix flake metadata:*)",
+      "Bash(nix flake show:*)",
+      "Bash(nix flake check:*)",
+      "Bash(nix derivation show:*)",
+      "Bash(nix search:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker logs:*)",
+      "Bash(docker inspect:*)",
+      "Bash(docker compose ps:*)",
+      "Bash(docker compose logs:*)",
+      "Read(//nix/store/**)",
+      "Read(//Users/isobe/.local/state/home-manager/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/isobe/repos",
+      "/Users/isobe/work"
+    ]
+  }
 }

@@ -6,12 +6,33 @@
 
 # Environment
 
-- macOS (Apple Silicon, aarch64-darwin). The shell is fish.
+- macOS (Apple Silicon, aarch64-darwin).
+- My interactive terminal is ghostty + fish, but **Claude Code's Bash tool runs zsh 5.9**
+  (the login shell is /bin/zsh). Write zsh-compatible commands — not fish, and not bash-only.
+- zsh pitfalls on this machine:
+    - An unmatched glob aborts the whole command (`no matches found`), it is not passed through
+      as a literal. Use a `(N)` qualifier (`ls -1 *.yml(N)`), `setopt null_glob`, or better
+      `rg --files -g '*.yml'`.
+    - Do not chain many steps into one huge command separated by `echo ===`. A single failure
+      loses the entire batch. Split it into several Bash calls.
+- `sed` differs by context: the plain shell has BSD `/usr/bin/sed` (`sed -i ''` is required),
+  but inside `nix develop` it is GNU sed (`sed -i`). Prefer the Edit tool over `sed -i`.
 - dotfiles are managed with nix flake (nix-darwin + home-manager). The location is ~/.config/nix-configuration.
 - Use jj (jujutsu) for version control.
-- The editor is neovim. The terminal is ghostty.
+- The editor is neovim.
 - Frequently used CLI tools: ripgrep (rg), bat, eza, fzf, direnv. Prioritize rg over grep/find.
 - If using a tool that is not installed, it is acceptable to run it using ',' (comma).
+
+# Shell & Paths
+
+- The Bash working directory persists between calls. Do not `cd`. Use absolute paths, or a
+  tool's own root flag: `git -C <dir>`, `jj --repository <dir>`, `docker compose -f <file>`,
+  `nix ... --flake <path>`.
+- I routinely work across several repositories in one session (e.g. working in
+  `~/work/<client>` while editing docs in `~/repos/<docs-repo>`). The session cwd does not
+  contain everything. Read a file before editing it, even when it lives outside the cwd.
+- Never `sleep N` to wait for something — it is blocked. Use `until <check>; do sleep 2; done`,
+  or start the work with run_in_background and poll it with Monitor.
 
 # Working Style
 
