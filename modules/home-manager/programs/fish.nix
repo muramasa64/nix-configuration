@@ -93,6 +93,17 @@
           end
         '';
       };
+
+      # herdrはEDITORをnvimに固定して起動する
+      # nvim init.luaがEDITOR=nvr(既存nvimウィンドウ再利用)に上書きするが、
+      # herdrサーバーは長時間稼働し続けるため、起動時のnvimが終了すると
+      # nvrの接続先ソケットが無効になり、Claude Code等からのエディタ起動が失敗する
+      herdr = {
+        wraps = "herdr";
+        body = ''
+          env EDITOR=nvim VISUAL=nvim command herdr $argv
+        '';
+      };
     };
 
     plugins = [
