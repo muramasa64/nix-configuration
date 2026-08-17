@@ -34,6 +34,15 @@
 - Never `sleep N` to wait for something — it is blocked. Use `until <check>; do sleep 2; done`,
   or start the work with run_in_background and poll it with Monitor.
 
+# Obsidian Vault
+
+- My vault is `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/main`, registered as an
+  additional directory. It is read-only on purpose: an `Edit` deny rule blocks every file-editing
+  tool. Do not work around it — the vault is iCloud-synced and writing behind Obsidian's back
+  causes sync conflicts.
+- It is a flat vault of ~4,300 Markdown files. Never list or glob it wholesale. Narrow it with
+  `rg -l <pattern>` first, then read only the files that matched.
+
 # Working Style
 
 - Keep explanations concise. Avoid redundant preambles or obvious summaries, and state the conclusion first.
