@@ -33,6 +33,10 @@
   homebrew = {
     taps = [
       "nikitabobko/tap"
+      {
+        name = "pingidentity/tap";
+        trusted = true;
+      }
     ];
     casks = [
       "bruno"
@@ -44,6 +48,7 @@
     ];
     brews = [
       "resterm"
+      "pingone-mcp-server"
     ];
   };
 }
