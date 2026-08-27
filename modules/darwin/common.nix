@@ -58,10 +58,13 @@
   system.defaults.trackpad = {
     Clicking = false; # Trackpadのタップでクリックを無効にする
     TrackpadThreeFingerDrag = true; # Trackpadの3本指でドラッグを有効にする
+    TrackpadFourFingerVertSwipeGesture = 2; # 4本指の上下スワイプを有効にする（下: App Exposé、上: Mission Control）
+    TrackpadThreeFingerVertSwipeGesture = 0; # 3本指の上下スワイプを無効にする（3本指ドラッグと排他）
   };
 
   system.defaults.dock = {
     autohide = true; # Dockを自動非表示をオン
+    showAppExposeGestureEnabled = true; # 上下スワイプでApp Exposéを表示する
     orientation = "bottom";
     persistent-others = [
       {
