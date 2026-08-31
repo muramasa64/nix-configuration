@@ -4,6 +4,10 @@
     ../../modules/darwin/common.nix
   ];
 
+  nix.settings = {
+    max-jobs = 8;
+  };
+
   system.defaults.dock = {
     persistent-apps = [
       { app = "/System/Applications/Mail.app"; }

@@ -8,7 +8,10 @@
     ../../config/certs/nscacert.pem
   ];
 
-  nix.settings.ssl-cert-file = /etc/ssl/certs/ca-certificates.crt;
+  nix.settings = {
+    max-jobs = 18;
+    ssl-cert-file = /etc/ssl/certs/ca-certificates.crt;
+  };
 
   system.defaults.dock = {
     persistent-apps = [

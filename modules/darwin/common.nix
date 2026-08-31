@@ -27,7 +27,6 @@
   ];
   nix.settings = {
     experimental-features = "nix-command flakes";
-    max-jobs = 18;
     trusted-users = [ "root" username ];
   };
 
