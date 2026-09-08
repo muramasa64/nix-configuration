@@ -3,7 +3,7 @@
   programs.starship = {
     enable = true;
     settings = {
-      format = "[](red)$os$username[](bg:peach fg:red)$directory[](bg:yellow fg:peach)\${custom.git_branch}\${custom.git_status}\${custom.starship-jj}[](fg:yellow bg:green)$c$rust$golang$nodejs$php$java$kotlin$haskell$python[](fg:green bg:sapphire)$conda[](fg:sapphire bg:lavender)$time[ ](fg:lavender)$cmd_duration$line_break$character";
+      format = "[](red)$os$username[](bg:peach fg:red)$directory[](bg:yellow fg:peach)\${custom.starship-jj}[](fg:yellow bg:green)$c$rust$golang$nodejs$php$java$kotlin$haskell$python[](fg:green bg:sapphire)$conda[](fg:sapphire bg:lavender)$time[ ](fg:lavender)$cmd_duration$line_break$character";
 
       palette = "catppuccin_mocha";
 
@@ -51,7 +51,6 @@
         style_user = "bg:red fg:crust";
       };
 
-
       directory = {
         format = "[ $path ]($style)";
         style = "bg:peach fg:crust";
@@ -59,25 +58,9 @@
         truncation_symbol = "…/";
       };
 
-      custom.git_branch = {
-        command = "starship module git_branch | sd '.*\\s+(\\S+)\\s*.*' '$1'\n";
-        description = "Only show git_branch if we're not in a jj repo";
-        format = "[[ $symbol $output](fg:crust bg:yellow)]($style)";
-        style = "bg:yellow";
-        symbol = "";
-        when = "! jj --ignore-working-copy root";
-      };
-
-      custom.git_status = {
-        command = "starship module git_status | sed 's/\\x1b\\[[0-9;]*m//g'\n";
-        description = "Only show git_branch if we're not in a jj repo";
-        format = "[($output)(fg:crust bg:yellow)]($style)";
-        style = "bg:yellow";
-        when = "! jj --ignore-working-copy root";
-      };
-
       custom.starship-jj = {
         command = "prompt";
+        description = "shell を starship-jj 自身に差し替えているため when にコマンドは書けない。jj repo 外では starship-jj が exit 1 を返し、starship が出力を捨てるので when = true で足りる";
         ignore_timeout = true;
         shell = ["starship-jj" "--ignore-working-copy" "starship"];
         use_stdin = false;
