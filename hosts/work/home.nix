@@ -3,7 +3,6 @@
   imports = [
     ../../modules/home-manager/common.nix
     ../../modules/home-manager/programs/claude.nix
-    ../../modules/home-manager/programs/herdr.nix
   ];
 
   home.username = username;
