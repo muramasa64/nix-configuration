@@ -1,0 +1,1822 @@
+---
+name: pingcli-usage
+description: Use this skill when answering questions about Ping CLI commands, flags, usage patterns, or when helping users construct CLI invocations. Invoke whenever the user asks about a pingcli command, wants to know available options, or needs to understand command behavior. This reference covers Ping CLI dev.
+summary: Complete command reference for Ping CLI dev.
+---
+
+This skill provides a complete command reference for **Ping CLI dev**.
+
+> **Important**: This file is auto-generated from the Cobra command tree.
+> To refresh after CLI changes, run: `make generate-skill-docs`
+
+# What This Skill Covers
+
+- All available commands and their flags, arguments, and examples
+- Command hierarchy and parent/child relationships
+- Per-command reference files in `references/`
+
+Each command reference file follows the naming convention:
+```
+cmd-<command-path-with-spaces-as-hyphens>.md
+```
+For example, `pingcli config get` → `references/cmd-pingcli-config-get.md`
+
+# Top-Level Commands
+
+| Command | Description | Reference File |
+|---------|-------------|----------------|
+| `agent-skills` | Find and install agent skills for Ping CLI. | [`cmd-pingcli-agent-skills.md`](references/cmd-pingcli-agent-skills.md) |
+| `auth` | Authenticate (or refresh authentication) for multiple connected products and services at once. | [`cmd-pingcli-auth.md`](references/cmd-pingcli-auth.md) |
+| `authorize` | Administration tools for the PingOne Authorize universal service. | [`cmd-pingcli-authorize.md`](references/cmd-pingcli-authorize.md) |
+| `completion` | Prints shell completion scripts | [`cmd-pingcli-completion.md`](references/cmd-pingcli-completion.md) |
+| `config` | Manage the CLI configuration. | [`cmd-pingcli-config.md`](references/cmd-pingcli-config.md) |
+| `credentials` | Administration tools for the PingOne Credentials universal service. | [`cmd-pingcli-credentials.md`](references/cmd-pingcli-credentials.md) |
+| `davinci` | Administration tools for the PingOne DaVinci universal service. | [`cmd-pingcli-davinci.md`](references/cmd-pingcli-davinci.md) |
+| `feedback` | Help us improve the CLI. Report issues or send us feedback on using the CLI tool. | [`cmd-pingcli-feedback.md`](references/cmd-pingcli-feedback.md) |
+| `init` | Initialize Ping CLI with a guided setup wizard. | [`cmd-pingcli-init.md`](references/cmd-pingcli-init.md) |
+| `mfa` | Administration tools for the PingOne MFA universal service. | [`cmd-pingcli-mfa.md`](references/cmd-pingcli-mfa.md) |
+| `pingfederate` | Administration tools for PingFederate deployed as software | [`cmd-pingcli-pingfederate.md`](references/cmd-pingcli-pingfederate.md) |
+| `pingone` | Administration tools for the PingOne platform. | [`cmd-pingcli-pingone.md`](references/cmd-pingcli-pingone.md) |
+| `protect` | Administration tools for the PingOne Protect universal service. | [`cmd-pingcli-protect.md`](references/cmd-pingcli-protect.md) |
+| `verify` | Administration tools for the PingOne Verify universal service. | [`cmd-pingcli-verify.md`](references/cmd-pingcli-verify.md) |
+
+# Full Command Tree
+
+- [`pingcli`](references/cmd-pingcli.md) — A CLI tool for managing the configuration of Ping Identity products.
+  - [`pingcli agent-skills`](references/cmd-pingcli-agent-skills.md) — Find and install agent skills for Ping CLI.
+    - [`pingcli agent-skills install`](references/cmd-pingcli-agent-skills-install.md) — Install an agent skill
+    - [`pingcli agent-skills list`](references/cmd-pingcli-agent-skills-list.md) — List all available agent skills
+  - [`pingcli auth`](references/cmd-pingcli-auth.md) — Authenticate (or refresh authentication) for multiple connected products and services at once.
+    - [`pingcli auth login`](references/cmd-pingcli-auth-login.md) — Log in to all enabled Ping services at once.
+    - [`pingcli auth logout`](references/cmd-pingcli-auth-logout.md) — Log out of all enabled Ping services at once.
+    - [`pingcli auth status`](references/cmd-pingcli-auth-status.md) — Show authentication status for all enabled Ping services.
+  - [`pingcli authorize`](references/cmd-pingcli-authorize.md) — Administration tools for the PingOne Authorize universal service.
+    - [`pingcli authorize api-servers`](references/cmd-pingcli-authorize-api-servers.md) — API Servers
+      - [`pingcli authorize api-servers apply`](references/cmd-pingcli-authorize-api-servers-apply.md) — Create or update an API server
+      - [`pingcli authorize api-servers create`](references/cmd-pingcli-authorize-api-servers-create.md) — Create a new API server
+      - [`pingcli authorize api-servers delete`](references/cmd-pingcli-authorize-api-servers-delete.md) — Delete an API server
+      - [`pingcli authorize api-servers get`](references/cmd-pingcli-authorize-api-servers-get.md) — Read a specific API server
+      - [`pingcli authorize api-servers list`](references/cmd-pingcli-authorize-api-servers-list.md) — List all API servers
+      - [`pingcli authorize api-servers operations`](references/cmd-pingcli-authorize-api-servers-operations.md) — API Server Operations
+        - [`pingcli authorize api-servers operations apply`](references/cmd-pingcli-authorize-api-servers-operations-apply.md) — Create or update an API server operation
+        - [`pingcli authorize api-servers operations create`](references/cmd-pingcli-authorize-api-servers-operations-create.md) — Create a new API server operation
+        - [`pingcli authorize api-servers operations delete`](references/cmd-pingcli-authorize-api-servers-operations-delete.md) — Delete an API server operation
+        - [`pingcli authorize api-servers operations get`](references/cmd-pingcli-authorize-api-servers-operations-get.md) — Read a specific API server operation
+        - [`pingcli authorize api-servers operations list`](references/cmd-pingcli-authorize-api-servers-operations-list.md) — List all API server operations
+        - [`pingcli authorize api-servers operations replace`](references/cmd-pingcli-authorize-api-servers-operations-replace.md) — Update an API server operation
+        - [`pingcli authorize api-servers operations template`](references/cmd-pingcli-authorize-api-servers-operations-template.md) — Generate an API server operation JSON template
+      - [`pingcli authorize api-servers replace`](references/cmd-pingcli-authorize-api-servers-replace.md) — Update an API server
+      - [`pingcli authorize api-servers template`](references/cmd-pingcli-authorize-api-servers-template.md) — Generate an API server JSON template
+    - [`pingcli authorize application-resources`](references/cmd-pingcli-authorize-application-resources.md) — Application Resources
+      - [`pingcli authorize application-resources get`](references/cmd-pingcli-authorize-application-resources-get.md) — Read a specific application resource
+      - [`pingcli authorize application-resources list`](references/cmd-pingcli-authorize-application-resources-list.md) — List all application resources
+    - [`pingcli authorize application-roles`](references/cmd-pingcli-authorize-application-roles.md) — Application Roles
+      - [`pingcli authorize application-roles apply`](references/cmd-pingcli-authorize-application-roles-apply.md) — Create or update an application role
+      - [`pingcli authorize application-roles assignments`](references/cmd-pingcli-authorize-application-roles-assignments.md) — Application Role Assignments
+        - [`pingcli authorize application-roles assignments list`](references/cmd-pingcli-authorize-application-roles-assignments-list.md) — List all application role assignments
+      - [`pingcli authorize application-roles create`](references/cmd-pingcli-authorize-application-roles-create.md) — Create a new application role
+      - [`pingcli authorize application-roles delete`](references/cmd-pingcli-authorize-application-roles-delete.md) — Delete an application role
+      - [`pingcli authorize application-roles get`](references/cmd-pingcli-authorize-application-roles-get.md) — Read a specific application role
+      - [`pingcli authorize application-roles list`](references/cmd-pingcli-authorize-application-roles-list.md) — List all application roles
+      - [`pingcli authorize application-roles permissions`](references/cmd-pingcli-authorize-application-roles-permissions.md) — Application Role Permissions
+        - [`pingcli authorize application-roles permissions create`](references/cmd-pingcli-authorize-application-roles-permissions-create.md) — Create a new application role permission
+        - [`pingcli authorize application-roles permissions delete`](references/cmd-pingcli-authorize-application-roles-permissions-delete.md) — Delete an application role permission
+        - [`pingcli authorize application-roles permissions get`](references/cmd-pingcli-authorize-application-roles-permissions-get.md) — Read a specific application role permission
+        - [`pingcli authorize application-roles permissions list`](references/cmd-pingcli-authorize-application-roles-permissions-list.md) — List all application role permissions
+        - [`pingcli authorize application-roles permissions template`](references/cmd-pingcli-authorize-application-roles-permissions-template.md) — Generate an application role permission JSON template
+      - [`pingcli authorize application-roles replace`](references/cmd-pingcli-authorize-application-roles-replace.md) — Update an application role
+      - [`pingcli authorize application-roles template`](references/cmd-pingcli-authorize-application-roles-template.md) — Generate an application role JSON template
+    - [`pingcli authorize decision-endpoints`](references/cmd-pingcli-authorize-decision-endpoints.md) — Decision Endpoints
+      - [`pingcli authorize decision-endpoints apply`](references/cmd-pingcli-authorize-decision-endpoints-apply.md) — Create or update a decision endpoint
+      - [`pingcli authorize decision-endpoints create`](references/cmd-pingcli-authorize-decision-endpoints-create.md) — Create a new decision endpoint
+      - [`pingcli authorize decision-endpoints delete`](references/cmd-pingcli-authorize-decision-endpoints-delete.md) — Delete a decision endpoint
+      - [`pingcli authorize decision-endpoints get`](references/cmd-pingcli-authorize-decision-endpoints-get.md) — Read a specific decision endpoint
+      - [`pingcli authorize decision-endpoints list`](references/cmd-pingcli-authorize-decision-endpoints-list.md) — List all decision endpoints
+      - [`pingcli authorize decision-endpoints replace`](references/cmd-pingcli-authorize-decision-endpoints-replace.md) — Update a decision endpoint
+      - [`pingcli authorize decision-endpoints template`](references/cmd-pingcli-authorize-decision-endpoints-template.md) — Generate a decision endpoint JSON template
+    - [`pingcli authorize permissions`](references/cmd-pingcli-authorize-permissions.md) — Application Resource Permissions
+      - [`pingcli authorize permissions apply`](references/cmd-pingcli-authorize-permissions-apply.md) — Create or update an application resource permission
+      - [`pingcli authorize permissions create`](references/cmd-pingcli-authorize-permissions-create.md) — Create a new application resource permission
+      - [`pingcli authorize permissions delete`](references/cmd-pingcli-authorize-permissions-delete.md) — Delete an application resource permission
+      - [`pingcli authorize permissions get`](references/cmd-pingcli-authorize-permissions-get.md) — Read a specific application resource permission
+      - [`pingcli authorize permissions list`](references/cmd-pingcli-authorize-permissions-list.md) — List all application resource permissions
+      - [`pingcli authorize permissions replace`](references/cmd-pingcli-authorize-permissions-replace.md) — Update an application resource permission
+      - [`pingcli authorize permissions template`](references/cmd-pingcli-authorize-permissions-template.md) — Generate an application resource permission JSON template
+  - [`pingcli completion`](references/cmd-pingcli-completion.md) — Prints shell completion scripts
+  - [`pingcli config`](references/cmd-pingcli-config.md) — Manage the CLI configuration.
+    - [`pingcli config get`](references/cmd-pingcli-config-get.md) — Read stored configuration settings for the CLI.
+    - [`pingcli config list-keys`](references/cmd-pingcli-config-list-keys.md) — List all configuration keys.
+    - [`pingcli config profiles`](references/cmd-pingcli-config-profiles.md) — Manage the configuration profiles.
+      - [`pingcli config profiles create`](references/cmd-pingcli-config-profiles-create.md) — Add a new custom configuration profile.
+      - [`pingcli config profiles delete`](references/cmd-pingcli-config-profiles-delete.md) — Delete a custom configuration profile.
+      - [`pingcli config profiles list`](references/cmd-pingcli-config-profiles-list.md) — List all custom configuration profiles.
+      - [`pingcli config profiles show`](references/cmd-pingcli-config-profiles-show.md) — View the stored configuration of a custom configuration profile.
+      - [`pingcli config profiles use`](references/cmd-pingcli-config-profiles-use.md) — Activate and set a custom configuration profile as the in-use profile.
+    - [`pingcli config set`](references/cmd-pingcli-config-set.md) — Set stored configuration settings for the CLI.
+    - [`pingcli config unset`](references/cmd-pingcli-config-unset.md) — Unset stored configuration settings for the CLI.
+  - [`pingcli credentials`](references/cmd-pingcli-credentials.md) — Administration tools for the PingOne Credentials universal service.
+    - [`pingcli credentials digital-wallet-applications`](references/cmd-pingcli-credentials-digital-wallet-applications.md) — Digital Wallet Applications
+      - [`pingcli credentials digital-wallet-applications apply`](references/cmd-pingcli-credentials-digital-wallet-applications-apply.md) — Create or update a digital wallet application
+      - [`pingcli credentials digital-wallet-applications create`](references/cmd-pingcli-credentials-digital-wallet-applications-create.md) — Create a new digital wallet application
+      - [`pingcli credentials digital-wallet-applications delete`](references/cmd-pingcli-credentials-digital-wallet-applications-delete.md) — Delete a digital wallet application
+      - [`pingcli credentials digital-wallet-applications get`](references/cmd-pingcli-credentials-digital-wallet-applications-get.md) — Read a specific digital wallet application
+      - [`pingcli credentials digital-wallet-applications list`](references/cmd-pingcli-credentials-digital-wallet-applications-list.md) — List all digital wallet applications
+      - [`pingcli credentials digital-wallet-applications replace`](references/cmd-pingcli-credentials-digital-wallet-applications-replace.md) — Replace a digital wallet application
+      - [`pingcli credentials digital-wallet-applications template`](references/cmd-pingcli-credentials-digital-wallet-applications-template.md) — Generate a digital wallet application JSON template
+    - [`pingcli credentials issuer-profile`](references/cmd-pingcli-credentials-issuer-profile.md) — Credential Issuer Profile
+      - [`pingcli credentials issuer-profile apply`](references/cmd-pingcli-credentials-issuer-profile-apply.md) — Update the credential issuer profile
+      - [`pingcli credentials issuer-profile get`](references/cmd-pingcli-credentials-issuer-profile-get.md) — Read the credential issuer profile
+      - [`pingcli credentials issuer-profile replace`](references/cmd-pingcli-credentials-issuer-profile-replace.md) — Update the credential issuer profile
+      - [`pingcli credentials issuer-profile template`](references/cmd-pingcli-credentials-issuer-profile-template.md) — Generate a credential issuer profile JSON template
+    - [`pingcli credentials types`](references/cmd-pingcli-credentials-types.md) — Credential Types
+      - [`pingcli credentials types apply`](references/cmd-pingcli-credentials-types-apply.md) — Create or update a credential type
+      - [`pingcli credentials types create`](references/cmd-pingcli-credentials-types-create.md) — Create a new credential type
+      - [`pingcli credentials types delete`](references/cmd-pingcli-credentials-types-delete.md) — Delete a credential type
+      - [`pingcli credentials types get`](references/cmd-pingcli-credentials-types-get.md) — Read a specific credential type
+      - [`pingcli credentials types issuance-rules`](references/cmd-pingcli-credentials-types-issuance-rules.md) — Credential Issuance Rules
+        - [`pingcli credentials types issuance-rules create`](references/cmd-pingcli-credentials-types-issuance-rules-create.md) — Create a new credential issuance rule
+        - [`pingcli credentials types issuance-rules delete`](references/cmd-pingcli-credentials-types-issuance-rules-delete.md) — Delete a credential issuance rule
+        - [`pingcli credentials types issuance-rules get`](references/cmd-pingcli-credentials-types-issuance-rules-get.md) — Read a specific credential issuance rule
+        - [`pingcli credentials types issuance-rules list`](references/cmd-pingcli-credentials-types-issuance-rules-list.md) — List all credential issuance rules
+        - [`pingcli credentials types issuance-rules replace`](references/cmd-pingcli-credentials-types-issuance-rules-replace.md) — Replace a credential issuance rule
+        - [`pingcli credentials types issuance-rules template`](references/cmd-pingcli-credentials-types-issuance-rules-template.md) — Generate a credential issuance rule JSON template
+        - [`pingcli credentials types issuance-rules usage-counts`](references/cmd-pingcli-credentials-types-issuance-rules-usage-counts.md) — Read credential issuance rule usage counts
+        - [`pingcli credentials types issuance-rules usage-details`](references/cmd-pingcli-credentials-types-issuance-rules-usage-details.md) — Read credential issuance rule usage details
+      - [`pingcli credentials types list`](references/cmd-pingcli-credentials-types-list.md) — List all credential types
+      - [`pingcli credentials types replace`](references/cmd-pingcli-credentials-types-replace.md) — Replace a credential type
+      - [`pingcli credentials types template`](references/cmd-pingcli-credentials-types-template.md) — Generate a credential type JSON template
+      - [`pingcli credentials types versions`](references/cmd-pingcli-credentials-types-versions.md) — Credential Type Versions
+        - [`pingcli credentials types versions get`](references/cmd-pingcli-credentials-types-versions-get.md) — Read a specific credential type version
+        - [`pingcli credentials types versions list`](references/cmd-pingcli-credentials-types-versions-list.md) — List all credential type versions
+    - [`pingcli credentials user-credentials`](references/cmd-pingcli-credentials-user-credentials.md) — User Credentials
+      - [`pingcli credentials user-credentials create`](references/cmd-pingcli-credentials-user-credentials-create.md) — Create a new user credential
+      - [`pingcli credentials user-credentials get`](references/cmd-pingcli-credentials-user-credentials-get.md) — Read a specific user credential
+      - [`pingcli credentials user-credentials provisioned-credentials`](references/cmd-pingcli-credentials-user-credentials-provisioned-credentials.md) — List provisioned credentials for a user credential
+      - [`pingcli credentials user-credentials replace`](references/cmd-pingcli-credentials-user-credentials-replace.md) — Replace a user credential
+      - [`pingcli credentials user-credentials template`](references/cmd-pingcli-credentials-user-credentials-template.md) — Generate a user credential JSON template
+    - [`pingcli credentials user-digital-wallets`](references/cmd-pingcli-credentials-user-digital-wallets.md) — User Digital Wallets
+      - [`pingcli credentials user-digital-wallets create`](references/cmd-pingcli-credentials-user-digital-wallets-create.md) — Create a new user digital wallet
+      - [`pingcli credentials user-digital-wallets delete`](references/cmd-pingcli-credentials-user-digital-wallets-delete.md) — Delete a user digital wallet
+      - [`pingcli credentials user-digital-wallets get`](references/cmd-pingcli-credentials-user-digital-wallets-get.md) — Read a specific user digital wallet
+      - [`pingcli credentials user-digital-wallets list`](references/cmd-pingcli-credentials-user-digital-wallets-list.md) — List all user digital wallets
+      - [`pingcli credentials user-digital-wallets provisioned-credentials`](references/cmd-pingcli-credentials-user-digital-wallets-provisioned-credentials.md) — List provisioned credentials for a user digital wallet
+      - [`pingcli credentials user-digital-wallets replace`](references/cmd-pingcli-credentials-user-digital-wallets-replace.md) — Replace a user digital wallet
+      - [`pingcli credentials user-digital-wallets template`](references/cmd-pingcli-credentials-user-digital-wallets-template.md) — Generate a user digital wallet JSON template
+  - [`pingcli davinci`](references/cmd-pingcli-davinci.md) — Administration tools for the PingOne DaVinci universal service.
+    - [`pingcli davinci applications`](references/cmd-pingcli-davinci-applications.md) — DaVinci Applications
+      - [`pingcli davinci applications apply`](references/cmd-pingcli-davinci-applications-apply.md) — Create or update a DaVinci application
+      - [`pingcli davinci applications create`](references/cmd-pingcli-davinci-applications-create.md) — Create a new DaVinci application
+      - [`pingcli davinci applications delete`](references/cmd-pingcli-davinci-applications-delete.md) — Delete a DaVinci application
+      - [`pingcli davinci applications flow-policies`](references/cmd-pingcli-davinci-applications-flow-policies.md) — DaVinci Flow Policies
+        - [`pingcli davinci applications flow-policies apply`](references/cmd-pingcli-davinci-applications-flow-policies-apply.md) — Create or update a DaVinci flow policy
+        - [`pingcli davinci applications flow-policies create`](references/cmd-pingcli-davinci-applications-flow-policies-create.md) — Create a new DaVinci flow policy
+        - [`pingcli davinci applications flow-policies delete`](references/cmd-pingcli-davinci-applications-flow-policies-delete.md) — Delete a DaVinci flow policy
+        - [`pingcli davinci applications flow-policies events`](references/cmd-pingcli-davinci-applications-flow-policies-events.md) — DaVinci Flow Policy Events
+          - [`pingcli davinci applications flow-policies events list`](references/cmd-pingcli-davinci-applications-flow-policies-events-list.md) — List DaVinci flow policy events
+        - [`pingcli davinci applications flow-policies get`](references/cmd-pingcli-davinci-applications-flow-policies-get.md) — Read a DaVinci flow policy
+        - [`pingcli davinci applications flow-policies list`](references/cmd-pingcli-davinci-applications-flow-policies-list.md) — List DaVinci flow policies
+        - [`pingcli davinci applications flow-policies replace`](references/cmd-pingcli-davinci-applications-flow-policies-replace.md) — Update a DaVinci flow policy
+        - [`pingcli davinci applications flow-policies template`](references/cmd-pingcli-davinci-applications-flow-policies-template.md) — Generate a DaVinci flow policy JSON template
+      - [`pingcli davinci applications get`](references/cmd-pingcli-davinci-applications-get.md) — Read a DaVinci application
+      - [`pingcli davinci applications list`](references/cmd-pingcli-davinci-applications-list.md) — List DaVinci applications
+      - [`pingcli davinci applications replace`](references/cmd-pingcli-davinci-applications-replace.md) — Update a DaVinci application
+      - [`pingcli davinci applications rotate-key`](references/cmd-pingcli-davinci-applications-rotate-key.md) — Rotate a DaVinci application API key
+      - [`pingcli davinci applications rotate-secret`](references/cmd-pingcli-davinci-applications-rotate-secret.md) — Rotate a DaVinci application OAuth secret
+      - [`pingcli davinci applications template`](references/cmd-pingcli-davinci-applications-template.md) — Generate a DaVinci application JSON template
+    - [`pingcli davinci connector-instances`](references/cmd-pingcli-davinci-connector-instances.md) — DaVinci Connector Instances
+      - [`pingcli davinci connector-instances apply`](references/cmd-pingcli-davinci-connector-instances-apply.md) — Create or update a DaVinci connector instance
+      - [`pingcli davinci connector-instances clone`](references/cmd-pingcli-davinci-connector-instances-clone.md) — Clone a DaVinci connector instance
+      - [`pingcli davinci connector-instances create`](references/cmd-pingcli-davinci-connector-instances-create.md) — Create a new DaVinci connector instance
+      - [`pingcli davinci connector-instances delete`](references/cmd-pingcli-davinci-connector-instances-delete.md) — Delete a DaVinci connector instance
+      - [`pingcli davinci connector-instances get`](references/cmd-pingcli-davinci-connector-instances-get.md) — Read a DaVinci connector instance
+      - [`pingcli davinci connector-instances list`](references/cmd-pingcli-davinci-connector-instances-list.md) — List DaVinci connector instances
+      - [`pingcli davinci connector-instances replace`](references/cmd-pingcli-davinci-connector-instances-replace.md) — Update a DaVinci connector instance
+      - [`pingcli davinci connector-instances template`](references/cmd-pingcli-davinci-connector-instances-template.md) — Generate a DaVinci connector instance JSON template
+    - [`pingcli davinci connectors`](references/cmd-pingcli-davinci-connectors.md) — DaVinci Connector Catalog
+      - [`pingcli davinci connectors details`](references/cmd-pingcli-davinci-connectors-details.md) — Read DaVinci connector details
+      - [`pingcli davinci connectors get`](references/cmd-pingcli-davinci-connectors-get.md) — Read a DaVinci connector
+      - [`pingcli davinci connectors list`](references/cmd-pingcli-davinci-connectors-list.md) — List DaVinci connectors
+    - [`pingcli davinci flows`](references/cmd-pingcli-davinci-flows.md) — DaVinci Flows
+      - [`pingcli davinci flows apply`](references/cmd-pingcli-davinci-flows-apply.md) — Create or update a DaVinci flow
+      - [`pingcli davinci flows clone`](references/cmd-pingcli-davinci-flows-clone.md) — Clone a DaVinci flow
+      - [`pingcli davinci flows create`](references/cmd-pingcli-davinci-flows-create.md) — Create a new DaVinci flow
+      - [`pingcli davinci flows delete`](references/cmd-pingcli-davinci-flows-delete.md) — Delete a DaVinci flow
+      - [`pingcli davinci flows deploy`](references/cmd-pingcli-davinci-flows-deploy.md) — Deploy a DaVinci flow
+      - [`pingcli davinci flows enabled`](references/cmd-pingcli-davinci-flows-enabled.md) — DaVinci Flow Enabled
+        - [`pingcli davinci flows enabled apply`](references/cmd-pingcli-davinci-flows-enabled-apply.md) — Update DaVinci flow enabled state
+        - [`pingcli davinci flows enabled get`](references/cmd-pingcli-davinci-flows-enabled-get.md) — Read DaVinci flow enabled state
+        - [`pingcli davinci flows enabled replace`](references/cmd-pingcli-davinci-flows-enabled-replace.md) — Update DaVinci flow enabled state
+        - [`pingcli davinci flows enabled template`](references/cmd-pingcli-davinci-flows-enabled-template.md) — Generate a DaVinci flow enabled JSON template
+      - [`pingcli davinci flows get`](references/cmd-pingcli-davinci-flows-get.md) — Read a DaVinci flow
+      - [`pingcli davinci flows list`](references/cmd-pingcli-davinci-flows-list.md) — List DaVinci flows
+      - [`pingcli davinci flows replace`](references/cmd-pingcli-davinci-flows-replace.md) — Update a DaVinci flow
+      - [`pingcli davinci flows template`](references/cmd-pingcli-davinci-flows-template.md) — Generate a DaVinci flow JSON template
+      - [`pingcli davinci flows versions`](references/cmd-pingcli-davinci-flows-versions.md) — DaVinci Flow Versions
+        - [`pingcli davinci flows versions delete`](references/cmd-pingcli-davinci-flows-versions-delete.md) — Delete a DaVinci flow version
+        - [`pingcli davinci flows versions details`](references/cmd-pingcli-davinci-flows-versions-details.md) — Get DaVinci flow version details
+        - [`pingcli davinci flows versions get`](references/cmd-pingcli-davinci-flows-versions-get.md) — Read a DaVinci flow version
+        - [`pingcli davinci flows versions list`](references/cmd-pingcli-davinci-flows-versions-list.md) — List DaVinci flow versions
+        - [`pingcli davinci flows versions set-alias`](references/cmd-pingcli-davinci-flows-versions-set-alias.md) — Set the alias for a DaVinci flow version
+    - [`pingcli davinci variables`](references/cmd-pingcli-davinci-variables.md) — DaVinci Variables
+      - [`pingcli davinci variables apply`](references/cmd-pingcli-davinci-variables-apply.md) — Create or update a DaVinci variable
+      - [`pingcli davinci variables create`](references/cmd-pingcli-davinci-variables-create.md) — Create a new DaVinci variable
+      - [`pingcli davinci variables delete`](references/cmd-pingcli-davinci-variables-delete.md) — Delete a DaVinci variable
+      - [`pingcli davinci variables get`](references/cmd-pingcli-davinci-variables-get.md) — Read a DaVinci variable
+      - [`pingcli davinci variables list`](references/cmd-pingcli-davinci-variables-list.md) — List DaVinci variables
+      - [`pingcli davinci variables replace`](references/cmd-pingcli-davinci-variables-replace.md) — Update a DaVinci variable
+      - [`pingcli davinci variables template`](references/cmd-pingcli-davinci-variables-template.md) — Generate a DaVinci variable JSON template
+  - [`pingcli feedback`](references/cmd-pingcli-feedback.md) — Help us improve the CLI. Report issues or send us feedback on using the CLI tool.
+  - [`pingcli init`](references/cmd-pingcli-init.md) — Initialize Ping CLI with a guided setup wizard.
+  - [`pingcli mfa`](references/cmd-pingcli-mfa.md) — Administration tools for the PingOne MFA universal service.
+    - [`pingcli mfa device-policies`](references/cmd-pingcli-mfa-device-policies.md) — MFA Device Policies
+      - [`pingcli mfa device-policies apply`](references/cmd-pingcli-mfa-device-policies-apply.md) — Create or update an MFA device policy
+      - [`pingcli mfa device-policies create`](references/cmd-pingcli-mfa-device-policies-create.md) — Create a new MFA device policy
+      - [`pingcli mfa device-policies delete`](references/cmd-pingcli-mfa-device-policies-delete.md) — Delete an MFA device policy
+      - [`pingcli mfa device-policies get`](references/cmd-pingcli-mfa-device-policies-get.md) — Read a specific MFA device policy
+      - [`pingcli mfa device-policies list`](references/cmd-pingcli-mfa-device-policies-list.md) — List all MFA device policies
+      - [`pingcli mfa device-policies replace`](references/cmd-pingcli-mfa-device-policies-replace.md) — Update an MFA device policy
+      - [`pingcli mfa device-policies template`](references/cmd-pingcli-mfa-device-policies-template.md) — Generate an MFA device policy JSON template
+    - [`pingcli mfa fido2-policies`](references/cmd-pingcli-mfa-fido2-policies.md) — FIDO2 Policies
+      - [`pingcli mfa fido2-policies apply`](references/cmd-pingcli-mfa-fido2-policies-apply.md) — Create or update a FIDO2 policy
+      - [`pingcli mfa fido2-policies create`](references/cmd-pingcli-mfa-fido2-policies-create.md) — Create a new FIDO2 policy
+      - [`pingcli mfa fido2-policies delete`](references/cmd-pingcli-mfa-fido2-policies-delete.md) — Delete a FIDO2 policy
+      - [`pingcli mfa fido2-policies get`](references/cmd-pingcli-mfa-fido2-policies-get.md) — Read a specific FIDO2 policy
+      - [`pingcli mfa fido2-policies list`](references/cmd-pingcli-mfa-fido2-policies-list.md) — List all FIDO2 policies
+      - [`pingcli mfa fido2-policies replace`](references/cmd-pingcli-mfa-fido2-policies-replace.md) — Update a FIDO2 policy
+      - [`pingcli mfa fido2-policies template`](references/cmd-pingcli-mfa-fido2-policies-template.md) — Generate a FIDO2 policy JSON template
+    - [`pingcli mfa settings`](references/cmd-pingcli-mfa-settings.md) — MFA Settings
+      - [`pingcli mfa settings apply`](references/cmd-pingcli-mfa-settings-apply.md) — Update MFA settings
+      - [`pingcli mfa settings delete`](references/cmd-pingcli-mfa-settings-delete.md) — Reset MFA settings to defaults
+      - [`pingcli mfa settings get`](references/cmd-pingcli-mfa-settings-get.md) — Read MFA settings
+      - [`pingcli mfa settings replace`](references/cmd-pingcli-mfa-settings-replace.md) — Update MFA settings
+      - [`pingcli mfa settings template`](references/cmd-pingcli-mfa-settings-template.md) — Generate an MFA settings JSON template
+    - [`pingcli mfa user-devices`](references/cmd-pingcli-mfa-user-devices.md) — User MFA Devices
+      - [`pingcli mfa user-devices delete`](references/cmd-pingcli-mfa-user-devices-delete.md) — Delete a user MFA device
+      - [`pingcli mfa user-devices get`](references/cmd-pingcli-mfa-user-devices-get.md) — Read a specific user MFA device
+      - [`pingcli mfa user-devices list`](references/cmd-pingcli-mfa-user-devices-list.md) — List all user MFA devices
+      - [`pingcli mfa user-devices send-logs`](references/cmd-pingcli-mfa-user-devices-send-logs.md) — Request log collection from a user MFA device
+      - [`pingcli mfa user-devices update-nickname`](references/cmd-pingcli-mfa-user-devices-update-nickname.md) — Update the nickname of a user MFA device
+  - [`pingcli pingfederate`](references/cmd-pingcli-pingfederate.md) — Administration tools for PingFederate deployed as software
+    - [`pingcli pingfederate administrative-accounts`](references/cmd-pingcli-pingfederate-administrative-accounts.md) — PingFederate Administrative Accounts
+      - [`pingcli pingfederate administrative-accounts apply`](references/cmd-pingcli-pingfederate-administrative-accounts-apply.md) — Create or update an administrative account
+      - [`pingcli pingfederate administrative-accounts change-password`](references/cmd-pingcli-pingfederate-administrative-accounts-change-password.md) — Change the currently-authenticated administrative account's password
+      - [`pingcli pingfederate administrative-accounts create`](references/cmd-pingcli-pingfederate-administrative-accounts-create.md) — Create a new administrative account
+      - [`pingcli pingfederate administrative-accounts delete`](references/cmd-pingcli-pingfederate-administrative-accounts-delete.md) — Delete an administrative account
+      - [`pingcli pingfederate administrative-accounts get`](references/cmd-pingcli-pingfederate-administrative-accounts-get.md) — Read a specific administrative account
+      - [`pingcli pingfederate administrative-accounts list`](references/cmd-pingcli-pingfederate-administrative-accounts-list.md) — List all administrative accounts
+      - [`pingcli pingfederate administrative-accounts replace`](references/cmd-pingcli-pingfederate-administrative-accounts-replace.md) — Update an administrative account
+      - [`pingcli pingfederate administrative-accounts reset-password`](references/cmd-pingcli-pingfederate-administrative-accounts-reset-password.md) — Reset a PingFederate administrative account password
+      - [`pingcli pingfederate administrative-accounts template`](references/cmd-pingcli-pingfederate-administrative-accounts-template.md) — Generate an administrative account JSON template
+    - [`pingcli pingfederate administrative-api`](references/cmd-pingcli-pingfederate-administrative-api.md) — Manage PingFederate Administrative API resources
+      - [`pingcli pingfederate administrative-api cors-settings`](references/cmd-pingcli-pingfederate-administrative-api-cors-settings.md) — PingFederate Administrative API CORS Settings
+        - [`pingcli pingfederate administrative-api cors-settings apply`](references/cmd-pingcli-pingfederate-administrative-api-cors-settings-apply.md) — Update administrative API CORS settings
+        - [`pingcli pingfederate administrative-api cors-settings get`](references/cmd-pingcli-pingfederate-administrative-api-cors-settings-get.md) — Read administrative API CORS settings
+        - [`pingcli pingfederate administrative-api cors-settings replace`](references/cmd-pingcli-pingfederate-administrative-api-cors-settings-replace.md) — Update administrative API CORS settings
+        - [`pingcli pingfederate administrative-api cors-settings template`](references/cmd-pingcli-pingfederate-administrative-api-cors-settings-template.md) — Generate an administrative API CORS settings JSON template
+    - [`pingcli pingfederate api`](references/cmd-pingcli-pingfederate-api.md) — Send a custom REST API request to the management API of PingFederate.
+    - [`pingcli pingfederate auth`](references/cmd-pingcli-pingfederate-auth.md) — Authenticate Ping CLI to the PingFederate management APIs.
+      - [`pingcli pingfederate auth login`](references/cmd-pingcli-pingfederate-auth-login.md) — Log in to allow Ping CLI to administer PingFederate
+      - [`pingcli pingfederate auth logout`](references/cmd-pingcli-pingfederate-auth-logout.md) — Log out from PingFederate
+      - [`pingcli pingfederate auth status`](references/cmd-pingcli-pingfederate-auth-status.md) — Print details of the current authenticated session.
+    - [`pingcli pingfederate authentication-api`](references/cmd-pingcli-pingfederate-authentication-api.md) — Manage PingFederate Authentication API resources
+      - [`pingcli pingfederate authentication-api applications`](references/cmd-pingcli-pingfederate-authentication-api-applications.md) — PingFederate Authentication API Applications
+        - [`pingcli pingfederate authentication-api applications apply`](references/cmd-pingcli-pingfederate-authentication-api-applications-apply.md) — Create or update an authentication API application
+        - [`pingcli pingfederate authentication-api applications create`](references/cmd-pingcli-pingfederate-authentication-api-applications-create.md) — Create a new authentication API application
+        - [`pingcli pingfederate authentication-api applications delete`](references/cmd-pingcli-pingfederate-authentication-api-applications-delete.md) — Delete an authentication API application
+        - [`pingcli pingfederate authentication-api applications get`](references/cmd-pingcli-pingfederate-authentication-api-applications-get.md) — Read a specific authentication API application
+        - [`pingcli pingfederate authentication-api applications list`](references/cmd-pingcli-pingfederate-authentication-api-applications-list.md) — List all authentication API applications
+        - [`pingcli pingfederate authentication-api applications replace`](references/cmd-pingcli-pingfederate-authentication-api-applications-replace.md) — Update an authentication API application
+        - [`pingcli pingfederate authentication-api applications template`](references/cmd-pingcli-pingfederate-authentication-api-applications-template.md) — Generate an authentication API application JSON template
+      - [`pingcli pingfederate authentication-api settings`](references/cmd-pingcli-pingfederate-authentication-api-settings.md) — PingFederate Authentication API Settings
+        - [`pingcli pingfederate authentication-api settings apply`](references/cmd-pingcli-pingfederate-authentication-api-settings-apply.md) — Update authentication API settings
+        - [`pingcli pingfederate authentication-api settings get`](references/cmd-pingcli-pingfederate-authentication-api-settings-get.md) — Read authentication API settings
+        - [`pingcli pingfederate authentication-api settings replace`](references/cmd-pingcli-pingfederate-authentication-api-settings-replace.md) — Update authentication API settings
+        - [`pingcli pingfederate authentication-api settings template`](references/cmd-pingcli-pingfederate-authentication-api-settings-template.md) — Generate an authentication API settings JSON template
+    - [`pingcli pingfederate authentication-policies`](references/cmd-pingcli-pingfederate-authentication-policies.md) — Manage PingFederate Authentication Policies resources
+      - [`pingcli pingfederate authentication-policies default`](references/cmd-pingcli-pingfederate-authentication-policies-default.md) — PingFederate Default Authentication Policy
+        - [`pingcli pingfederate authentication-policies default apply`](references/cmd-pingcli-pingfederate-authentication-policies-default-apply.md) — Update default authentication policy
+        - [`pingcli pingfederate authentication-policies default get`](references/cmd-pingcli-pingfederate-authentication-policies-default-get.md) — Read default authentication policy
+        - [`pingcli pingfederate authentication-policies default replace`](references/cmd-pingcli-pingfederate-authentication-policies-default-replace.md) — Update default authentication policy
+        - [`pingcli pingfederate authentication-policies default template`](references/cmd-pingcli-pingfederate-authentication-policies-default-template.md) — Generate a default authentication policy JSON template
+      - [`pingcli pingfederate authentication-policies fragments`](references/cmd-pingcli-pingfederate-authentication-policies-fragments.md) — PingFederate Authentication Policy Fragments
+        - [`pingcli pingfederate authentication-policies fragments apply`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-apply.md) — Create or update an authentication policy fragment
+        - [`pingcli pingfederate authentication-policies fragments create`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-create.md) — Create a new authentication policy fragment
+        - [`pingcli pingfederate authentication-policies fragments delete`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-delete.md) — Delete an authentication policy fragment
+        - [`pingcli pingfederate authentication-policies fragments get`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-get.md) — Read a specific authentication policy fragment
+        - [`pingcli pingfederate authentication-policies fragments list`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-list.md) — List all authentication policy fragments
+        - [`pingcli pingfederate authentication-policies fragments replace`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-replace.md) — Update an authentication policy fragment
+        - [`pingcli pingfederate authentication-policies fragments template`](references/cmd-pingcli-pingfederate-authentication-policies-fragments-template.md) — Generate an authentication policy fragment JSON template
+      - [`pingcli pingfederate authentication-policies policy`](references/cmd-pingcli-pingfederate-authentication-policies-policy.md) — Manage an authentication policy tree
+        - [`pingcli pingfederate authentication-policies policy create`](references/cmd-pingcli-pingfederate-authentication-policies-policy-create.md) — Create an Authentication Policy
+        - [`pingcli pingfederate authentication-policies policy delete`](references/cmd-pingcli-pingfederate-authentication-policies-policy-delete.md) — Delete an Authentication Policy
+        - [`pingcli pingfederate authentication-policies policy get`](references/cmd-pingcli-pingfederate-authentication-policies-policy-get.md) — Read Authentication Policy
+        - [`pingcli pingfederate authentication-policies policy move`](references/cmd-pingcli-pingfederate-authentication-policies-policy-move.md) — Move an authentication policy to a location within the policy tree
+        - [`pingcli pingfederate authentication-policies policy replace`](references/cmd-pingcli-pingfederate-authentication-policies-policy-replace.md) — Update Authentication Policy
+        - [`pingcli pingfederate authentication-policies policy template`](references/cmd-pingcli-pingfederate-authentication-policies-policy-template.md) — Generate an Authentication Policy JSON template
+      - [`pingcli pingfederate authentication-policies settings`](references/cmd-pingcli-pingfederate-authentication-policies-settings.md) — PingFederate Authentication Policies Settings
+        - [`pingcli pingfederate authentication-policies settings apply`](references/cmd-pingcli-pingfederate-authentication-policies-settings-apply.md) — Update authentication policies settings
+        - [`pingcli pingfederate authentication-policies settings get`](references/cmd-pingcli-pingfederate-authentication-policies-settings-get.md) — Read authentication policies settings
+        - [`pingcli pingfederate authentication-policies settings replace`](references/cmd-pingcli-pingfederate-authentication-policies-settings-replace.md) — Update authentication policies settings
+        - [`pingcli pingfederate authentication-policies settings template`](references/cmd-pingcli-pingfederate-authentication-policies-settings-template.md) — Generate an authentication policies settings JSON template
+    - [`pingcli pingfederate authentication-policy-contracts`](references/cmd-pingcli-pingfederate-authentication-policy-contracts.md) — PingFederate Authentication Policy Contracts
+      - [`pingcli pingfederate authentication-policy-contracts apply`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-apply.md) — Create or update an authentication policy contract
+      - [`pingcli pingfederate authentication-policy-contracts create`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-create.md) — Create a new authentication policy contract
+      - [`pingcli pingfederate authentication-policy-contracts delete`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-delete.md) — Delete an authentication policy contract
+      - [`pingcli pingfederate authentication-policy-contracts get`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-get.md) — Read a specific authentication policy contract
+      - [`pingcli pingfederate authentication-policy-contracts list`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-list.md) — List all authentication policy contracts
+      - [`pingcli pingfederate authentication-policy-contracts replace`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-replace.md) — Update an authentication policy contract
+      - [`pingcli pingfederate authentication-policy-contracts template`](references/cmd-pingcli-pingfederate-authentication-policy-contracts-template.md) — Generate an authentication policy contract JSON template
+    - [`pingcli pingfederate authentication-selectors`](references/cmd-pingcli-pingfederate-authentication-selectors.md) — PingFederate Authentication Selectors
+      - [`pingcli pingfederate authentication-selectors apply`](references/cmd-pingcli-pingfederate-authentication-selectors-apply.md) — Create or update an authentication selector
+      - [`pingcli pingfederate authentication-selectors create`](references/cmd-pingcli-pingfederate-authentication-selectors-create.md) — Create a new authentication selector
+      - [`pingcli pingfederate authentication-selectors delete`](references/cmd-pingcli-pingfederate-authentication-selectors-delete.md) — Delete an authentication selector
+      - [`pingcli pingfederate authentication-selectors descriptors`](references/cmd-pingcli-pingfederate-authentication-selectors-descriptors.md) — PingFederate Authentication Selector Descriptors
+        - [`pingcli pingfederate authentication-selectors descriptors get`](references/cmd-pingcli-pingfederate-authentication-selectors-descriptors-get.md) — Read a specific authentication selector descriptor
+        - [`pingcli pingfederate authentication-selectors descriptors list`](references/cmd-pingcli-pingfederate-authentication-selectors-descriptors-list.md) — List all authentication selector descriptors
+      - [`pingcli pingfederate authentication-selectors get`](references/cmd-pingcli-pingfederate-authentication-selectors-get.md) — Read a specific authentication selector
+      - [`pingcli pingfederate authentication-selectors list`](references/cmd-pingcli-pingfederate-authentication-selectors-list.md) — List all authentication selectors
+      - [`pingcli pingfederate authentication-selectors replace`](references/cmd-pingcli-pingfederate-authentication-selectors-replace.md) — Update an authentication selector
+      - [`pingcli pingfederate authentication-selectors template`](references/cmd-pingcli-pingfederate-authentication-selectors-template.md) — Generate an authentication selector JSON template
+    - [`pingcli pingfederate bulk`](references/cmd-pingcli-pingfederate-bulk.md) — Manage PingFederate Bulk resources
+      - [`pingcli pingfederate bulk export`](references/cmd-pingcli-pingfederate-bulk-export.md) — Read the PingFederate bulk configuration export
+      - [`pingcli pingfederate bulk import`](references/cmd-pingcli-pingfederate-bulk-import.md) — Import the PingFederate bulk configuration
+    - [`pingcli pingfederate captcha-providers`](references/cmd-pingcli-pingfederate-captcha-providers.md) — PingFederate CAPTCHA Providers
+      - [`pingcli pingfederate captcha-providers apply`](references/cmd-pingcli-pingfederate-captcha-providers-apply.md) — Create or update a CAPTCHA provider
+      - [`pingcli pingfederate captcha-providers create`](references/cmd-pingcli-pingfederate-captcha-providers-create.md) — Create a new CAPTCHA provider
+      - [`pingcli pingfederate captcha-providers delete`](references/cmd-pingcli-pingfederate-captcha-providers-delete.md) — Delete a CAPTCHA provider
+      - [`pingcli pingfederate captcha-providers descriptors`](references/cmd-pingcli-pingfederate-captcha-providers-descriptors.md) — PingFederate CAPTCHA Provider Descriptors
+        - [`pingcli pingfederate captcha-providers descriptors get`](references/cmd-pingcli-pingfederate-captcha-providers-descriptors-get.md) — Read a specific captcha provider descriptor
+        - [`pingcli pingfederate captcha-providers descriptors list`](references/cmd-pingcli-pingfederate-captcha-providers-descriptors-list.md) — List all captcha provider descriptors
+      - [`pingcli pingfederate captcha-providers get`](references/cmd-pingcli-pingfederate-captcha-providers-get.md) — Read a specific CAPTCHA provider
+      - [`pingcli pingfederate captcha-providers list`](references/cmd-pingcli-pingfederate-captcha-providers-list.md) — List all CAPTCHA providers
+      - [`pingcli pingfederate captcha-providers replace`](references/cmd-pingcli-pingfederate-captcha-providers-replace.md) — Update a CAPTCHA provider
+      - [`pingcli pingfederate captcha-providers settings`](references/cmd-pingcli-pingfederate-captcha-providers-settings.md) — PingFederate CAPTCHA Providers Settings
+        - [`pingcli pingfederate captcha-providers settings apply`](references/cmd-pingcli-pingfederate-captcha-providers-settings-apply.md) — Update CAPTCHA providers settings
+        - [`pingcli pingfederate captcha-providers settings get`](references/cmd-pingcli-pingfederate-captcha-providers-settings-get.md) — Read CAPTCHA providers settings
+        - [`pingcli pingfederate captcha-providers settings replace`](references/cmd-pingcli-pingfederate-captcha-providers-settings-replace.md) — Update CAPTCHA providers settings
+        - [`pingcli pingfederate captcha-providers settings template`](references/cmd-pingcli-pingfederate-captcha-providers-settings-template.md) — Generate a CAPTCHA providers settings JSON template
+      - [`pingcli pingfederate captcha-providers template`](references/cmd-pingcli-pingfederate-captcha-providers-template.md) — Generate a CAPTCHA provider JSON template
+    - [`pingcli pingfederate certificates`](references/cmd-pingcli-pingfederate-certificates.md) — Manage PingFederate Certificates resources
+      - [`pingcli pingfederate certificates ca`](references/cmd-pingcli-pingfederate-certificates-ca.md) — PingFederate Trusted CA Certificates
+        - [`pingcli pingfederate certificates ca create`](references/cmd-pingcli-pingfederate-certificates-ca-create.md) — Import a new trusted CA certificate
+        - [`pingcli pingfederate certificates ca delete`](references/cmd-pingcli-pingfederate-certificates-ca-delete.md) — Delete a trusted CA certificate
+        - [`pingcli pingfederate certificates ca export`](references/cmd-pingcli-pingfederate-certificates-ca-export.md) — Export a trusted CA certificate file
+        - [`pingcli pingfederate certificates ca get`](references/cmd-pingcli-pingfederate-certificates-ca-get.md) — Read a specific trusted CA certificate
+        - [`pingcli pingfederate certificates ca list`](references/cmd-pingcli-pingfederate-certificates-ca-list.md) — List all trusted CA certificates
+        - [`pingcli pingfederate certificates ca template`](references/cmd-pingcli-pingfederate-certificates-ca-template.md) — Generate a trusted CA certificate JSON template
+      - [`pingcli pingfederate certificates groups`](references/cmd-pingcli-pingfederate-certificates-groups.md) — PingFederate certificate group certificates
+        - [`pingcli pingfederate certificates groups create`](references/cmd-pingcli-pingfederate-certificates-groups-create.md) — Import a new certificate into a certificate group
+        - [`pingcli pingfederate certificates groups delete`](references/cmd-pingcli-pingfederate-certificates-groups-delete.md) — Delete a certificate from a certificate group
+        - [`pingcli pingfederate certificates groups get`](references/cmd-pingcli-pingfederate-certificates-groups-get.md) — Read a specific certificate from a certificate group
+        - [`pingcli pingfederate certificates groups list`](references/cmd-pingcli-pingfederate-certificates-groups-list.md) — List all certificates in a certificate group
+        - [`pingcli pingfederate certificates groups template`](references/cmd-pingcli-pingfederate-certificates-groups-template.md) — Generate a certificate group JSON template
+      - [`pingcli pingfederate certificates revocation`](references/cmd-pingcli-pingfederate-certificates-revocation.md) — Manage PingFederate Certificates Revocation resources
+        - [`pingcli pingfederate certificates revocation ocsp-certificate`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate.md) — PingFederate OCSP Certificates
+          - [`pingcli pingfederate certificates revocation ocsp-certificate create`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate-create.md) — Import a new OCSP certificate
+          - [`pingcli pingfederate certificates revocation ocsp-certificate delete`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate-delete.md) — Delete an OCSP certificate
+          - [`pingcli pingfederate certificates revocation ocsp-certificate get`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate-get.md) — Read a specific OCSP certificate
+          - [`pingcli pingfederate certificates revocation ocsp-certificate list`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate-list.md) — List all OCSP certificates
+          - [`pingcli pingfederate certificates revocation ocsp-certificate template`](references/cmd-pingcli-pingfederate-certificates-revocation-ocsp-certificate-template.md) — Generate an OCSP certificate JSON template
+        - [`pingcli pingfederate certificates revocation revocation-settings`](references/cmd-pingcli-pingfederate-certificates-revocation-revocation-settings.md) — PingFederate Certificate Revocation Settings
+          - [`pingcli pingfederate certificates revocation revocation-settings apply`](references/cmd-pingcli-pingfederate-certificates-revocation-revocation-settings-apply.md) — Update the certificate revocation settings
+          - [`pingcli pingfederate certificates revocation revocation-settings get`](references/cmd-pingcli-pingfederate-certificates-revocation-revocation-settings-get.md) — Read the certificate revocation settings
+          - [`pingcli pingfederate certificates revocation revocation-settings replace`](references/cmd-pingcli-pingfederate-certificates-revocation-revocation-settings-replace.md) — Update the certificate revocation settings
+          - [`pingcli pingfederate certificates revocation revocation-settings template`](references/cmd-pingcli-pingfederate-certificates-revocation-revocation-settings-template.md) — Generate a certificate revocation settings JSON template
+    - [`pingcli pingfederate cluster`](references/cmd-pingcli-pingfederate-cluster.md) — Manage PingFederate Cluster resources
+      - [`pingcli pingfederate cluster admin-node`](references/cmd-pingcli-pingfederate-cluster-admin-node.md) — Manage PingFederate Cluster Admin Node resources
+        - [`pingcli pingfederate cluster admin-node activate`](references/cmd-pingcli-pingfederate-cluster-admin-node-activate.md) — Activate cluster admin node role
+        - [`pingcli pingfederate cluster admin-node status`](references/cmd-pingcli-pingfederate-cluster-admin-node-status.md) — Read cluster admin node status
+      - [`pingcli pingfederate cluster replicate`](references/cmd-pingcli-pingfederate-cluster-replicate.md) — Trigger PingFederate cluster replication
+      - [`pingcli pingfederate cluster settings`](references/cmd-pingcli-pingfederate-cluster-settings.md) — PingFederate Cluster Settings
+        - [`pingcli pingfederate cluster settings apply`](references/cmd-pingcli-pingfederate-cluster-settings-apply.md) — Update cluster settings
+        - [`pingcli pingfederate cluster settings get`](references/cmd-pingcli-pingfederate-cluster-settings-get.md) — Read cluster settings
+        - [`pingcli pingfederate cluster settings replace`](references/cmd-pingcli-pingfederate-cluster-settings-replace.md) — Update cluster settings
+        - [`pingcli pingfederate cluster settings template`](references/cmd-pingcli-pingfederate-cluster-settings-template.md) — Generate a cluster settings JSON template
+      - [`pingcli pingfederate cluster status`](references/cmd-pingcli-pingfederate-cluster-status.md) — Read PingFederate cluster status
+    - [`pingcli pingfederate collect-support-data`](references/cmd-pingcli-pingfederate-collect-support-data.md) — Manage PingFederate Collect Support Data (CSD) resources
+      - [`pingcli pingfederate collect-support-data archives`](references/cmd-pingcli-pingfederate-collect-support-data-archives.md) — PingFederate Collect Support Data (CSD) Archives
+        - [`pingcli pingfederate collect-support-data archives collect`](references/cmd-pingcli-pingfederate-collect-support-data-archives-collect.md) — Trigger a new CSD collect
+        - [`pingcli pingfederate collect-support-data archives export`](references/cmd-pingcli-pingfederate-collect-support-data-archives-export.md) — Export a CSD archive
+        - [`pingcli pingfederate collect-support-data archives get`](references/cmd-pingcli-pingfederate-collect-support-data-archives-get.md) — Read a specific CSD archive's status
+        - [`pingcli pingfederate collect-support-data archives list`](references/cmd-pingcli-pingfederate-collect-support-data-archives-list.md) — List all CSD archives
+        - [`pingcli pingfederate collect-support-data archives template`](references/cmd-pingcli-pingfederate-collect-support-data-archives-template.md) — Generate a CSD collect settings JSON template
+    - [`pingcli pingfederate config-archive`](references/cmd-pingcli-pingfederate-config-archive.md) — Manage the PingFederate configuration archive
+      - [`pingcli pingfederate config-archive export`](references/cmd-pingcli-pingfederate-config-archive-export.md) — Export the PingFederate configuration archive
+      - [`pingcli pingfederate config-archive import`](references/cmd-pingcli-pingfederate-config-archive-import.md) — Import a PingFederate configuration archive
+    - [`pingcli pingfederate config-store-settings`](references/cmd-pingcli-pingfederate-config-store-settings.md) — PingFederate Configuration Store Settings
+      - [`pingcli pingfederate config-store-settings apply`](references/cmd-pingcli-pingfederate-config-store-settings-apply.md) — Create or update a configuration store setting
+      - [`pingcli pingfederate config-store-settings delete`](references/cmd-pingcli-pingfederate-config-store-settings-delete.md) — Delete a configuration store setting
+      - [`pingcli pingfederate config-store-settings get`](references/cmd-pingcli-pingfederate-config-store-settings-get.md) — Read a specific configuration store setting
+      - [`pingcli pingfederate config-store-settings list`](references/cmd-pingcli-pingfederate-config-store-settings-list.md) — List all configuration store settings in a bundle
+      - [`pingcli pingfederate config-store-settings template`](references/cmd-pingcli-pingfederate-config-store-settings-template.md) — Generate a configuration store setting JSON template
+    - [`pingcli pingfederate configuration-encryption-keys`](references/cmd-pingcli-pingfederate-configuration-encryption-keys.md) — PingFederate Configuration Encryption Keys
+      - [`pingcli pingfederate configuration-encryption-keys list`](references/cmd-pingcli-pingfederate-configuration-encryption-keys-list.md) — List all configuration encryption keys
+      - [`pingcli pingfederate configuration-encryption-keys rotate`](references/cmd-pingcli-pingfederate-configuration-encryption-keys-rotate.md) — Rotate the configuration encryption key
+    - [`pingcli pingfederate connection-metadata`](references/cmd-pingcli-pingfederate-connection-metadata.md) — Manage PingFederate connection metadata
+      - [`pingcli pingfederate connection-metadata convert`](references/cmd-pingcli-pingfederate-connection-metadata-convert.md) — Convert SAML connection metadata into a JSON connection
+      - [`pingcli pingfederate connection-metadata export`](references/cmd-pingcli-pingfederate-connection-metadata-export.md) — Export a connection's SAML metadata
+      - [`pingcli pingfederate connection-metadata template`](references/cmd-pingcli-pingfederate-connection-metadata-template.md) — Generate a connection metadata convert or export JSON template
+    - [`pingcli pingfederate data-stores`](references/cmd-pingcli-pingfederate-data-stores.md) — PingFederate Data Stores
+      - [`pingcli pingfederate data-stores apply`](references/cmd-pingcli-pingfederate-data-stores-apply.md) — Create or update a data store
+      - [`pingcli pingfederate data-stores create`](references/cmd-pingcli-pingfederate-data-stores-create.md) — Create a new data store
+      - [`pingcli pingfederate data-stores delete`](references/cmd-pingcli-pingfederate-data-stores-delete.md) — Delete a data store
+      - [`pingcli pingfederate data-stores descriptors`](references/cmd-pingcli-pingfederate-data-stores-descriptors.md) — PingFederate Custom Data Store Descriptors
+        - [`pingcli pingfederate data-stores descriptors get`](references/cmd-pingcli-pingfederate-data-stores-descriptors-get.md) — Read a specific data store descriptor
+        - [`pingcli pingfederate data-stores descriptors list`](references/cmd-pingcli-pingfederate-data-stores-descriptors-list.md) — List all data store descriptors
+      - [`pingcli pingfederate data-stores get`](references/cmd-pingcli-pingfederate-data-stores-get.md) — Read a specific data store
+      - [`pingcli pingfederate data-stores get-action`](references/cmd-pingcli-pingfederate-data-stores-get-action.md) — Get a data store action
+      - [`pingcli pingfederate data-stores invoke-action`](references/cmd-pingcli-pingfederate-data-stores-invoke-action.md) — Invoke a data store action
+      - [`pingcli pingfederate data-stores list`](references/cmd-pingcli-pingfederate-data-stores-list.md) — List all data stores
+      - [`pingcli pingfederate data-stores list-actions`](references/cmd-pingcli-pingfederate-data-stores-list-actions.md) — List data store actions
+      - [`pingcli pingfederate data-stores replace`](references/cmd-pingcli-pingfederate-data-stores-replace.md) — Update a data store
+      - [`pingcli pingfederate data-stores template`](references/cmd-pingcli-pingfederate-data-stores-template.md) — Generate a data store JSON template (LDAP skeleton; adjust type and fields for other subtypes)
+    - [`pingcli pingfederate extended-properties`](references/cmd-pingcli-pingfederate-extended-properties.md) — PingFederate Extended Properties
+      - [`pingcli pingfederate extended-properties apply`](references/cmd-pingcli-pingfederate-extended-properties-apply.md) — Update extended properties
+      - [`pingcli pingfederate extended-properties get`](references/cmd-pingcli-pingfederate-extended-properties-get.md) — Read extended properties
+      - [`pingcli pingfederate extended-properties replace`](references/cmd-pingcli-pingfederate-extended-properties-replace.md) — Update extended properties
+      - [`pingcli pingfederate extended-properties template`](references/cmd-pingcli-pingfederate-extended-properties-template.md) — Generate an extended properties JSON template
+    - [`pingcli pingfederate identity-store-provisioners`](references/cmd-pingcli-pingfederate-identity-store-provisioners.md) — PingFederate Identity Store Provisioners
+      - [`pingcli pingfederate identity-store-provisioners apply`](references/cmd-pingcli-pingfederate-identity-store-provisioners-apply.md) — Create or update an identity store provisioner
+      - [`pingcli pingfederate identity-store-provisioners create`](references/cmd-pingcli-pingfederate-identity-store-provisioners-create.md) — Create a new identity store provisioner
+      - [`pingcli pingfederate identity-store-provisioners delete`](references/cmd-pingcli-pingfederate-identity-store-provisioners-delete.md) — Delete an identity store provisioner
+      - [`pingcli pingfederate identity-store-provisioners descriptors`](references/cmd-pingcli-pingfederate-identity-store-provisioners-descriptors.md) — PingFederate Identity Store Provisioner Descriptors
+        - [`pingcli pingfederate identity-store-provisioners descriptors get`](references/cmd-pingcli-pingfederate-identity-store-provisioners-descriptors-get.md) — Read a specific identity store provisioner descriptor
+        - [`pingcli pingfederate identity-store-provisioners descriptors list`](references/cmd-pingcli-pingfederate-identity-store-provisioners-descriptors-list.md) — List all identity store provisioner descriptors
+      - [`pingcli pingfederate identity-store-provisioners get`](references/cmd-pingcli-pingfederate-identity-store-provisioners-get.md) — Read a specific identity store provisioner
+      - [`pingcli pingfederate identity-store-provisioners list`](references/cmd-pingcli-pingfederate-identity-store-provisioners-list.md) — List all identity store provisioners
+      - [`pingcli pingfederate identity-store-provisioners replace`](references/cmd-pingcli-pingfederate-identity-store-provisioners-replace.md) — Update an identity store provisioner
+      - [`pingcli pingfederate identity-store-provisioners template`](references/cmd-pingcli-pingfederate-identity-store-provisioners-template.md) — Generate an identity store provisioner JSON template
+    - [`pingcli pingfederate idp`](references/cmd-pingcli-pingfederate-idp.md) — Manage PingFederate IdP resources
+      - [`pingcli pingfederate idp adapters`](references/cmd-pingcli-pingfederate-idp-adapters.md) — PingFederate IDP Adapters
+        - [`pingcli pingfederate idp adapters apply`](references/cmd-pingcli-pingfederate-idp-adapters-apply.md) — Create or update an IDP adapter
+        - [`pingcli pingfederate idp adapters create`](references/cmd-pingcli-pingfederate-idp-adapters-create.md) — Create a new IDP adapter
+        - [`pingcli pingfederate idp adapters delete`](references/cmd-pingcli-pingfederate-idp-adapters-delete.md) — Delete an IDP adapter
+        - [`pingcli pingfederate idp adapters descriptors`](references/cmd-pingcli-pingfederate-idp-adapters-descriptors.md) — PingFederate IDP Adapter Descriptors
+          - [`pingcli pingfederate idp adapters descriptors get`](references/cmd-pingcli-pingfederate-idp-adapters-descriptors-get.md) — Read a specific IDP adapter descriptor
+          - [`pingcli pingfederate idp adapters descriptors list`](references/cmd-pingcli-pingfederate-idp-adapters-descriptors-list.md) — List all IDP adapter descriptors
+        - [`pingcli pingfederate idp adapters get`](references/cmd-pingcli-pingfederate-idp-adapters-get.md) — Read a specific IDP adapter
+        - [`pingcli pingfederate idp adapters get-action`](references/cmd-pingcli-pingfederate-idp-adapters-get-action.md) — Get an IDP adapter action
+        - [`pingcli pingfederate idp adapters invoke-action`](references/cmd-pingcli-pingfederate-idp-adapters-invoke-action.md) — Invoke an IDP adapter action
+        - [`pingcli pingfederate idp adapters list`](references/cmd-pingcli-pingfederate-idp-adapters-list.md) — List all IDP adapters
+        - [`pingcli pingfederate idp adapters list-actions`](references/cmd-pingcli-pingfederate-idp-adapters-list-actions.md) — List IDP adapter actions
+        - [`pingcli pingfederate idp adapters replace`](references/cmd-pingcli-pingfederate-idp-adapters-replace.md) — Update an IDP adapter
+        - [`pingcli pingfederate idp adapters template`](references/cmd-pingcli-pingfederate-idp-adapters-template.md) — Generate an IDP adapter JSON template
+      - [`pingcli pingfederate idp connectors`](references/cmd-pingcli-pingfederate-idp-connectors.md) — Manage PingFederate IdP Connector resources
+        - [`pingcli pingfederate idp connectors descriptors`](references/cmd-pingcli-pingfederate-idp-connectors-descriptors.md) — PingFederate IdP Connector Descriptors
+          - [`pingcli pingfederate idp connectors descriptors get`](references/cmd-pingcli-pingfederate-idp-connectors-descriptors-get.md) — Read a specific IdP connector descriptor
+          - [`pingcli pingfederate idp connectors descriptors list`](references/cmd-pingcli-pingfederate-idp-connectors-descriptors-list.md) — List all IdP connector descriptors
+      - [`pingcli pingfederate idp default-urls`](references/cmd-pingcli-pingfederate-idp-default-urls.md) — PingFederate IdP Default URLs
+        - [`pingcli pingfederate idp default-urls apply`](references/cmd-pingcli-pingfederate-idp-default-urls-apply.md) — Update IdP default URLs
+        - [`pingcli pingfederate idp default-urls get`](references/cmd-pingcli-pingfederate-idp-default-urls-get.md) — Read IdP default URLs
+        - [`pingcli pingfederate idp default-urls replace`](references/cmd-pingcli-pingfederate-idp-default-urls-replace.md) — Update IdP default URLs
+        - [`pingcli pingfederate idp default-urls template`](references/cmd-pingcli-pingfederate-idp-default-urls-template.md) — Generate an IdP default URLs JSON template
+      - [`pingcli pingfederate idp sp-connections`](references/cmd-pingcli-pingfederate-idp-sp-connections.md) — PingFederate SP Connections
+        - [`pingcli pingfederate idp sp-connections apply`](references/cmd-pingcli-pingfederate-idp-sp-connections-apply.md) — Create or update an SP connection
+        - [`pingcli pingfederate idp sp-connections certs`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs.md) — PingFederate SP Connection certs
+          - [`pingcli pingfederate idp sp-connections certs add`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs-add.md) — Add an SP connection certificate
+          - [`pingcli pingfederate idp sp-connections certs apply`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs-apply.md) — Update SP connection certs
+          - [`pingcli pingfederate idp sp-connections certs get`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs-get.md) — Read SP connection certs
+          - [`pingcli pingfederate idp sp-connections certs replace`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs-replace.md) — Update SP connection certs
+          - [`pingcli pingfederate idp sp-connections certs template`](references/cmd-pingcli-pingfederate-idp-sp-connections-certs-template.md) — Generate an SP connection certs JSON template
+        - [`pingcli pingfederate idp sp-connections create`](references/cmd-pingcli-pingfederate-idp-sp-connections-create.md) — Create a new SP connection
+        - [`pingcli pingfederate idp sp-connections decryption-keys`](references/cmd-pingcli-pingfederate-idp-sp-connections-decryption-keys.md) — PingFederate SP Connection decryption keys
+          - [`pingcli pingfederate idp sp-connections decryption-keys apply`](references/cmd-pingcli-pingfederate-idp-sp-connections-decryption-keys-apply.md) — Update SP connection decryption keys
+          - [`pingcli pingfederate idp sp-connections decryption-keys get`](references/cmd-pingcli-pingfederate-idp-sp-connections-decryption-keys-get.md) — Read SP connection decryption keys
+          - [`pingcli pingfederate idp sp-connections decryption-keys replace`](references/cmd-pingcli-pingfederate-idp-sp-connections-decryption-keys-replace.md) — Update SP connection decryption keys
+          - [`pingcli pingfederate idp sp-connections decryption-keys template`](references/cmd-pingcli-pingfederate-idp-sp-connections-decryption-keys-template.md) — Generate an SP connection decryption keys JSON template
+        - [`pingcli pingfederate idp sp-connections delete`](references/cmd-pingcli-pingfederate-idp-sp-connections-delete.md) — Delete an SP connection
+        - [`pingcli pingfederate idp sp-connections get`](references/cmd-pingcli-pingfederate-idp-sp-connections-get.md) — Read a specific SP connection
+        - [`pingcli pingfederate idp sp-connections list`](references/cmd-pingcli-pingfederate-idp-sp-connections-list.md) — List all SP connections
+        - [`pingcli pingfederate idp sp-connections replace`](references/cmd-pingcli-pingfederate-idp-sp-connections-replace.md) — Update an SP connection
+        - [`pingcli pingfederate idp sp-connections signing-settings`](references/cmd-pingcli-pingfederate-idp-sp-connections-signing-settings.md) — PingFederate SP Connection signing settings
+          - [`pingcli pingfederate idp sp-connections signing-settings apply`](references/cmd-pingcli-pingfederate-idp-sp-connections-signing-settings-apply.md) — Update SP connection signing settings
+          - [`pingcli pingfederate idp sp-connections signing-settings get`](references/cmd-pingcli-pingfederate-idp-sp-connections-signing-settings-get.md) — Read SP connection signing settings
+          - [`pingcli pingfederate idp sp-connections signing-settings replace`](references/cmd-pingcli-pingfederate-idp-sp-connections-signing-settings-replace.md) — Update SP connection signing settings
+          - [`pingcli pingfederate idp sp-connections signing-settings template`](references/cmd-pingcli-pingfederate-idp-sp-connections-signing-settings-template.md) — Generate an SP connection signing settings JSON template
+        - [`pingcli pingfederate idp sp-connections template`](references/cmd-pingcli-pingfederate-idp-sp-connections-template.md) — Generate an SP connection JSON template
+      - [`pingcli pingfederate idp sts-request-parameters-contracts`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts.md) — PingFederate STS request parameters contracts
+        - [`pingcli pingfederate idp sts-request-parameters-contracts apply`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-apply.md) — Create or update an STS request parameters contract
+        - [`pingcli pingfederate idp sts-request-parameters-contracts create`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-create.md) — Create a new STS request parameters contract
+        - [`pingcli pingfederate idp sts-request-parameters-contracts delete`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-delete.md) — Delete an STS request parameters contract
+        - [`pingcli pingfederate idp sts-request-parameters-contracts get`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-get.md) — Read a specific STS request parameters contract
+        - [`pingcli pingfederate idp sts-request-parameters-contracts list`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-list.md) — List all STS request parameters contracts
+        - [`pingcli pingfederate idp sts-request-parameters-contracts replace`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-replace.md) — Update an STS request parameters contract
+        - [`pingcli pingfederate idp sts-request-parameters-contracts template`](references/cmd-pingcli-pingfederate-idp-sts-request-parameters-contracts-template.md) — Generate an STS request parameters contract JSON template
+      - [`pingcli pingfederate idp token-processors`](references/cmd-pingcli-pingfederate-idp-token-processors.md) — PingFederate Token Processors
+        - [`pingcli pingfederate idp token-processors apply`](references/cmd-pingcli-pingfederate-idp-token-processors-apply.md) — Create or update a token processor
+        - [`pingcli pingfederate idp token-processors create`](references/cmd-pingcli-pingfederate-idp-token-processors-create.md) — Create a new token processor
+        - [`pingcli pingfederate idp token-processors delete`](references/cmd-pingcli-pingfederate-idp-token-processors-delete.md) — Delete a token processor
+        - [`pingcli pingfederate idp token-processors descriptors`](references/cmd-pingcli-pingfederate-idp-token-processors-descriptors.md) — PingFederate Token Processor Descriptors
+          - [`pingcli pingfederate idp token-processors descriptors get`](references/cmd-pingcli-pingfederate-idp-token-processors-descriptors-get.md) — Read a specific token processor descriptor
+          - [`pingcli pingfederate idp token-processors descriptors list`](references/cmd-pingcli-pingfederate-idp-token-processors-descriptors-list.md) — List all token processor descriptors
+        - [`pingcli pingfederate idp token-processors get`](references/cmd-pingcli-pingfederate-idp-token-processors-get.md) — Read a specific token processor
+        - [`pingcli pingfederate idp token-processors list`](references/cmd-pingcli-pingfederate-idp-token-processors-list.md) — List all token processors
+        - [`pingcli pingfederate idp token-processors replace`](references/cmd-pingcli-pingfederate-idp-token-processors-replace.md) — Update a token processor
+        - [`pingcli pingfederate idp token-processors template`](references/cmd-pingcli-pingfederate-idp-token-processors-template.md) — Generate a token processor JSON template
+    - [`pingcli pingfederate idp-to-sp-adapter-mappings`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings.md) — PingFederate IdP-to-SP Adapter Mappings
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings apply`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-apply.md) — Create or update an IdP-to-SP Adapter mapping
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings create`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-create.md) — Create a new IdP-to-SP Adapter mapping
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings delete`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-delete.md) — Delete an IdP-to-SP Adapter mapping
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings get`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-get.md) — Read a specific IdP-to-SP Adapter mapping
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings list`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-list.md) — List all IdP-to-SP Adapter mappings
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings replace`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-replace.md) — Update an IdP-to-SP Adapter mapping
+      - [`pingcli pingfederate idp-to-sp-adapter-mappings template`](references/cmd-pingcli-pingfederate-idp-to-sp-adapter-mappings-template.md) — Generate an IdP-to-SP Adapter mapping JSON template
+    - [`pingcli pingfederate incoming-proxy-settings`](references/cmd-pingcli-pingfederate-incoming-proxy-settings.md) — PingFederate incoming proxy settings
+      - [`pingcli pingfederate incoming-proxy-settings apply`](references/cmd-pingcli-pingfederate-incoming-proxy-settings-apply.md) — Update incoming proxy settings
+      - [`pingcli pingfederate incoming-proxy-settings get`](references/cmd-pingcli-pingfederate-incoming-proxy-settings-get.md) — Read incoming proxy settings
+      - [`pingcli pingfederate incoming-proxy-settings replace`](references/cmd-pingcli-pingfederate-incoming-proxy-settings-replace.md) — Update incoming proxy settings
+      - [`pingcli pingfederate incoming-proxy-settings template`](references/cmd-pingcli-pingfederate-incoming-proxy-settings-template.md) — Generate an incoming proxy settings JSON template
+    - [`pingcli pingfederate init`](references/cmd-pingcli-pingfederate-init.md) — Initialize Ping CLI for the PingFederate management APIs.
+    - [`pingcli pingfederate kerberos`](references/cmd-pingcli-pingfederate-kerberos.md) — Manage PingFederate Kerberos resources
+      - [`pingcli pingfederate kerberos realms`](references/cmd-pingcli-pingfederate-kerberos-realms.md) — PingFederate Kerberos Realms
+        - [`pingcli pingfederate kerberos realms apply`](references/cmd-pingcli-pingfederate-kerberos-realms-apply.md) — Create or update a Kerberos realm
+        - [`pingcli pingfederate kerberos realms create`](references/cmd-pingcli-pingfederate-kerberos-realms-create.md) — Create a new Kerberos realm
+        - [`pingcli pingfederate kerberos realms delete`](references/cmd-pingcli-pingfederate-kerberos-realms-delete.md) — Delete a Kerberos realm
+        - [`pingcli pingfederate kerberos realms get`](references/cmd-pingcli-pingfederate-kerberos-realms-get.md) — Read a specific Kerberos realm
+        - [`pingcli pingfederate kerberos realms list`](references/cmd-pingcli-pingfederate-kerberos-realms-list.md) — List all Kerberos realms
+        - [`pingcli pingfederate kerberos realms replace`](references/cmd-pingcli-pingfederate-kerberos-realms-replace.md) — Update a Kerberos realm
+        - [`pingcli pingfederate kerberos realms settings`](references/cmd-pingcli-pingfederate-kerberos-realms-settings.md) — PingFederate Kerberos Realms Settings
+          - [`pingcli pingfederate kerberos realms settings apply`](references/cmd-pingcli-pingfederate-kerberos-realms-settings-apply.md) — Update Kerberos Realms Settings
+          - [`pingcli pingfederate kerberos realms settings get`](references/cmd-pingcli-pingfederate-kerberos-realms-settings-get.md) — Read Kerberos Realms Settings
+          - [`pingcli pingfederate kerberos realms settings replace`](references/cmd-pingcli-pingfederate-kerberos-realms-settings-replace.md) — Update Kerberos Realms Settings
+          - [`pingcli pingfederate kerberos realms settings template`](references/cmd-pingcli-pingfederate-kerberos-realms-settings-template.md) — Generate a Kerberos Realms Settings JSON template
+        - [`pingcli pingfederate kerberos realms template`](references/cmd-pingcli-pingfederate-kerberos-realms-template.md) — Generate a Kerberos realm JSON template
+    - [`pingcli pingfederate key-pairs`](references/cmd-pingcli-pingfederate-key-pairs.md) — Manage PingFederate Key Pairs resources
+      - [`pingcli pingfederate key-pairs key-algorithms`](references/cmd-pingcli-pingfederate-key-pairs-key-algorithms.md) — PingFederate Key Algorithms
+        - [`pingcli pingfederate key-pairs key-algorithms list`](references/cmd-pingcli-pingfederate-key-pairs-key-algorithms-list.md) — List all key algorithms
+      - [`pingcli pingfederate key-pairs oauth-openid-connect`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect.md) — PingFederate OAuth/OpenID Connect keys settings
+        - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets.md) — PingFederate OAuth/OpenID Connect additional key sets
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets apply`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-apply.md) — Create or update an OAuth/OpenID Connect additional key set
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets create`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-create.md) — Create a new OAuth/OpenID Connect additional key set
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets delete`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-delete.md) — Delete an OAuth/OpenID Connect additional key set
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets get`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-get.md) — Read a specific OAuth/OpenID Connect additional key set
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets list`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-list.md) — List all OAuth/OpenID Connect additional key sets
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets replace`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-replace.md) — Update an OAuth/OpenID Connect additional key set
+          - [`pingcli pingfederate key-pairs oauth-openid-connect additional-key-sets template`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-additional-key-sets-template.md) — Generate an OAuth/OpenID Connect additional key set JSON template
+        - [`pingcli pingfederate key-pairs oauth-openid-connect apply`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-apply.md) — Update OAuth/OpenID Connect keys settings
+        - [`pingcli pingfederate key-pairs oauth-openid-connect get`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-get.md) — Read OAuth/OpenID Connect keys settings
+        - [`pingcli pingfederate key-pairs oauth-openid-connect replace`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-replace.md) — Update OAuth/OpenID Connect keys settings
+        - [`pingcli pingfederate key-pairs oauth-openid-connect template`](references/cmd-pingcli-pingfederate-key-pairs-oauth-openid-connect-template.md) — Generate an OAuth/OpenID Connect keys settings JSON template
+      - [`pingcli pingfederate key-pairs signing`](references/cmd-pingcli-pingfederate-key-pairs-signing.md) — PingFederate Signing Key Pairs
+        - [`pingcli pingfederate key-pairs signing create`](references/cmd-pingcli-pingfederate-key-pairs-signing-create.md) — Generate a new signing key pair
+        - [`pingcli pingfederate key-pairs signing delete`](references/cmd-pingcli-pingfederate-key-pairs-signing-delete.md) — Delete a signing key pair
+        - [`pingcli pingfederate key-pairs signing export-certificate`](references/cmd-pingcli-pingfederate-key-pairs-signing-export-certificate.md) — Export a signing key pair certificate file
+        - [`pingcli pingfederate key-pairs signing export-pem`](references/cmd-pingcli-pingfederate-key-pairs-signing-export-pem.md) — Export a signing key pair PEM file
+        - [`pingcli pingfederate key-pairs signing export-pkcs12`](references/cmd-pingcli-pingfederate-key-pairs-signing-export-pkcs12.md) — Export a signing key pair PKCS12 file
+        - [`pingcli pingfederate key-pairs signing generate-csr`](references/cmd-pingcli-pingfederate-key-pairs-signing-generate-csr.md) — Generate a CSR for a signing key pair
+        - [`pingcli pingfederate key-pairs signing get`](references/cmd-pingcli-pingfederate-key-pairs-signing-get.md) — Read a specific signing key pair
+        - [`pingcli pingfederate key-pairs signing import`](references/cmd-pingcli-pingfederate-key-pairs-signing-import.md) — Import a signing key pair
+        - [`pingcli pingfederate key-pairs signing import-csr-response`](references/cmd-pingcli-pingfederate-key-pairs-signing-import-csr-response.md) — Import a signing key pair CSR response
+        - [`pingcli pingfederate key-pairs signing link`](references/cmd-pingcli-pingfederate-key-pairs-signing-link.md) — Link a signing key pair private key and certificate (HSM only)
+        - [`pingcli pingfederate key-pairs signing list`](references/cmd-pingcli-pingfederate-key-pairs-signing-list.md) — List all signing key pairs
+        - [`pingcli pingfederate key-pairs signing rotation-settings`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings.md) — PingFederate signing key pair rotation settings
+          - [`pingcli pingfederate key-pairs signing rotation-settings apply`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings-apply.md) — Update signing key pair rotation settings
+          - [`pingcli pingfederate key-pairs signing rotation-settings delete`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings-delete.md) — Delete signing key pair rotation settings
+          - [`pingcli pingfederate key-pairs signing rotation-settings get`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings-get.md) — Read signing key pair rotation settings
+          - [`pingcli pingfederate key-pairs signing rotation-settings replace`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings-replace.md) — Update signing key pair rotation settings
+          - [`pingcli pingfederate key-pairs signing rotation-settings template`](references/cmd-pingcli-pingfederate-key-pairs-signing-rotation-settings-template.md) — Generate a signing key pair rotation settings JSON template
+        - [`pingcli pingfederate key-pairs signing template`](references/cmd-pingcli-pingfederate-key-pairs-signing-template.md) — Generate a signing key pair create, import, import-csr-response, or link JSON template
+      - [`pingcli pingfederate key-pairs ssl-client`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client.md) — PingFederate SSL Client Key Pairs
+        - [`pingcli pingfederate key-pairs ssl-client create`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-create.md) — Generate a new SSL client key pair
+        - [`pingcli pingfederate key-pairs ssl-client delete`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-delete.md) — Delete an SSL client key pair
+        - [`pingcli pingfederate key-pairs ssl-client export-certificate`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-export-certificate.md) — Export an SSL client key pair certificate file
+        - [`pingcli pingfederate key-pairs ssl-client export-pem`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-export-pem.md) — Export an SSL client key pair PEM file
+        - [`pingcli pingfederate key-pairs ssl-client export-pkcs12`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-export-pkcs12.md) — Export an SSL client key pair PKCS12 file
+        - [`pingcli pingfederate key-pairs ssl-client generate-csr`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-generate-csr.md) — Generate a CSR for an SSL client key pair
+        - [`pingcli pingfederate key-pairs ssl-client get`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-get.md) — Read a specific SSL client key pair
+        - [`pingcli pingfederate key-pairs ssl-client import`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-import.md) — Import an SSL client key pair
+        - [`pingcli pingfederate key-pairs ssl-client import-csr-response`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-import-csr-response.md) — Import an SSL client key pair CSR response
+        - [`pingcli pingfederate key-pairs ssl-client link`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-link.md) — Link an SSL client key pair private key and certificate (HSM only)
+        - [`pingcli pingfederate key-pairs ssl-client list`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-list.md) — List all SSL client key pairs
+        - [`pingcli pingfederate key-pairs ssl-client template`](references/cmd-pingcli-pingfederate-key-pairs-ssl-client-template.md) — Generate an SSL client key pair create, import, import-csr-response, or link JSON template
+      - [`pingcli pingfederate key-pairs ssl-server`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server.md) — PingFederate SSL Server Key Pairs
+        - [`pingcli pingfederate key-pairs ssl-server create`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-create.md) — Generate a new SSL server key pair
+        - [`pingcli pingfederate key-pairs ssl-server delete`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-delete.md) — Delete an SSL server key pair
+        - [`pingcli pingfederate key-pairs ssl-server export-certificate`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-export-certificate.md) — Export an SSL server key pair certificate file
+        - [`pingcli pingfederate key-pairs ssl-server export-pem`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-export-pem.md) — Export an SSL server key pair PEM file
+        - [`pingcli pingfederate key-pairs ssl-server export-pkcs12`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-export-pkcs12.md) — Export an SSL server key pair PKCS12 file
+        - [`pingcli pingfederate key-pairs ssl-server generate-csr`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-generate-csr.md) — Generate a CSR for an SSL server key pair
+        - [`pingcli pingfederate key-pairs ssl-server get`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-get.md) — Read a specific SSL server key pair
+        - [`pingcli pingfederate key-pairs ssl-server import`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-import.md) — Import an SSL server key pair
+        - [`pingcli pingfederate key-pairs ssl-server import-csr-response`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-import-csr-response.md) — Import an SSL server key pair CSR response
+        - [`pingcli pingfederate key-pairs ssl-server link`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-link.md) — Link an SSL server key pair private key and certificate (HSM only)
+        - [`pingcli pingfederate key-pairs ssl-server list`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-list.md) — List all SSL server key pairs
+        - [`pingcli pingfederate key-pairs ssl-server settings`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-settings.md) — PingFederate SSL Server Settings
+          - [`pingcli pingfederate key-pairs ssl-server settings apply`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-settings-apply.md) — Update SSL server settings
+          - [`pingcli pingfederate key-pairs ssl-server settings get`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-settings-get.md) — Read SSL server settings
+          - [`pingcli pingfederate key-pairs ssl-server settings replace`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-settings-replace.md) — Update SSL server settings
+          - [`pingcli pingfederate key-pairs ssl-server settings template`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-settings-template.md) — Generate an SSL server settings JSON template
+        - [`pingcli pingfederate key-pairs ssl-server template`](references/cmd-pingcli-pingfederate-key-pairs-ssl-server-template.md) — Generate an SSL server key pair create, import, import-csr-response, or link JSON template
+    - [`pingcli pingfederate license`](references/cmd-pingcli-pingfederate-license.md) — PingFederate license
+      - [`pingcli pingfederate license agreement`](references/cmd-pingcli-pingfederate-license-agreement.md) — PingFederate License Agreement
+        - [`pingcli pingfederate license agreement apply`](references/cmd-pingcli-pingfederate-license-agreement-apply.md) — Update license agreement
+        - [`pingcli pingfederate license agreement get`](references/cmd-pingcli-pingfederate-license-agreement-get.md) — Read license agreement
+        - [`pingcli pingfederate license agreement replace`](references/cmd-pingcli-pingfederate-license-agreement-replace.md) — Update license agreement
+        - [`pingcli pingfederate license agreement template`](references/cmd-pingcli-pingfederate-license-agreement-template.md) — Generate a license agreement JSON template
+      - [`pingcli pingfederate license apply`](references/cmd-pingcli-pingfederate-license-apply.md) — Update license
+      - [`pingcli pingfederate license get`](references/cmd-pingcli-pingfederate-license-get.md) — Read license
+      - [`pingcli pingfederate license replace`](references/cmd-pingcli-pingfederate-license-replace.md) — Replace license
+      - [`pingcli pingfederate license template`](references/cmd-pingcli-pingfederate-license-template.md) — Generate a license JSON template
+    - [`pingcli pingfederate local-identity`](references/cmd-pingcli-pingfederate-local-identity.md) — Manage PingFederate Local Identity resources
+      - [`pingcli pingfederate local-identity profiles`](references/cmd-pingcli-pingfederate-local-identity-profiles.md) — PingFederate Local Identity Profiles
+        - [`pingcli pingfederate local-identity profiles apply`](references/cmd-pingcli-pingfederate-local-identity-profiles-apply.md) — Create or update a local identity profile
+        - [`pingcli pingfederate local-identity profiles create`](references/cmd-pingcli-pingfederate-local-identity-profiles-create.md) — Create a new local identity profile
+        - [`pingcli pingfederate local-identity profiles delete`](references/cmd-pingcli-pingfederate-local-identity-profiles-delete.md) — Delete a local identity profile
+        - [`pingcli pingfederate local-identity profiles get`](references/cmd-pingcli-pingfederate-local-identity-profiles-get.md) — Read a specific local identity profile
+        - [`pingcli pingfederate local-identity profiles list`](references/cmd-pingcli-pingfederate-local-identity-profiles-list.md) — List all local identity profiles
+        - [`pingcli pingfederate local-identity profiles replace`](references/cmd-pingcli-pingfederate-local-identity-profiles-replace.md) — Update a local identity profile
+        - [`pingcli pingfederate local-identity profiles template`](references/cmd-pingcli-pingfederate-local-identity-profiles-template.md) — Generate a local identity profile JSON template
+    - [`pingcli pingfederate metadata-urls`](references/cmd-pingcli-pingfederate-metadata-urls.md) — PingFederate metadata URLs
+      - [`pingcli pingfederate metadata-urls apply`](references/cmd-pingcli-pingfederate-metadata-urls-apply.md) — Create or update a metadata URL
+      - [`pingcli pingfederate metadata-urls create`](references/cmd-pingcli-pingfederate-metadata-urls-create.md) — Create a new metadata URL
+      - [`pingcli pingfederate metadata-urls delete`](references/cmd-pingcli-pingfederate-metadata-urls-delete.md) — Delete a metadata URL
+      - [`pingcli pingfederate metadata-urls get`](references/cmd-pingcli-pingfederate-metadata-urls-get.md) — Read a specific metadata URL
+      - [`pingcli pingfederate metadata-urls list`](references/cmd-pingcli-pingfederate-metadata-urls-list.md) — List all metadata URLs
+      - [`pingcli pingfederate metadata-urls replace`](references/cmd-pingcli-pingfederate-metadata-urls-replace.md) — Update a metadata URL
+      - [`pingcli pingfederate metadata-urls template`](references/cmd-pingcli-pingfederate-metadata-urls-template.md) — Generate a metadata URL JSON template
+    - [`pingcli pingfederate notification-publishers`](references/cmd-pingcli-pingfederate-notification-publishers.md) — PingFederate notification publishers
+      - [`pingcli pingfederate notification-publishers apply`](references/cmd-pingcli-pingfederate-notification-publishers-apply.md) — Create or update a notification publisher
+      - [`pingcli pingfederate notification-publishers create`](references/cmd-pingcli-pingfederate-notification-publishers-create.md) — Create a new notification publisher
+      - [`pingcli pingfederate notification-publishers delete`](references/cmd-pingcli-pingfederate-notification-publishers-delete.md) — Delete a notification publisher
+      - [`pingcli pingfederate notification-publishers descriptors`](references/cmd-pingcli-pingfederate-notification-publishers-descriptors.md) — PingFederate Notification Publisher Descriptors
+        - [`pingcli pingfederate notification-publishers descriptors get`](references/cmd-pingcli-pingfederate-notification-publishers-descriptors-get.md) — Read a specific notification publisher descriptor
+        - [`pingcli pingfederate notification-publishers descriptors list`](references/cmd-pingcli-pingfederate-notification-publishers-descriptors-list.md) — List all notification publisher descriptors
+      - [`pingcli pingfederate notification-publishers get`](references/cmd-pingcli-pingfederate-notification-publishers-get.md) — Read a specific notification publisher
+      - [`pingcli pingfederate notification-publishers get-action`](references/cmd-pingcli-pingfederate-notification-publishers-get-action.md) — Get a notification publisher action
+      - [`pingcli pingfederate notification-publishers invoke-action`](references/cmd-pingcli-pingfederate-notification-publishers-invoke-action.md) — Invoke a notification publisher action
+      - [`pingcli pingfederate notification-publishers list`](references/cmd-pingcli-pingfederate-notification-publishers-list.md) — List all notification publishers
+      - [`pingcli pingfederate notification-publishers list-actions`](references/cmd-pingcli-pingfederate-notification-publishers-list-actions.md) — List notification publisher actions
+      - [`pingcli pingfederate notification-publishers replace`](references/cmd-pingcli-pingfederate-notification-publishers-replace.md) — Update a notification publisher
+      - [`pingcli pingfederate notification-publishers settings`](references/cmd-pingcli-pingfederate-notification-publishers-settings.md) — PingFederate Notification Publishers Settings
+        - [`pingcli pingfederate notification-publishers settings apply`](references/cmd-pingcli-pingfederate-notification-publishers-settings-apply.md) — Update notification publishers settings
+        - [`pingcli pingfederate notification-publishers settings get`](references/cmd-pingcli-pingfederate-notification-publishers-settings-get.md) — Read notification publishers settings
+        - [`pingcli pingfederate notification-publishers settings replace`](references/cmd-pingcli-pingfederate-notification-publishers-settings-replace.md) — Update notification publishers settings
+        - [`pingcli pingfederate notification-publishers settings template`](references/cmd-pingcli-pingfederate-notification-publishers-settings-template.md) — Generate a notification publishers settings JSON template
+      - [`pingcli pingfederate notification-publishers template`](references/cmd-pingcli-pingfederate-notification-publishers-template.md) — Generate a notification publisher JSON template
+    - [`pingcli pingfederate oauth`](references/cmd-pingcli-pingfederate-oauth.md) — Manage PingFederate OAuth resources
+      - [`pingcli pingfederate oauth access-token-managers`](references/cmd-pingcli-pingfederate-oauth-access-token-managers.md) — PingFederate OAuth access token managers
+        - [`pingcli pingfederate oauth access-token-managers apply`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-apply.md) — Create or update an access token manager
+        - [`pingcli pingfederate oauth access-token-managers create`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-create.md) — Create a new access token manager
+        - [`pingcli pingfederate oauth access-token-managers delete`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-delete.md) — Delete an access token manager
+        - [`pingcli pingfederate oauth access-token-managers descriptors`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-descriptors.md) — PingFederate Access Token Manager Descriptors
+          - [`pingcli pingfederate oauth access-token-managers descriptors get`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-descriptors-get.md) — Read a specific access token manager descriptor
+          - [`pingcli pingfederate oauth access-token-managers descriptors list`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-descriptors-list.md) — List all access token manager descriptors
+        - [`pingcli pingfederate oauth access-token-managers get`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-get.md) — Read a specific access token manager
+        - [`pingcli pingfederate oauth access-token-managers list`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-list.md) — List all access token managers
+        - [`pingcli pingfederate oauth access-token-managers replace`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-replace.md) — Update an access token manager
+        - [`pingcli pingfederate oauth access-token-managers settings`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-settings.md) — PingFederate OAuth Access Token Manager Settings
+          - [`pingcli pingfederate oauth access-token-managers settings apply`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-settings-apply.md) — Update access token manager settings
+          - [`pingcli pingfederate oauth access-token-managers settings get`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-settings-get.md) — Read access token manager settings
+          - [`pingcli pingfederate oauth access-token-managers settings replace`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-settings-replace.md) — Update access token manager settings
+          - [`pingcli pingfederate oauth access-token-managers settings template`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-settings-template.md) — Generate an access token manager settings JSON template
+        - [`pingcli pingfederate oauth access-token-managers template`](references/cmd-pingcli-pingfederate-oauth-access-token-managers-template.md) — Generate an access token manager JSON template
+      - [`pingcli pingfederate oauth access-token-mappings`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings.md) — PingFederate OAuth access token mappings
+        - [`pingcli pingfederate oauth access-token-mappings create`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-create.md) — Create a new access token mapping
+        - [`pingcli pingfederate oauth access-token-mappings delete`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-delete.md) — Delete an access token mapping
+        - [`pingcli pingfederate oauth access-token-mappings get`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-get.md) — Read a specific access token mapping
+        - [`pingcli pingfederate oauth access-token-mappings list`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-list.md) — List all access token mappings
+        - [`pingcli pingfederate oauth access-token-mappings replace`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-replace.md) — Update an access token mapping
+        - [`pingcli pingfederate oauth access-token-mappings template`](references/cmd-pingcli-pingfederate-oauth-access-token-mappings-template.md) — Generate an access token mapping JSON template
+      - [`pingcli pingfederate oauth auth-server-settings`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings.md) — PingFederate OAuth Authorization Server Settings
+        - [`pingcli pingfederate oauth auth-server-settings apply`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-apply.md) — Update oauth authorization server settings
+        - [`pingcli pingfederate oauth auth-server-settings get`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-get.md) — Read oauth authorization server settings
+        - [`pingcli pingfederate oauth auth-server-settings replace`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-replace.md) — Update oauth authorization server settings
+        - [`pingcli pingfederate oauth auth-server-settings scopes`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes.md) — Manage OAuth Authorization Server Settings scope collections
+          - [`pingcli pingfederate oauth auth-server-settings scopes common`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common.md) — PingFederate OAuth common scopes
+            - [`pingcli pingfederate oauth auth-server-settings scopes common apply`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-apply.md) — Create or update an OAuth common scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes common create`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-create.md) — Create a new OAuth common scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes common delete`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-delete.md) — Delete an OAuth common scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes common get`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-get.md) — Read a specific OAuth common scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes common list`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-list.md) — List all OAuth common scopes
+            - [`pingcli pingfederate oauth auth-server-settings scopes common replace`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-replace.md) — Update an OAuth common scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes common template`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-template.md) — Generate an OAuth common scope JSON template
+          - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups.md) — PingFederate OAuth common scope groups
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups apply`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-apply.md) — Create or update a common scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups create`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-create.md) — Create a new common scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups delete`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-delete.md) — Delete a common scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups get`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-get.md) — Read a specific common scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups list`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-list.md) — List all common scope groups
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups replace`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-replace.md) — Update a common scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes common-scope-groups template`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-common-scope-groups-template.md) — Generate a common scope group JSON template
+          - [`pingcli pingfederate oauth auth-server-settings scopes exclusive`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive.md) — PingFederate OAuth exclusive scopes
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive apply`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-apply.md) — Create or update an OAuth exclusive scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive create`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-create.md) — Create a new OAuth exclusive scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive delete`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-delete.md) — Delete an OAuth exclusive scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive get`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-get.md) — Read a specific OAuth exclusive scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive list`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-list.md) — List all OAuth exclusive scopes
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive replace`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-replace.md) — Update an OAuth exclusive scope
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive template`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-template.md) — Generate an OAuth exclusive scope JSON template
+          - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups.md) — PingFederate OAuth exclusive scope groups
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups apply`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-apply.md) — Create or update an OAuth exclusive scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups create`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-create.md) — Create a new OAuth exclusive scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups delete`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-delete.md) — Delete an OAuth exclusive scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups get`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-get.md) — Read a specific OAuth exclusive scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups list`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-list.md) — List all OAuth exclusive scope groups
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups replace`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-replace.md) — Update an OAuth exclusive scope group
+            - [`pingcli pingfederate oauth auth-server-settings scopes exclusive-scope-groups template`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-scopes-exclusive-scope-groups-template.md) — Generate an OAuth exclusive scope group JSON template
+        - [`pingcli pingfederate oauth auth-server-settings template`](references/cmd-pingcli-pingfederate-oauth-auth-server-settings-template.md) — Generate an oauth authorization server settings JSON template
+      - [`pingcli pingfederate oauth authentication-policy-contract-mappings`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings.md) — PingFederate OAuth Authentication Policy Contract Mappings
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings apply`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-apply.md) — Create or update an authentication policy contract mapping
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings create`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-create.md) — Create a new authentication policy contract mapping
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings delete`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-delete.md) — Delete an authentication policy contract mapping
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings get`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-get.md) — Read a specific authentication policy contract mapping
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings list`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-list.md) — List all authentication policy contract mappings
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings replace`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-replace.md) — Update an authentication policy contract mapping
+        - [`pingcli pingfederate oauth authentication-policy-contract-mappings template`](references/cmd-pingcli-pingfederate-oauth-authentication-policy-contract-mappings-template.md) — Generate an authentication policy contract mapping JSON template
+      - [`pingcli pingfederate oauth authorization-detail-processors`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors.md) — PingFederate OAuth authorization detail processors
+        - [`pingcli pingfederate oauth authorization-detail-processors apply`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-apply.md) — Create or update an authorization detail processor
+        - [`pingcli pingfederate oauth authorization-detail-processors create`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-create.md) — Create a new authorization detail processor
+        - [`pingcli pingfederate oauth authorization-detail-processors delete`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-delete.md) — Delete an authorization detail processor
+        - [`pingcli pingfederate oauth authorization-detail-processors descriptors`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-descriptors.md) — PingFederate OAuth Authorization Detail Processor Descriptors
+          - [`pingcli pingfederate oauth authorization-detail-processors descriptors get`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-descriptors-get.md) — Read a specific authorization detail processor descriptor
+          - [`pingcli pingfederate oauth authorization-detail-processors descriptors list`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-descriptors-list.md) — List all authorization detail processor descriptors
+        - [`pingcli pingfederate oauth authorization-detail-processors get`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-get.md) — Read a specific authorization detail processor
+        - [`pingcli pingfederate oauth authorization-detail-processors list`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-list.md) — List all authorization detail processors
+        - [`pingcli pingfederate oauth authorization-detail-processors replace`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-replace.md) — Update an authorization detail processor
+        - [`pingcli pingfederate oauth authorization-detail-processors template`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-processors-template.md) — Generate an authorization detail processor JSON template
+      - [`pingcli pingfederate oauth authorization-detail-types`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types.md) — PingFederate OAuth Authorization Detail Types
+        - [`pingcli pingfederate oauth authorization-detail-types apply`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-apply.md) — Create or update an authorization detail type
+        - [`pingcli pingfederate oauth authorization-detail-types create`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-create.md) — Create a new authorization detail type
+        - [`pingcli pingfederate oauth authorization-detail-types delete`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-delete.md) — Delete an authorization detail type
+        - [`pingcli pingfederate oauth authorization-detail-types get`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-get.md) — Read a specific authorization detail type
+        - [`pingcli pingfederate oauth authorization-detail-types list`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-list.md) — List all authorization detail types
+        - [`pingcli pingfederate oauth authorization-detail-types replace`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-replace.md) — Update an authorization detail type
+        - [`pingcli pingfederate oauth authorization-detail-types template`](references/cmd-pingcli-pingfederate-oauth-authorization-detail-types-template.md) — Generate an authorization detail type JSON template
+      - [`pingcli pingfederate oauth ciba-server-policy`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy.md) — Manage PingFederate OAuth CIBA Server Policy resources
+        - [`pingcli pingfederate oauth ciba-server-policy request-policies`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies.md) — PingFederate OAuth CIBA Server Policy Request Policies
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies apply`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-apply.md) — Create or update a CIBA request policy
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies create`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-create.md) — Create a new CIBA request policy
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies delete`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-delete.md) — Delete a CIBA request policy
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies get`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-get.md) — Read a specific CIBA request policy
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies list`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-list.md) — List all CIBA request policies
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies replace`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-replace.md) — Update a CIBA request policy
+          - [`pingcli pingfederate oauth ciba-server-policy request-policies template`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-request-policies-template.md) — Generate a CIBA request policy JSON template
+        - [`pingcli pingfederate oauth ciba-server-policy settings`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-settings.md) — PingFederate OAuth CIBA Server Policy Settings
+          - [`pingcli pingfederate oauth ciba-server-policy settings apply`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-settings-apply.md) — Update CIBA server policy settings
+          - [`pingcli pingfederate oauth ciba-server-policy settings get`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-settings-get.md) — Read CIBA server policy settings
+          - [`pingcli pingfederate oauth ciba-server-policy settings replace`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-settings-replace.md) — Update CIBA server policy settings
+          - [`pingcli pingfederate oauth ciba-server-policy settings template`](references/cmd-pingcli-pingfederate-oauth-ciba-server-policy-settings-template.md) — Generate a CIBA server policy settings JSON template
+      - [`pingcli pingfederate oauth client-registration-policies`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies.md) — PingFederate OAuth Client Registration Policies
+        - [`pingcli pingfederate oauth client-registration-policies apply`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-apply.md) — Create or update a client registration policy
+        - [`pingcli pingfederate oauth client-registration-policies create`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-create.md) — Create a new client registration policy
+        - [`pingcli pingfederate oauth client-registration-policies delete`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-delete.md) — Delete a client registration policy
+        - [`pingcli pingfederate oauth client-registration-policies descriptors`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-descriptors.md) — PingFederate OAuth Client Registration Policy Descriptors
+          - [`pingcli pingfederate oauth client-registration-policies descriptors get`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-descriptors-get.md) — Read a specific OAuth client registration policy descriptor
+          - [`pingcli pingfederate oauth client-registration-policies descriptors list`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-descriptors-list.md) — List all OAuth client registration policy descriptors
+        - [`pingcli pingfederate oauth client-registration-policies get`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-get.md) — Read a specific client registration policy
+        - [`pingcli pingfederate oauth client-registration-policies list`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-list.md) — List all client registration policies
+        - [`pingcli pingfederate oauth client-registration-policies replace`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-replace.md) — Update a client registration policy
+        - [`pingcli pingfederate oauth client-registration-policies template`](references/cmd-pingcli-pingfederate-oauth-client-registration-policies-template.md) — Generate a client registration policy JSON template
+      - [`pingcli pingfederate oauth client-settings`](references/cmd-pingcli-pingfederate-oauth-client-settings.md) — PingFederate OAuth Client Settings
+        - [`pingcli pingfederate oauth client-settings apply`](references/cmd-pingcli-pingfederate-oauth-client-settings-apply.md) — Update oauth client settings
+        - [`pingcli pingfederate oauth client-settings get`](references/cmd-pingcli-pingfederate-oauth-client-settings-get.md) — Read oauth client settings
+        - [`pingcli pingfederate oauth client-settings replace`](references/cmd-pingcli-pingfederate-oauth-client-settings-replace.md) — Update oauth client settings
+        - [`pingcli pingfederate oauth client-settings template`](references/cmd-pingcli-pingfederate-oauth-client-settings-template.md) — Generate an oauth client settings JSON template
+      - [`pingcli pingfederate oauth clients`](references/cmd-pingcli-pingfederate-oauth-clients.md) — PingFederate OAuth Clients
+        - [`pingcli pingfederate oauth clients apply`](references/cmd-pingcli-pingfederate-oauth-clients-apply.md) — Create or update an OAuth client
+        - [`pingcli pingfederate oauth clients create`](references/cmd-pingcli-pingfederate-oauth-clients-create.md) — Create a new OAuth client
+        - [`pingcli pingfederate oauth clients delete`](references/cmd-pingcli-pingfederate-oauth-clients-delete.md) — Delete an OAuth client
+        - [`pingcli pingfederate oauth clients get`](references/cmd-pingcli-pingfederate-oauth-clients-get.md) — Read a specific OAuth client
+        - [`pingcli pingfederate oauth clients get-secret`](references/cmd-pingcli-pingfederate-oauth-clients-get-secret.md) — Get an OAuth client secret
+        - [`pingcli pingfederate oauth clients list`](references/cmd-pingcli-pingfederate-oauth-clients-list.md) — List all OAuth clients
+        - [`pingcli pingfederate oauth clients replace`](references/cmd-pingcli-pingfederate-oauth-clients-replace.md) — Update an OAuth client
+        - [`pingcli pingfederate oauth clients revoke-secondary-secrets`](references/cmd-pingcli-pingfederate-oauth-clients-revoke-secondary-secrets.md) — Revoke an OAuth client's secondary secrets
+        - [`pingcli pingfederate oauth clients template`](references/cmd-pingcli-pingfederate-oauth-clients-template.md) — Generate an OAuth client JSON template
+        - [`pingcli pingfederate oauth clients update-secret`](references/cmd-pingcli-pingfederate-oauth-clients-update-secret.md) — Update an OAuth client secret
+      - [`pingcli pingfederate oauth idp-adapter-mappings`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings.md) — PingFederate OAuth IdP Adapter Mappings
+        - [`pingcli pingfederate oauth idp-adapter-mappings apply`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-apply.md) — Create or update an IdP adapter mapping
+        - [`pingcli pingfederate oauth idp-adapter-mappings create`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-create.md) — Create a new IdP adapter mapping
+        - [`pingcli pingfederate oauth idp-adapter-mappings delete`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-delete.md) — Delete an IdP adapter mapping
+        - [`pingcli pingfederate oauth idp-adapter-mappings get`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-get.md) — Read a specific IdP adapter mapping
+        - [`pingcli pingfederate oauth idp-adapter-mappings list`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-list.md) — List all IdP adapter mappings
+        - [`pingcli pingfederate oauth idp-adapter-mappings replace`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-replace.md) — Update an IdP adapter mapping
+        - [`pingcli pingfederate oauth idp-adapter-mappings template`](references/cmd-pingcli-pingfederate-oauth-idp-adapter-mappings-template.md) — Generate an IdP adapter mapping JSON template
+      - [`pingcli pingfederate oauth issuers`](references/cmd-pingcli-pingfederate-oauth-issuers.md) — PingFederate OAuth virtual issuers
+        - [`pingcli pingfederate oauth issuers apply`](references/cmd-pingcli-pingfederate-oauth-issuers-apply.md) — Create or update an OAuth virtual issuer
+        - [`pingcli pingfederate oauth issuers create`](references/cmd-pingcli-pingfederate-oauth-issuers-create.md) — Create a new OAuth virtual issuer
+        - [`pingcli pingfederate oauth issuers delete`](references/cmd-pingcli-pingfederate-oauth-issuers-delete.md) — Delete an OAuth virtual issuer
+        - [`pingcli pingfederate oauth issuers get`](references/cmd-pingcli-pingfederate-oauth-issuers-get.md) — Read a specific OAuth virtual issuer
+        - [`pingcli pingfederate oauth issuers list`](references/cmd-pingcli-pingfederate-oauth-issuers-list.md) — List all OAuth virtual issuers
+        - [`pingcli pingfederate oauth issuers replace`](references/cmd-pingcli-pingfederate-oauth-issuers-replace.md) — Update an OAuth virtual issuer
+        - [`pingcli pingfederate oauth issuers template`](references/cmd-pingcli-pingfederate-oauth-issuers-template.md) — Generate an OAuth virtual issuer JSON template
+      - [`pingcli pingfederate oauth oidc`](references/cmd-pingcli-pingfederate-oauth-oidc.md) — Manage PingFederate OAuth/OpenID Connect resources
+        - [`pingcli pingfederate oauth oidc policies`](references/cmd-pingcli-pingfederate-oauth-oidc-policies.md) — PingFederate OAuth/OpenID Connect Policies
+          - [`pingcli pingfederate oauth oidc policies apply`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-apply.md) — Create or update an OAuth/OpenID Connect policy
+          - [`pingcli pingfederate oauth oidc policies create`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-create.md) — Create a new OAuth/OpenID Connect policy
+          - [`pingcli pingfederate oauth oidc policies delete`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-delete.md) — Delete an OAuth/OpenID Connect policy
+          - [`pingcli pingfederate oauth oidc policies get`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-get.md) — Read a specific OAuth/OpenID Connect policy
+          - [`pingcli pingfederate oauth oidc policies list`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-list.md) — List all OAuth/OpenID Connect policies
+          - [`pingcli pingfederate oauth oidc policies replace`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-replace.md) — Update an OAuth/OpenID Connect policy
+          - [`pingcli pingfederate oauth oidc policies template`](references/cmd-pingcli-pingfederate-oauth-oidc-policies-template.md) — Generate an OAuth/OpenID Connect policy JSON template
+        - [`pingcli pingfederate oauth oidc settings`](references/cmd-pingcli-pingfederate-oauth-oidc-settings.md) — PingFederate OAuth/OpenID Connect Settings
+          - [`pingcli pingfederate oauth oidc settings apply`](references/cmd-pingcli-pingfederate-oauth-oidc-settings-apply.md) — Update OAuth/OpenID Connect settings
+          - [`pingcli pingfederate oauth oidc settings get`](references/cmd-pingcli-pingfederate-oauth-oidc-settings-get.md) — Read OAuth/OpenID Connect settings
+          - [`pingcli pingfederate oauth oidc settings replace`](references/cmd-pingcli-pingfederate-oauth-oidc-settings-replace.md) — Update OAuth/OpenID Connect settings
+          - [`pingcli pingfederate oauth oidc settings template`](references/cmd-pingcli-pingfederate-oauth-oidc-settings-template.md) — Generate an OAuth/OpenID Connect settings JSON template
+      - [`pingcli pingfederate oauth out-of-band-auth-plugins`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins.md) — PingFederate OAuth out-of-band authenticator plugin instances
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins apply`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-apply.md) — Create or update an out-of-band authenticator plugin instance
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins create`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-create.md) — Create a new out-of-band authenticator plugin instance
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins delete`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-delete.md) — Delete an out-of-band authenticator plugin instance
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins descriptors`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-descriptors.md) — PingFederate OAuth out-of-band authenticator plugin descriptors
+          - [`pingcli pingfederate oauth out-of-band-auth-plugins descriptors get`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-descriptors-get.md) — Read a specific out-of-band authenticator plugin descriptor
+          - [`pingcli pingfederate oauth out-of-band-auth-plugins descriptors list`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-descriptors-list.md) — List all out-of-band authenticator plugin descriptors
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins get`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-get.md) — Read a specific out-of-band authenticator plugin instance
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins get-action`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-get-action.md) — Get an out-of-band authenticator plugin action
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins invoke-action`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-invoke-action.md) — Invoke an out-of-band authenticator plugin action
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins list`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-list.md) — List all out-of-band authenticator plugin instances
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins list-actions`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-list-actions.md) — List out-of-band authenticator plugin actions
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins replace`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-replace.md) — Update an out-of-band authenticator plugin instance
+        - [`pingcli pingfederate oauth out-of-band-auth-plugins template`](references/cmd-pingcli-pingfederate-oauth-out-of-band-auth-plugins-template.md) — Generate an out-of-band authenticator plugin instance JSON template
+      - [`pingcli pingfederate oauth processor-policy-mappings`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings.md) — PingFederate OAuth processor policy mappings
+        - [`pingcli pingfederate oauth processor-policy-mappings apply`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-apply.md) — Create or update a processor policy mapping
+        - [`pingcli pingfederate oauth processor-policy-mappings create`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-create.md) — Create a new processor policy mapping
+        - [`pingcli pingfederate oauth processor-policy-mappings delete`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-delete.md) — Delete a processor policy mapping
+        - [`pingcli pingfederate oauth processor-policy-mappings get`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-get.md) — Read a specific processor policy mapping
+        - [`pingcli pingfederate oauth processor-policy-mappings list`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-list.md) — List all processor policy mappings
+        - [`pingcli pingfederate oauth processor-policy-mappings replace`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-replace.md) — Update a processor policy mapping
+        - [`pingcli pingfederate oauth processor-policy-mappings template`](references/cmd-pingcli-pingfederate-oauth-processor-policy-mappings-template.md) — Generate a processor policy mapping JSON template
+      - [`pingcli pingfederate oauth resource-owner-credentials-mappings`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings.md) — PingFederate OAuth Resource Owner Credentials Mappings
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings apply`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-apply.md) — Create or update a resource owner credentials mapping
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings create`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-create.md) — Create a new resource owner credentials mapping
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings delete`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-delete.md) — Delete a resource owner credentials mapping
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings get`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-get.md) — Read a specific resource owner credentials mapping
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings list`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-list.md) — List all resource owner credentials mappings
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings replace`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-replace.md) — Update a resource owner credentials mapping
+        - [`pingcli pingfederate oauth resource-owner-credentials-mappings template`](references/cmd-pingcli-pingfederate-oauth-resource-owner-credentials-mappings-template.md) — Generate a resource owner credentials mapping JSON template
+      - [`pingcli pingfederate oauth token-exchange`](references/cmd-pingcli-pingfederate-oauth-token-exchange.md) — Manage PingFederate OAuth Token Exchange resources
+        - [`pingcli pingfederate oauth token-exchange generator`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator.md) — Manage PingFederate OAuth Token Exchange generator resources
+          - [`pingcli pingfederate oauth token-exchange generator groups`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups.md) — PingFederate OAuth 2.0 Token Exchange generator groups
+            - [`pingcli pingfederate oauth token-exchange generator groups apply`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-apply.md) — Create or update a token exchange generator group
+            - [`pingcli pingfederate oauth token-exchange generator groups create`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-create.md) — Create a new token exchange generator group
+            - [`pingcli pingfederate oauth token-exchange generator groups delete`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-delete.md) — Delete a token exchange generator group
+            - [`pingcli pingfederate oauth token-exchange generator groups get`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-get.md) — Read a specific token exchange generator group
+            - [`pingcli pingfederate oauth token-exchange generator groups list`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-list.md) — List all token exchange generator groups
+            - [`pingcli pingfederate oauth token-exchange generator groups replace`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-replace.md) — Update a token exchange generator group
+            - [`pingcli pingfederate oauth token-exchange generator groups template`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-groups-template.md) — Generate a token exchange generator group JSON template
+          - [`pingcli pingfederate oauth token-exchange generator settings`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-settings.md) — PingFederate OAuth 2.0 Token Exchange generator settings
+            - [`pingcli pingfederate oauth token-exchange generator settings apply`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-settings-apply.md) — Update token exchange generator settings
+            - [`pingcli pingfederate oauth token-exchange generator settings get`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-settings-get.md) — Read token exchange generator settings
+            - [`pingcli pingfederate oauth token-exchange generator settings replace`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-settings-replace.md) — Update token exchange generator settings
+            - [`pingcli pingfederate oauth token-exchange generator settings template`](references/cmd-pingcli-pingfederate-oauth-token-exchange-generator-settings-template.md) — Generate a token exchange generator settings JSON template
+        - [`pingcli pingfederate oauth token-exchange processor`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor.md) — Manage PingFederate OAuth Token Exchange processor resources
+          - [`pingcli pingfederate oauth token-exchange processor policies`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies.md) — PingFederate OAuth 2.0 Token Exchange processor policies
+            - [`pingcli pingfederate oauth token-exchange processor policies apply`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-apply.md) — Create or update a token exchange processor policy
+            - [`pingcli pingfederate oauth token-exchange processor policies create`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-create.md) — Create a new token exchange processor policy
+            - [`pingcli pingfederate oauth token-exchange processor policies delete`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-delete.md) — Delete a token exchange processor policy
+            - [`pingcli pingfederate oauth token-exchange processor policies get`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-get.md) — Read a specific token exchange processor policy
+            - [`pingcli pingfederate oauth token-exchange processor policies list`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-list.md) — List all token exchange processor policies
+            - [`pingcli pingfederate oauth token-exchange processor policies replace`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-replace.md) — Update a token exchange processor policy
+            - [`pingcli pingfederate oauth token-exchange processor policies template`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-policies-template.md) — Generate a token exchange processor policy JSON template
+          - [`pingcli pingfederate oauth token-exchange processor settings`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-settings.md) — PingFederate OAuth 2.0 Token Exchange processor settings
+            - [`pingcli pingfederate oauth token-exchange processor settings apply`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-settings-apply.md) — Update token exchange processor settings
+            - [`pingcli pingfederate oauth token-exchange processor settings get`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-settings-get.md) — Read token exchange processor settings
+            - [`pingcli pingfederate oauth token-exchange processor settings replace`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-settings-replace.md) — Update token exchange processor settings
+            - [`pingcli pingfederate oauth token-exchange processor settings template`](references/cmd-pingcli-pingfederate-oauth-token-exchange-processor-settings-template.md) — Generate a token exchange processor settings JSON template
+        - [`pingcli pingfederate oauth token-exchange token-generator-mappings`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings.md) — PingFederate Token Exchange Processor policy to Token Generator Mappings
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings apply`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-apply.md) — Create or update a token generator mapping
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings create`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-create.md) — Create a new token generator mapping
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings delete`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-delete.md) — Delete a token generator mapping
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings get`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-get.md) — Read a specific token generator mapping
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings list`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-list.md) — List all token generator mappings
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings replace`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-replace.md) — Update a token generator mapping
+          - [`pingcli pingfederate oauth token-exchange token-generator-mappings template`](references/cmd-pingcli-pingfederate-oauth-token-exchange-token-generator-mappings-template.md) — Generate a token generator mapping JSON template
+    - [`pingcli pingfederate password-credential-validators`](references/cmd-pingcli-pingfederate-password-credential-validators.md) — PingFederate Password Credential Validators
+      - [`pingcli pingfederate password-credential-validators apply`](references/cmd-pingcli-pingfederate-password-credential-validators-apply.md) — Create or update a password credential validator
+      - [`pingcli pingfederate password-credential-validators create`](references/cmd-pingcli-pingfederate-password-credential-validators-create.md) — Create a new password credential validator
+      - [`pingcli pingfederate password-credential-validators delete`](references/cmd-pingcli-pingfederate-password-credential-validators-delete.md) — Delete a password credential validator
+      - [`pingcli pingfederate password-credential-validators descriptors`](references/cmd-pingcli-pingfederate-password-credential-validators-descriptors.md) — PingFederate Password Credential Validator Descriptors
+        - [`pingcli pingfederate password-credential-validators descriptors get`](references/cmd-pingcli-pingfederate-password-credential-validators-descriptors-get.md) — Read a specific password credential validator descriptor
+        - [`pingcli pingfederate password-credential-validators descriptors list`](references/cmd-pingcli-pingfederate-password-credential-validators-descriptors-list.md) — List all password credential validator descriptors
+      - [`pingcli pingfederate password-credential-validators get`](references/cmd-pingcli-pingfederate-password-credential-validators-get.md) — Read a specific password credential validator
+      - [`pingcli pingfederate password-credential-validators list`](references/cmd-pingcli-pingfederate-password-credential-validators-list.md) — List all password credential validators
+      - [`pingcli pingfederate password-credential-validators replace`](references/cmd-pingcli-pingfederate-password-credential-validators-replace.md) — Update a password credential validator
+      - [`pingcli pingfederate password-credential-validators template`](references/cmd-pingcli-pingfederate-password-credential-validators-template.md) — Generate a password credential validator JSON template
+    - [`pingcli pingfederate ping-one-connections`](references/cmd-pingcli-pingfederate-ping-one-connections.md) — PingFederate PingOne connections
+      - [`pingcli pingfederate ping-one-connections apply`](references/cmd-pingcli-pingfederate-ping-one-connections-apply.md) — Create or update a PingOne connection
+      - [`pingcli pingfederate ping-one-connections create`](references/cmd-pingcli-pingfederate-ping-one-connections-create.md) — Create a new PingOne connection
+      - [`pingcli pingfederate ping-one-connections credential-status`](references/cmd-pingcli-pingfederate-ping-one-connections-credential-status.md) — Read a PingOne connection credential status
+      - [`pingcli pingfederate ping-one-connections delete`](references/cmd-pingcli-pingfederate-ping-one-connections-delete.md) — Delete a PingOne connection
+      - [`pingcli pingfederate ping-one-connections environments`](references/cmd-pingcli-pingfederate-ping-one-connections-environments.md) — List the PingOne environments for a PingOne connection
+      - [`pingcli pingfederate ping-one-connections get`](references/cmd-pingcli-pingfederate-ping-one-connections-get.md) — Read a specific PingOne connection
+      - [`pingcli pingfederate ping-one-connections list`](references/cmd-pingcli-pingfederate-ping-one-connections-list.md) — List all PingOne connections
+      - [`pingcli pingfederate ping-one-connections replace`](references/cmd-pingcli-pingfederate-ping-one-connections-replace.md) — Update a PingOne connection
+      - [`pingcli pingfederate ping-one-connections service-associations`](references/cmd-pingcli-pingfederate-ping-one-connections-service-associations.md) — Read a PingOne connection's service associations
+      - [`pingcli pingfederate ping-one-connections template`](references/cmd-pingcli-pingfederate-ping-one-connections-template.md) — Generate a PingOne connection JSON template
+      - [`pingcli pingfederate ping-one-connections usage`](references/cmd-pingcli-pingfederate-ping-one-connections-usage.md) — Read a PingOne connection's resource usage
+    - [`pingcli pingfederate pingone-for-enterprise`](references/cmd-pingcli-pingfederate-pingone-for-enterprise.md) — Manage the PingFederate connection to PingOne for Enterprise
+      - [`pingcli pingfederate pingone-for-enterprise apply`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-apply.md) — Update PingOne for Enterprise settings
+      - [`pingcli pingfederate pingone-for-enterprise disconnect`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-disconnect.md) — Disconnect PingFederate from PingOne for Enterprise
+      - [`pingcli pingfederate pingone-for-enterprise get`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-get.md) — Read PingOne for Enterprise settings
+      - [`pingcli pingfederate pingone-for-enterprise key-pairs`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-key-pairs.md) — Manage PingOne for Enterprise key pairs
+        - [`pingcli pingfederate pingone-for-enterprise key-pairs get`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-key-pairs-get.md) — Read PingOne for Enterprise key pairs
+        - [`pingcli pingfederate pingone-for-enterprise key-pairs rotate`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-key-pairs-rotate.md) — Rotate PingOne for Enterprise key pairs
+      - [`pingcli pingfederate pingone-for-enterprise replace`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-replace.md) — Update PingOne for Enterprise settings
+      - [`pingcli pingfederate pingone-for-enterprise template`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-template.md) — Generate a PingOne for Enterprise settings JSON template
+      - [`pingcli pingfederate pingone-for-enterprise update-identity-repository`](references/cmd-pingcli-pingfederate-pingone-for-enterprise-update-identity-repository.md) — Update the PingOne for Enterprise identity repository
+    - [`pingcli pingfederate protocol-metadata`](references/cmd-pingcli-pingfederate-protocol-metadata.md) — Manage PingFederate Protocol Metadata resources
+      - [`pingcli pingfederate protocol-metadata attribute-requester-mappings`](references/cmd-pingcli-pingfederate-protocol-metadata-attribute-requester-mappings.md) — PingFederate Protocol Metadata Attribute Requester Mappings
+        - [`pingcli pingfederate protocol-metadata attribute-requester-mappings apply`](references/cmd-pingcli-pingfederate-protocol-metadata-attribute-requester-mappings-apply.md) — Update attribute requester mappings
+        - [`pingcli pingfederate protocol-metadata attribute-requester-mappings get`](references/cmd-pingcli-pingfederate-protocol-metadata-attribute-requester-mappings-get.md) — Read attribute requester mappings
+        - [`pingcli pingfederate protocol-metadata attribute-requester-mappings replace`](references/cmd-pingcli-pingfederate-protocol-metadata-attribute-requester-mappings-replace.md) — Update attribute requester mappings
+        - [`pingcli pingfederate protocol-metadata attribute-requester-mappings template`](references/cmd-pingcli-pingfederate-protocol-metadata-attribute-requester-mappings-template.md) — Generate an attribute requester mappings JSON template
+      - [`pingcli pingfederate protocol-metadata lifetime-settings`](references/cmd-pingcli-pingfederate-protocol-metadata-lifetime-settings.md) — PingFederate Protocol Metadata Lifetime Settings
+        - [`pingcli pingfederate protocol-metadata lifetime-settings apply`](references/cmd-pingcli-pingfederate-protocol-metadata-lifetime-settings-apply.md) — Update lifetime settings
+        - [`pingcli pingfederate protocol-metadata lifetime-settings get`](references/cmd-pingcli-pingfederate-protocol-metadata-lifetime-settings-get.md) — Read lifetime settings
+        - [`pingcli pingfederate protocol-metadata lifetime-settings replace`](references/cmd-pingcli-pingfederate-protocol-metadata-lifetime-settings-replace.md) — Update lifetime settings
+        - [`pingcli pingfederate protocol-metadata lifetime-settings template`](references/cmd-pingcli-pingfederate-protocol-metadata-lifetime-settings-template.md) — Generate a lifetime settings JSON template
+      - [`pingcli pingfederate protocol-metadata signing-settings`](references/cmd-pingcli-pingfederate-protocol-metadata-signing-settings.md) — PingFederate Protocol Metadata Signing Settings
+        - [`pingcli pingfederate protocol-metadata signing-settings apply`](references/cmd-pingcli-pingfederate-protocol-metadata-signing-settings-apply.md) — Update signing settings
+        - [`pingcli pingfederate protocol-metadata signing-settings get`](references/cmd-pingcli-pingfederate-protocol-metadata-signing-settings-get.md) — Read signing settings
+        - [`pingcli pingfederate protocol-metadata signing-settings replace`](references/cmd-pingcli-pingfederate-protocol-metadata-signing-settings-replace.md) — Update signing settings
+        - [`pingcli pingfederate protocol-metadata signing-settings template`](references/cmd-pingcli-pingfederate-protocol-metadata-signing-settings-template.md) — Generate a signing settings JSON template
+    - [`pingcli pingfederate redirect-validation`](references/cmd-pingcli-pingfederate-redirect-validation.md) — PingFederate Redirect Validation Settings
+      - [`pingcli pingfederate redirect-validation apply`](references/cmd-pingcli-pingfederate-redirect-validation-apply.md) — Update redirect validation settings
+      - [`pingcli pingfederate redirect-validation get`](references/cmd-pingcli-pingfederate-redirect-validation-get.md) — Read redirect validation settings
+      - [`pingcli pingfederate redirect-validation replace`](references/cmd-pingcli-pingfederate-redirect-validation-replace.md) — Update redirect validation settings
+      - [`pingcli pingfederate redirect-validation template`](references/cmd-pingcli-pingfederate-redirect-validation-template.md) — Generate a redirect validation settings JSON template
+    - [`pingcli pingfederate secret-managers`](references/cmd-pingcli-pingfederate-secret-managers.md) — PingFederate Secret Managers
+      - [`pingcli pingfederate secret-managers apply`](references/cmd-pingcli-pingfederate-secret-managers-apply.md) — Create or update a secret manager
+      - [`pingcli pingfederate secret-managers create`](references/cmd-pingcli-pingfederate-secret-managers-create.md) — Create a new secret manager
+      - [`pingcli pingfederate secret-managers delete`](references/cmd-pingcli-pingfederate-secret-managers-delete.md) — Delete a secret manager
+      - [`pingcli pingfederate secret-managers descriptors`](references/cmd-pingcli-pingfederate-secret-managers-descriptors.md) — PingFederate Secret Manager Descriptors
+        - [`pingcli pingfederate secret-managers descriptors get`](references/cmd-pingcli-pingfederate-secret-managers-descriptors-get.md) — Read a specific secret manager descriptor
+        - [`pingcli pingfederate secret-managers descriptors list`](references/cmd-pingcli-pingfederate-secret-managers-descriptors-list.md) — List all secret manager descriptors
+      - [`pingcli pingfederate secret-managers get`](references/cmd-pingcli-pingfederate-secret-managers-get.md) — Read a specific secret manager
+      - [`pingcli pingfederate secret-managers get-action`](references/cmd-pingcli-pingfederate-secret-managers-get-action.md) — Get a secret manager action
+      - [`pingcli pingfederate secret-managers invoke-action`](references/cmd-pingcli-pingfederate-secret-managers-invoke-action.md) — Invoke a secret manager action
+      - [`pingcli pingfederate secret-managers list`](references/cmd-pingcli-pingfederate-secret-managers-list.md) — List all secret managers
+      - [`pingcli pingfederate secret-managers list-actions`](references/cmd-pingcli-pingfederate-secret-managers-list-actions.md) — List secret manager actions
+      - [`pingcli pingfederate secret-managers replace`](references/cmd-pingcli-pingfederate-secret-managers-replace.md) — Update a secret manager
+      - [`pingcli pingfederate secret-managers template`](references/cmd-pingcli-pingfederate-secret-managers-template.md) — Generate a secret manager JSON template
+    - [`pingcli pingfederate server-settings`](references/cmd-pingcli-pingfederate-server-settings.md) — PingFederate Server Settings
+      - [`pingcli pingfederate server-settings apply`](references/cmd-pingcli-pingfederate-server-settings-apply.md) — Update server settings
+      - [`pingcli pingfederate server-settings audit-log-settings`](references/cmd-pingcli-pingfederate-server-settings-audit-log-settings.md) — PingFederate Audit Log Settings
+        - [`pingcli pingfederate server-settings audit-log-settings apply`](references/cmd-pingcli-pingfederate-server-settings-audit-log-settings-apply.md) — Update audit log settings
+        - [`pingcli pingfederate server-settings audit-log-settings get`](references/cmd-pingcli-pingfederate-server-settings-audit-log-settings-get.md) — Read audit log settings
+        - [`pingcli pingfederate server-settings audit-log-settings replace`](references/cmd-pingcli-pingfederate-server-settings-audit-log-settings-replace.md) — Update audit log settings
+        - [`pingcli pingfederate server-settings audit-log-settings template`](references/cmd-pingcli-pingfederate-server-settings-audit-log-settings-template.md) — Generate an audit log settings JSON template
+      - [`pingcli pingfederate server-settings federation-info`](references/cmd-pingcli-pingfederate-server-settings-federation-info.md) — PingFederate Federation Info
+        - [`pingcli pingfederate server-settings federation-info apply`](references/cmd-pingcli-pingfederate-server-settings-federation-info-apply.md) — Update federation info
+        - [`pingcli pingfederate server-settings federation-info get`](references/cmd-pingcli-pingfederate-server-settings-federation-info-get.md) — Read federation info
+        - [`pingcli pingfederate server-settings federation-info replace`](references/cmd-pingcli-pingfederate-server-settings-federation-info-replace.md) — Update federation info
+        - [`pingcli pingfederate server-settings federation-info template`](references/cmd-pingcli-pingfederate-server-settings-federation-info-template.md) — Generate a federation info JSON template
+      - [`pingcli pingfederate server-settings general-settings`](references/cmd-pingcli-pingfederate-server-settings-general-settings.md) — PingFederate General Settings
+        - [`pingcli pingfederate server-settings general-settings apply`](references/cmd-pingcli-pingfederate-server-settings-general-settings-apply.md) — Update General Settings
+        - [`pingcli pingfederate server-settings general-settings get`](references/cmd-pingcli-pingfederate-server-settings-general-settings-get.md) — Read General Settings
+        - [`pingcli pingfederate server-settings general-settings replace`](references/cmd-pingcli-pingfederate-server-settings-general-settings-replace.md) — Update General Settings
+        - [`pingcli pingfederate server-settings general-settings template`](references/cmd-pingcli-pingfederate-server-settings-general-settings-template.md) — Generate a PingFederate general settings JSON template
+      - [`pingcli pingfederate server-settings get`](references/cmd-pingcli-pingfederate-server-settings-get.md) — Read server settings
+      - [`pingcli pingfederate server-settings log-settings`](references/cmd-pingcli-pingfederate-server-settings-log-settings.md) — PingFederate Log Settings
+        - [`pingcli pingfederate server-settings log-settings apply`](references/cmd-pingcli-pingfederate-server-settings-log-settings-apply.md) — Update log settings
+        - [`pingcli pingfederate server-settings log-settings get`](references/cmd-pingcli-pingfederate-server-settings-log-settings-get.md) — Read log settings
+        - [`pingcli pingfederate server-settings log-settings replace`](references/cmd-pingcli-pingfederate-server-settings-log-settings-replace.md) — Update log settings
+        - [`pingcli pingfederate server-settings log-settings template`](references/cmd-pingcli-pingfederate-server-settings-log-settings-template.md) — Generate a log settings JSON template
+      - [`pingcli pingfederate server-settings notifications`](references/cmd-pingcli-pingfederate-server-settings-notifications.md) — PingFederate Notification Settings
+        - [`pingcli pingfederate server-settings notifications apply`](references/cmd-pingcli-pingfederate-server-settings-notifications-apply.md) — Update notification settings
+        - [`pingcli pingfederate server-settings notifications get`](references/cmd-pingcli-pingfederate-server-settings-notifications-get.md) — Read notification settings
+        - [`pingcli pingfederate server-settings notifications replace`](references/cmd-pingcli-pingfederate-server-settings-notifications-replace.md) — Update notification settings
+        - [`pingcli pingfederate server-settings notifications template`](references/cmd-pingcli-pingfederate-server-settings-notifications-template.md) — Generate a notification settings JSON template
+      - [`pingcli pingfederate server-settings outbound-provisioning`](references/cmd-pingcli-pingfederate-server-settings-outbound-provisioning.md) — PingFederate Outbound Provisioning
+        - [`pingcli pingfederate server-settings outbound-provisioning apply`](references/cmd-pingcli-pingfederate-server-settings-outbound-provisioning-apply.md) — Update outbound provisioning settings
+        - [`pingcli pingfederate server-settings outbound-provisioning get`](references/cmd-pingcli-pingfederate-server-settings-outbound-provisioning-get.md) — Read outbound provisioning settings
+        - [`pingcli pingfederate server-settings outbound-provisioning replace`](references/cmd-pingcli-pingfederate-server-settings-outbound-provisioning-replace.md) — Update outbound provisioning settings
+        - [`pingcli pingfederate server-settings outbound-provisioning template`](references/cmd-pingcli-pingfederate-server-settings-outbound-provisioning-template.md) — Generate a PingFederate outbound provisioning settings JSON template
+      - [`pingcli pingfederate server-settings replace`](references/cmd-pingcli-pingfederate-server-settings-replace.md) — Update server settings
+      - [`pingcli pingfederate server-settings system-keys`](references/cmd-pingcli-pingfederate-server-settings-system-keys.md) — PingFederate Server Settings System Keys
+        - [`pingcli pingfederate server-settings system-keys apply`](references/cmd-pingcli-pingfederate-server-settings-system-keys-apply.md) — Update system keys
+        - [`pingcli pingfederate server-settings system-keys get`](references/cmd-pingcli-pingfederate-server-settings-system-keys-get.md) — Read system keys
+        - [`pingcli pingfederate server-settings system-keys replace`](references/cmd-pingcli-pingfederate-server-settings-system-keys-replace.md) — Update system keys
+        - [`pingcli pingfederate server-settings system-keys rotate`](references/cmd-pingcli-pingfederate-server-settings-system-keys-rotate.md) — Rotate system keys
+        - [`pingcli pingfederate server-settings system-keys template`](references/cmd-pingcli-pingfederate-server-settings-system-keys-template.md) — Generate a system keys JSON template
+      - [`pingcli pingfederate server-settings template`](references/cmd-pingcli-pingfederate-server-settings-template.md) — Generate a server settings JSON template
+      - [`pingcli pingfederate server-settings ws-trust-sts-settings`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings.md) — PingFederate WS-Trust STS Settings
+        - [`pingcli pingfederate server-settings ws-trust-sts-settings apply`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-apply.md) — Update WS-Trust STS Settings
+        - [`pingcli pingfederate server-settings ws-trust-sts-settings get`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-get.md) — Read WS-Trust STS Settings
+        - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates.md) — PingFederate WS-Trust STS Issuer Certificates
+          - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates create`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates-create.md) — Import a new WS-Trust STS issuer certificate
+          - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates delete`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates-delete.md) — Delete a WS-Trust STS issuer certificate
+          - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates get`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates-get.md) — Read a specific WS-Trust STS issuer certificate
+          - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates list`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates-list.md) — List all WS-Trust STS issuer certificates
+          - [`pingcli pingfederate server-settings ws-trust-sts-settings issuer-certificates template`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-issuer-certificates-template.md) — Generate a WS-Trust STS issuer certificate JSON template
+        - [`pingcli pingfederate server-settings ws-trust-sts-settings replace`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-replace.md) — Update WS-Trust STS Settings
+        - [`pingcli pingfederate server-settings ws-trust-sts-settings template`](references/cmd-pingcli-pingfederate-server-settings-ws-trust-sts-settings-template.md) — Generate a PingFederate WS-Trust STS settings JSON template
+    - [`pingcli pingfederate service-authentication`](references/cmd-pingcli-pingfederate-service-authentication.md) — PingFederate Service Authentication
+      - [`pingcli pingfederate service-authentication apply`](references/cmd-pingcli-pingfederate-service-authentication-apply.md) — Update service authentication
+      - [`pingcli pingfederate service-authentication get`](references/cmd-pingcli-pingfederate-service-authentication-get.md) — Read service authentication
+      - [`pingcli pingfederate service-authentication replace`](references/cmd-pingcli-pingfederate-service-authentication-replace.md) — Update service authentication
+      - [`pingcli pingfederate service-authentication template`](references/cmd-pingcli-pingfederate-service-authentication-template.md) — Generate a service authentication JSON template
+    - [`pingcli pingfederate session`](references/cmd-pingcli-pingfederate-session.md) — Manage PingFederate Session resources
+      - [`pingcli pingfederate session application-session-policy`](references/cmd-pingcli-pingfederate-session-application-session-policy.md) — PingFederate Application Session Policy
+        - [`pingcli pingfederate session application-session-policy apply`](references/cmd-pingcli-pingfederate-session-application-session-policy-apply.md) — Update the application session policy
+        - [`pingcli pingfederate session application-session-policy get`](references/cmd-pingcli-pingfederate-session-application-session-policy-get.md) — Read the application session policy
+        - [`pingcli pingfederate session application-session-policy replace`](references/cmd-pingcli-pingfederate-session-application-session-policy-replace.md) — Update the application session policy
+        - [`pingcli pingfederate session application-session-policy template`](references/cmd-pingcli-pingfederate-session-application-session-policy-template.md) — Generate an application session policy JSON template
+      - [`pingcli pingfederate session authentication-session-policies`](references/cmd-pingcli-pingfederate-session-authentication-session-policies.md) — PingFederate authentication session policies
+        - [`pingcli pingfederate session authentication-session-policies apply`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-apply.md) — Create or update an authentication session policy
+        - [`pingcli pingfederate session authentication-session-policies create`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-create.md) — Create an authentication session policy
+        - [`pingcli pingfederate session authentication-session-policies delete`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-delete.md) — Delete an authentication session policy
+        - [`pingcli pingfederate session authentication-session-policies get`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-get.md) — Read an authentication session policy
+        - [`pingcli pingfederate session authentication-session-policies global`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-global.md) — PingFederate global authentication session policy
+          - [`pingcli pingfederate session authentication-session-policies global apply`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-global-apply.md) — Apply the global authentication session policy
+          - [`pingcli pingfederate session authentication-session-policies global get`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-global-get.md) — Read the global authentication session policy
+          - [`pingcli pingfederate session authentication-session-policies global replace`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-global-replace.md) — Replace the global authentication session policy
+          - [`pingcli pingfederate session authentication-session-policies global template`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-global-template.md) — Generate a global authentication session policy JSON template
+        - [`pingcli pingfederate session authentication-session-policies list`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-list.md) — List authentication session policies
+        - [`pingcli pingfederate session authentication-session-policies replace`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-replace.md) — Replace an authentication session policy
+        - [`pingcli pingfederate session authentication-session-policies template`](references/cmd-pingcli-pingfederate-session-authentication-session-policies-template.md) — Generate an authentication session policy JSON template
+      - [`pingcli pingfederate session quotas`](references/cmd-pingcli-pingfederate-session-quotas.md) — PingFederate Session Quotas
+        - [`pingcli pingfederate session quotas apply`](references/cmd-pingcli-pingfederate-session-quotas-apply.md) — Update session quotas
+        - [`pingcli pingfederate session quotas get`](references/cmd-pingcli-pingfederate-session-quotas-get.md) — Read session quotas
+        - [`pingcli pingfederate session quotas replace`](references/cmd-pingcli-pingfederate-session-quotas-replace.md) — Update session quotas
+        - [`pingcli pingfederate session quotas template`](references/cmd-pingcli-pingfederate-session-quotas-template.md) — Generate a session quotas JSON template
+      - [`pingcli pingfederate session settings`](references/cmd-pingcli-pingfederate-session-settings.md) — PingFederate Session Settings
+        - [`pingcli pingfederate session settings apply`](references/cmd-pingcli-pingfederate-session-settings-apply.md) — Update session settings
+        - [`pingcli pingfederate session settings get`](references/cmd-pingcli-pingfederate-session-settings-get.md) — Read session settings
+        - [`pingcli pingfederate session settings replace`](references/cmd-pingcli-pingfederate-session-settings-replace.md) — Update session settings
+        - [`pingcli pingfederate session settings template`](references/cmd-pingcli-pingfederate-session-settings-template.md) — Generate a session settings JSON template
+    - [`pingcli pingfederate sp`](references/cmd-pingcli-pingfederate-sp.md) — Manage PingFederate SP resources
+      - [`pingcli pingfederate sp adapters`](references/cmd-pingcli-pingfederate-sp-adapters.md) — PingFederate SP adapters
+        - [`pingcli pingfederate sp adapters apply`](references/cmd-pingcli-pingfederate-sp-adapters-apply.md) — Create or update an SP adapter
+        - [`pingcli pingfederate sp adapters create`](references/cmd-pingcli-pingfederate-sp-adapters-create.md) — Create a new SP adapter
+        - [`pingcli pingfederate sp adapters delete`](references/cmd-pingcli-pingfederate-sp-adapters-delete.md) — Delete an SP adapter
+        - [`pingcli pingfederate sp adapters descriptors`](references/cmd-pingcli-pingfederate-sp-adapters-descriptors.md) — PingFederate SP Adapter Descriptors
+          - [`pingcli pingfederate sp adapters descriptors get`](references/cmd-pingcli-pingfederate-sp-adapters-descriptors-get.md) — Read a specific SP adapter descriptor
+          - [`pingcli pingfederate sp adapters descriptors list`](references/cmd-pingcli-pingfederate-sp-adapters-descriptors-list.md) — List all SP adapter descriptors
+        - [`pingcli pingfederate sp adapters get`](references/cmd-pingcli-pingfederate-sp-adapters-get.md) — Read a specific SP adapter
+        - [`pingcli pingfederate sp adapters get-action`](references/cmd-pingcli-pingfederate-sp-adapters-get-action.md) — Get an SP adapter action
+        - [`pingcli pingfederate sp adapters invoke-action`](references/cmd-pingcli-pingfederate-sp-adapters-invoke-action.md) — Invoke an SP adapter action
+        - [`pingcli pingfederate sp adapters list`](references/cmd-pingcli-pingfederate-sp-adapters-list.md) — List all SP adapters
+        - [`pingcli pingfederate sp adapters list-actions`](references/cmd-pingcli-pingfederate-sp-adapters-list-actions.md) — List SP adapter actions
+        - [`pingcli pingfederate sp adapters replace`](references/cmd-pingcli-pingfederate-sp-adapters-replace.md) — Update an SP adapter
+        - [`pingcli pingfederate sp adapters template`](references/cmd-pingcli-pingfederate-sp-adapters-template.md) — Generate an SP adapter JSON template
+      - [`pingcli pingfederate sp authentication-policy-contract-mappings`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings.md) — PingFederate Authentication Policy Contract Mappings
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings apply`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-apply.md) — Create or update an authentication policy contract mapping
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings create`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-create.md) — Create a new authentication policy contract mapping
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings delete`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-delete.md) — Delete an authentication policy contract mapping
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings get`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-get.md) — Read a specific authentication policy contract mapping
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings list`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-list.md) — List all authentication policy contract mappings
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings replace`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-replace.md) — Update an authentication policy contract mapping
+        - [`pingcli pingfederate sp authentication-policy-contract-mappings template`](references/cmd-pingcli-pingfederate-sp-authentication-policy-contract-mappings-template.md) — Generate an authentication policy contract mapping JSON template
+      - [`pingcli pingfederate sp default-urls`](references/cmd-pingcli-pingfederate-sp-default-urls.md) — PingFederate SP Default URLs
+        - [`pingcli pingfederate sp default-urls apply`](references/cmd-pingcli-pingfederate-sp-default-urls-apply.md) — Update SP default URLs
+        - [`pingcli pingfederate sp default-urls get`](references/cmd-pingcli-pingfederate-sp-default-urls-get.md) — Read SP default URLs
+        - [`pingcli pingfederate sp default-urls replace`](references/cmd-pingcli-pingfederate-sp-default-urls-replace.md) — Update SP default URLs
+        - [`pingcli pingfederate sp default-urls template`](references/cmd-pingcli-pingfederate-sp-default-urls-template.md) — Generate an SP default URLs JSON template
+      - [`pingcli pingfederate sp idp-connections`](references/cmd-pingcli-pingfederate-sp-idp-connections.md) — PingFederate SP IdP Connections
+        - [`pingcli pingfederate sp idp-connections apply`](references/cmd-pingcli-pingfederate-sp-idp-connections-apply.md) — Create or update an IdP connection
+        - [`pingcli pingfederate sp idp-connections certs`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs.md) — PingFederate SP IdP connection certificates
+          - [`pingcli pingfederate sp idp-connections certs add`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs-add.md) — Add a certificate to an IdP connection
+          - [`pingcli pingfederate sp idp-connections certs apply`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs-apply.md) — Replace IdP connection certificates
+          - [`pingcli pingfederate sp idp-connections certs get`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs-get.md) — Read IdP connection certificates
+          - [`pingcli pingfederate sp idp-connections certs replace`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs-replace.md) — Replace IdP connection certificates
+          - [`pingcli pingfederate sp idp-connections certs template`](references/cmd-pingcli-pingfederate-sp-idp-connections-certs-template.md) — Generate an IdP connection certs JSON template
+        - [`pingcli pingfederate sp idp-connections create`](references/cmd-pingcli-pingfederate-sp-idp-connections-create.md) — Create a new IdP connection
+        - [`pingcli pingfederate sp idp-connections decryption-keys`](references/cmd-pingcli-pingfederate-sp-idp-connections-decryption-keys.md) — PingFederate SP IdP connection decryption keys
+          - [`pingcli pingfederate sp idp-connections decryption-keys apply`](references/cmd-pingcli-pingfederate-sp-idp-connections-decryption-keys-apply.md) — Update IdP connection decryption keys
+          - [`pingcli pingfederate sp idp-connections decryption-keys get`](references/cmd-pingcli-pingfederate-sp-idp-connections-decryption-keys-get.md) — Read IdP connection decryption keys
+          - [`pingcli pingfederate sp idp-connections decryption-keys replace`](references/cmd-pingcli-pingfederate-sp-idp-connections-decryption-keys-replace.md) — Update IdP connection decryption keys
+          - [`pingcli pingfederate sp idp-connections decryption-keys template`](references/cmd-pingcli-pingfederate-sp-idp-connections-decryption-keys-template.md) — Generate an IdP connection decryption keys JSON template
+        - [`pingcli pingfederate sp idp-connections delete`](references/cmd-pingcli-pingfederate-sp-idp-connections-delete.md) — Delete an IdP connection
+        - [`pingcli pingfederate sp idp-connections get`](references/cmd-pingcli-pingfederate-sp-idp-connections-get.md) — Read a specific IdP connection
+        - [`pingcli pingfederate sp idp-connections list`](references/cmd-pingcli-pingfederate-sp-idp-connections-list.md) — List all IdP connections
+        - [`pingcli pingfederate sp idp-connections replace`](references/cmd-pingcli-pingfederate-sp-idp-connections-replace.md) — Update an IdP connection
+        - [`pingcli pingfederate sp idp-connections signing-settings`](references/cmd-pingcli-pingfederate-sp-idp-connections-signing-settings.md) — PingFederate SP IdP connection signing settings
+          - [`pingcli pingfederate sp idp-connections signing-settings apply`](references/cmd-pingcli-pingfederate-sp-idp-connections-signing-settings-apply.md) — Update IdP connection signing settings
+          - [`pingcli pingfederate sp idp-connections signing-settings get`](references/cmd-pingcli-pingfederate-sp-idp-connections-signing-settings-get.md) — Read IdP connection signing settings
+          - [`pingcli pingfederate sp idp-connections signing-settings replace`](references/cmd-pingcli-pingfederate-sp-idp-connections-signing-settings-replace.md) — Update IdP connection signing settings
+          - [`pingcli pingfederate sp idp-connections signing-settings template`](references/cmd-pingcli-pingfederate-sp-idp-connections-signing-settings-template.md) — Generate an IdP connection signing settings JSON template
+        - [`pingcli pingfederate sp idp-connections template`](references/cmd-pingcli-pingfederate-sp-idp-connections-template.md) — Generate an IdP connection JSON template
+      - [`pingcli pingfederate sp target-url-mappings`](references/cmd-pingcli-pingfederate-sp-target-url-mappings.md) — PingFederate SP Target URL Mappings
+        - [`pingcli pingfederate sp target-url-mappings apply`](references/cmd-pingcli-pingfederate-sp-target-url-mappings-apply.md) — Update SP target URL mappings
+        - [`pingcli pingfederate sp target-url-mappings get`](references/cmd-pingcli-pingfederate-sp-target-url-mappings-get.md) — Read SP target URL mappings
+        - [`pingcli pingfederate sp target-url-mappings replace`](references/cmd-pingcli-pingfederate-sp-target-url-mappings-replace.md) — Update SP target URL mappings
+        - [`pingcli pingfederate sp target-url-mappings template`](references/cmd-pingcli-pingfederate-sp-target-url-mappings-template.md) — Generate an SP target URL mappings JSON template
+      - [`pingcli pingfederate sp token-generators`](references/cmd-pingcli-pingfederate-sp-token-generators.md) — PingFederate SP Token Generators
+        - [`pingcli pingfederate sp token-generators apply`](references/cmd-pingcli-pingfederate-sp-token-generators-apply.md) — Create or update a SP token generator
+        - [`pingcli pingfederate sp token-generators create`](references/cmd-pingcli-pingfederate-sp-token-generators-create.md) — Create a new SP token generator
+        - [`pingcli pingfederate sp token-generators delete`](references/cmd-pingcli-pingfederate-sp-token-generators-delete.md) — Delete a SP token generator
+        - [`pingcli pingfederate sp token-generators descriptors`](references/cmd-pingcli-pingfederate-sp-token-generators-descriptors.md) — PingFederate Token Generator Descriptors
+          - [`pingcli pingfederate sp token-generators descriptors get`](references/cmd-pingcli-pingfederate-sp-token-generators-descriptors-get.md) — Read a specific token generator descriptor
+          - [`pingcli pingfederate sp token-generators descriptors list`](references/cmd-pingcli-pingfederate-sp-token-generators-descriptors-list.md) — List all token generator descriptors
+        - [`pingcli pingfederate sp token-generators get`](references/cmd-pingcli-pingfederate-sp-token-generators-get.md) — Read a specific SP token generator
+        - [`pingcli pingfederate sp token-generators list`](references/cmd-pingcli-pingfederate-sp-token-generators-list.md) — List all SP token generators
+        - [`pingcli pingfederate sp token-generators replace`](references/cmd-pingcli-pingfederate-sp-token-generators-replace.md) — Update a SP token generator
+        - [`pingcli pingfederate sp token-generators template`](references/cmd-pingcli-pingfederate-sp-token-generators-template.md) — Generate a SP token generator JSON template
+    - [`pingcli pingfederate token-processor-to-token-generator-mappings`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings.md) — PingFederate Token Processor to Token Generator Mappings
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings apply`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-apply.md) — Create or update a token processor to token generator mapping
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings create`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-create.md) — Create a new token processor to token generator mapping
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings delete`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-delete.md) — Delete a token processor to token generator mapping
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings get`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-get.md) — Read a specific token processor to token generator mapping
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings list`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-list.md) — List all token processor to token generator mappings
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings replace`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-replace.md) — Update a token processor to token generator mapping
+      - [`pingcli pingfederate token-processor-to-token-generator-mappings template`](references/cmd-pingcli-pingfederate-token-processor-to-token-generator-mappings-template.md) — Generate a token processor to token generator mapping JSON template
+    - [`pingcli pingfederate version`](references/cmd-pingcli-pingfederate-version.md) — PingFederate Version
+      - [`pingcli pingfederate version get`](references/cmd-pingcli-pingfederate-version-get.md) — Read PingFederate version
+    - [`pingcli pingfederate virtual-host-names`](references/cmd-pingcli-pingfederate-virtual-host-names.md) — PingFederate Virtual Host Names
+      - [`pingcli pingfederate virtual-host-names apply`](references/cmd-pingcli-pingfederate-virtual-host-names-apply.md) — Update virtual host names settings
+      - [`pingcli pingfederate virtual-host-names get`](references/cmd-pingcli-pingfederate-virtual-host-names-get.md) — Read virtual host names settings
+      - [`pingcli pingfederate virtual-host-names replace`](references/cmd-pingcli-pingfederate-virtual-host-names-replace.md) — Update virtual host names settings
+      - [`pingcli pingfederate virtual-host-names template`](references/cmd-pingcli-pingfederate-virtual-host-names-template.md) — Generate a virtual host names settings JSON template
+  - [`pingcli pingone`](references/cmd-pingcli-pingone.md) — Administration tools for the PingOne platform.
+    - [`pingcli pingone active-identity-counts`](references/cmd-pingcli-pingone-active-identity-counts.md) — Active identity counts
+      - [`pingcli pingone active-identity-counts list`](references/cmd-pingcli-pingone-active-identity-counts-list.md) — List active identity counts
+    - [`pingcli pingone admin-config`](references/cmd-pingcli-pingone-admin-config.md) — Administrator Security
+      - [`pingcli pingone admin-config apply`](references/cmd-pingcli-pingone-admin-config-apply.md) — Update administrator security
+      - [`pingcli pingone admin-config get`](references/cmd-pingcli-pingone-admin-config-get.md) — Read administrator security
+      - [`pingcli pingone admin-config replace`](references/cmd-pingcli-pingone-admin-config-replace.md) — Update administrator security
+      - [`pingcli pingone admin-config template`](references/cmd-pingcli-pingone-admin-config-template.md) — Generate an administrator security JSON template
+    - [`pingcli pingone agreements`](references/cmd-pingcli-pingone-agreements.md) — Agreements
+      - [`pingcli pingone agreements apply`](references/cmd-pingcli-pingone-agreements-apply.md) — Create or update an agreement
+      - [`pingcli pingone agreements create`](references/cmd-pingcli-pingone-agreements-create.md) — Create a new agreement
+      - [`pingcli pingone agreements delete`](references/cmd-pingcli-pingone-agreements-delete.md) — Delete an agreement
+      - [`pingcli pingone agreements get`](references/cmd-pingcli-pingone-agreements-get.md) — Read a specific agreement
+      - [`pingcli pingone agreements languages`](references/cmd-pingcli-pingone-agreements-languages.md) — Agreement Languages
+        - [`pingcli pingone agreements languages apply`](references/cmd-pingcli-pingone-agreements-languages-apply.md) — Create or update an agreement language
+        - [`pingcli pingone agreements languages create`](references/cmd-pingcli-pingone-agreements-languages-create.md) — Create a new agreement language
+        - [`pingcli pingone agreements languages delete`](references/cmd-pingcli-pingone-agreements-languages-delete.md) — Delete an agreement language
+        - [`pingcli pingone agreements languages get`](references/cmd-pingcli-pingone-agreements-languages-get.md) — Read a specific agreement language
+        - [`pingcli pingone agreements languages list`](references/cmd-pingcli-pingone-agreements-languages-list.md) — List all agreement languages
+        - [`pingcli pingone agreements languages replace`](references/cmd-pingcli-pingone-agreements-languages-replace.md) — Update an agreement language
+        - [`pingcli pingone agreements languages template`](references/cmd-pingcli-pingone-agreements-languages-template.md) — Generate an agreement language JSON template
+      - [`pingcli pingone agreements list`](references/cmd-pingcli-pingone-agreements-list.md) — List all agreements
+      - [`pingcli pingone agreements replace`](references/cmd-pingcli-pingone-agreements-replace.md) — Update an agreement
+      - [`pingcli pingone agreements template`](references/cmd-pingcli-pingone-agreements-template.md) — Generate an agreement JSON template
+    - [`pingcli pingone alert-channels`](references/cmd-pingcli-pingone-alert-channels.md) — Alert Channels
+      - [`pingcli pingone alert-channels apply`](references/cmd-pingcli-pingone-alert-channels-apply.md) — Create or update an alert channel
+      - [`pingcli pingone alert-channels create`](references/cmd-pingcli-pingone-alert-channels-create.md) — Create a new alert channel
+      - [`pingcli pingone alert-channels delete`](references/cmd-pingcli-pingone-alert-channels-delete.md) — Delete an alert channel
+      - [`pingcli pingone alert-channels list`](references/cmd-pingcli-pingone-alert-channels-list.md) — List all alert channels
+      - [`pingcli pingone alert-channels replace`](references/cmd-pingcli-pingone-alert-channels-replace.md) — Update an alert channel
+      - [`pingcli pingone alert-channels template`](references/cmd-pingcli-pingone-alert-channels-template.md) — Generate an alert channel JSON template
+    - [`pingcli pingone api`](references/cmd-pingcli-pingone-api.md) — Send a custom REST API request to the management API of PingOne.
+    - [`pingcli pingone applications`](references/cmd-pingcli-pingone-applications.md) — Applications
+      - [`pingcli pingone applications apply`](references/cmd-pingcli-pingone-applications-apply.md) — Create or update an application
+      - [`pingcli pingone applications attribute-mappings`](references/cmd-pingcli-pingone-applications-attribute-mappings.md) — Application Attribute Mappings
+        - [`pingcli pingone applications attribute-mappings apply`](references/cmd-pingcli-pingone-applications-attribute-mappings-apply.md) — Create or update an application attribute mapping
+        - [`pingcli pingone applications attribute-mappings create`](references/cmd-pingcli-pingone-applications-attribute-mappings-create.md) — Create a new application attribute mapping
+        - [`pingcli pingone applications attribute-mappings delete`](references/cmd-pingcli-pingone-applications-attribute-mappings-delete.md) — Delete an application attribute mapping
+        - [`pingcli pingone applications attribute-mappings get`](references/cmd-pingcli-pingone-applications-attribute-mappings-get.md) — Read a specific application attribute mapping
+        - [`pingcli pingone applications attribute-mappings list`](references/cmd-pingcli-pingone-applications-attribute-mappings-list.md) — List all application attribute mappings
+        - [`pingcli pingone applications attribute-mappings replace`](references/cmd-pingcli-pingone-applications-attribute-mappings-replace.md) — Replace an application attribute mapping
+        - [`pingcli pingone applications attribute-mappings template`](references/cmd-pingcli-pingone-applications-attribute-mappings-template.md) — Generate an application attribute mapping JSON template
+      - [`pingcli pingone applications create`](references/cmd-pingcli-pingone-applications-create.md) — Create a new application
+      - [`pingcli pingone applications delete`](references/cmd-pingcli-pingone-applications-delete.md) — Delete an application
+      - [`pingcli pingone applications flow-policy-assignments`](references/cmd-pingcli-pingone-applications-flow-policy-assignments.md) — Flow Policy Assignments
+        - [`pingcli pingone applications flow-policy-assignments create`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-create.md) — Create a new flow policy assignment
+        - [`pingcli pingone applications flow-policy-assignments delete`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-delete.md) — Delete a flow policy assignment
+        - [`pingcli pingone applications flow-policy-assignments get`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-get.md) — Read a specific flow policy assignment
+        - [`pingcli pingone applications flow-policy-assignments list`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-list.md) — List all flow policy assignments
+        - [`pingcli pingone applications flow-policy-assignments replace`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-replace.md) — Update a flow policy assignment
+        - [`pingcli pingone applications flow-policy-assignments template`](references/cmd-pingcli-pingone-applications-flow-policy-assignments-template.md) — Generate a flow policy assignment JSON template
+      - [`pingcli pingone applications get`](references/cmd-pingcli-pingone-applications-get.md) — Read a specific application
+      - [`pingcli pingone applications grants`](references/cmd-pingcli-pingone-applications-grants.md) — Application Grants
+        - [`pingcli pingone applications grants create`](references/cmd-pingcli-pingone-applications-grants-create.md) — Create a new application grant
+        - [`pingcli pingone applications grants delete`](references/cmd-pingcli-pingone-applications-grants-delete.md) — Delete an application grant
+        - [`pingcli pingone applications grants get`](references/cmd-pingcli-pingone-applications-grants-get.md) — Read a specific application grant
+        - [`pingcli pingone applications grants list`](references/cmd-pingcli-pingone-applications-grants-list.md) — List all application grants
+        - [`pingcli pingone applications grants replace`](references/cmd-pingcli-pingone-applications-grants-replace.md) — Update an application grant
+        - [`pingcli pingone applications grants template`](references/cmd-pingcli-pingone-applications-grants-template.md) — Generate an application grant JSON template
+      - [`pingcli pingone applications list`](references/cmd-pingcli-pingone-applications-list.md) — List all applications
+      - [`pingcli pingone applications replace`](references/cmd-pingcli-pingone-applications-replace.md) — Replace an application
+      - [`pingcli pingone applications role-assignments`](references/cmd-pingcli-pingone-applications-role-assignments.md) — Application Role Assignments
+        - [`pingcli pingone applications role-assignments create`](references/cmd-pingcli-pingone-applications-role-assignments-create.md) — Create a new application role assignment
+        - [`pingcli pingone applications role-assignments delete`](references/cmd-pingcli-pingone-applications-role-assignments-delete.md) — Delete an application role assignment
+        - [`pingcli pingone applications role-assignments get`](references/cmd-pingcli-pingone-applications-role-assignments-get.md) — Read a specific application role assignment
+        - [`pingcli pingone applications role-assignments list`](references/cmd-pingcli-pingone-applications-role-assignments-list.md) — List all application role assignments
+        - [`pingcli pingone applications role-assignments template`](references/cmd-pingcli-pingone-applications-role-assignments-template.md) — Generate an application role assignment JSON template
+      - [`pingcli pingone applications secrets`](references/cmd-pingcli-pingone-applications-secrets.md) — Application Secrets
+        - [`pingcli pingone applications secrets delete-previous`](references/cmd-pingcli-pingone-applications-secrets-delete-previous.md) — Delete the previous application secret
+        - [`pingcli pingone applications secrets get`](references/cmd-pingcli-pingone-applications-secrets-get.md) — Read an application secret
+        - [`pingcli pingone applications secrets rotate`](references/cmd-pingcli-pingone-applications-secrets-rotate.md) — Rotate an application secret
+        - [`pingcli pingone applications secrets template`](references/cmd-pingcli-pingone-applications-secrets-template.md) — Generate an application secret rotate template
+      - [`pingcli pingone applications sop-assignments`](references/cmd-pingcli-pingone-applications-sop-assignments.md) — Sign-On Policy Assignments
+        - [`pingcli pingone applications sop-assignments create`](references/cmd-pingcli-pingone-applications-sop-assignments-create.md) — Create a new sign-on policy assignment
+        - [`pingcli pingone applications sop-assignments delete`](references/cmd-pingcli-pingone-applications-sop-assignments-delete.md) — Delete a sign-on policy assignment
+        - [`pingcli pingone applications sop-assignments get`](references/cmd-pingcli-pingone-applications-sop-assignments-get.md) — Read a specific sign-on policy assignment
+        - [`pingcli pingone applications sop-assignments list`](references/cmd-pingcli-pingone-applications-sop-assignments-list.md) — List all sign-on policy assignments
+        - [`pingcli pingone applications sop-assignments replace`](references/cmd-pingcli-pingone-applications-sop-assignments-replace.md) — Update a sign-on policy assignment
+        - [`pingcli pingone applications sop-assignments template`](references/cmd-pingcli-pingone-applications-sop-assignments-template.md) — Generate a sign-on policy assignment JSON template
+      - [`pingcli pingone applications template`](references/cmd-pingcli-pingone-applications-template.md) — Generate an application JSON template
+    - [`pingcli pingone auth`](references/cmd-pingcli-pingone-auth.md) — Authenticate Ping CLI to the PingOne management APIs.
+      - [`pingcli pingone auth login`](references/cmd-pingcli-pingone-auth-login.md) — Log in to allow Ping CLI to administer PingOne
+      - [`pingcli pingone auth logout`](references/cmd-pingcli-pingone-auth-logout.md) — Log out from PingOne
+      - [`pingcli pingone auth refresh`](references/cmd-pingcli-pingone-auth-refresh.md) — Refresh the current authenticated session.
+      - [`pingcli pingone auth status`](references/cmd-pingcli-pingone-auth-status.md) — Print details of the current authenticated session.
+      - [`pingcli pingone auth token`](references/cmd-pingcli-pingone-auth-token.md) — Print the active token for the current authenticated session.
+    - [`pingcli pingone authorize`](references/cmd-pingcli-pingone-authorize.md) — Administration tools for the PingOne Authorize universal service.
+      - [`pingcli pingone authorize api-servers`](references/cmd-pingcli-pingone-authorize-api-servers.md) — API Servers
+        - [`pingcli pingone authorize api-servers apply`](references/cmd-pingcli-pingone-authorize-api-servers-apply.md) — Create or update an API server
+        - [`pingcli pingone authorize api-servers create`](references/cmd-pingcli-pingone-authorize-api-servers-create.md) — Create a new API server
+        - [`pingcli pingone authorize api-servers delete`](references/cmd-pingcli-pingone-authorize-api-servers-delete.md) — Delete an API server
+        - [`pingcli pingone authorize api-servers get`](references/cmd-pingcli-pingone-authorize-api-servers-get.md) — Read a specific API server
+        - [`pingcli pingone authorize api-servers list`](references/cmd-pingcli-pingone-authorize-api-servers-list.md) — List all API servers
+        - [`pingcli pingone authorize api-servers operations`](references/cmd-pingcli-pingone-authorize-api-servers-operations.md) — API Server Operations
+          - [`pingcli pingone authorize api-servers operations apply`](references/cmd-pingcli-pingone-authorize-api-servers-operations-apply.md) — Create or update an API server operation
+          - [`pingcli pingone authorize api-servers operations create`](references/cmd-pingcli-pingone-authorize-api-servers-operations-create.md) — Create a new API server operation
+          - [`pingcli pingone authorize api-servers operations delete`](references/cmd-pingcli-pingone-authorize-api-servers-operations-delete.md) — Delete an API server operation
+          - [`pingcli pingone authorize api-servers operations get`](references/cmd-pingcli-pingone-authorize-api-servers-operations-get.md) — Read a specific API server operation
+          - [`pingcli pingone authorize api-servers operations list`](references/cmd-pingcli-pingone-authorize-api-servers-operations-list.md) — List all API server operations
+          - [`pingcli pingone authorize api-servers operations replace`](references/cmd-pingcli-pingone-authorize-api-servers-operations-replace.md) — Update an API server operation
+          - [`pingcli pingone authorize api-servers operations template`](references/cmd-pingcli-pingone-authorize-api-servers-operations-template.md) — Generate an API server operation JSON template
+        - [`pingcli pingone authorize api-servers replace`](references/cmd-pingcli-pingone-authorize-api-servers-replace.md) — Update an API server
+        - [`pingcli pingone authorize api-servers template`](references/cmd-pingcli-pingone-authorize-api-servers-template.md) — Generate an API server JSON template
+      - [`pingcli pingone authorize application-resources`](references/cmd-pingcli-pingone-authorize-application-resources.md) — Application Resources
+        - [`pingcli pingone authorize application-resources get`](references/cmd-pingcli-pingone-authorize-application-resources-get.md) — Read a specific application resource
+        - [`pingcli pingone authorize application-resources list`](references/cmd-pingcli-pingone-authorize-application-resources-list.md) — List all application resources
+      - [`pingcli pingone authorize application-roles`](references/cmd-pingcli-pingone-authorize-application-roles.md) — Application Roles
+        - [`pingcli pingone authorize application-roles apply`](references/cmd-pingcli-pingone-authorize-application-roles-apply.md) — Create or update an application role
+        - [`pingcli pingone authorize application-roles assignments`](references/cmd-pingcli-pingone-authorize-application-roles-assignments.md) — Application Role Assignments
+          - [`pingcli pingone authorize application-roles assignments list`](references/cmd-pingcli-pingone-authorize-application-roles-assignments-list.md) — List all application role assignments
+        - [`pingcli pingone authorize application-roles create`](references/cmd-pingcli-pingone-authorize-application-roles-create.md) — Create a new application role
+        - [`pingcli pingone authorize application-roles delete`](references/cmd-pingcli-pingone-authorize-application-roles-delete.md) — Delete an application role
+        - [`pingcli pingone authorize application-roles get`](references/cmd-pingcli-pingone-authorize-application-roles-get.md) — Read a specific application role
+        - [`pingcli pingone authorize application-roles list`](references/cmd-pingcli-pingone-authorize-application-roles-list.md) — List all application roles
+        - [`pingcli pingone authorize application-roles permissions`](references/cmd-pingcli-pingone-authorize-application-roles-permissions.md) — Application Role Permissions
+          - [`pingcli pingone authorize application-roles permissions create`](references/cmd-pingcli-pingone-authorize-application-roles-permissions-create.md) — Create a new application role permission
+          - [`pingcli pingone authorize application-roles permissions delete`](references/cmd-pingcli-pingone-authorize-application-roles-permissions-delete.md) — Delete an application role permission
+          - [`pingcli pingone authorize application-roles permissions get`](references/cmd-pingcli-pingone-authorize-application-roles-permissions-get.md) — Read a specific application role permission
+          - [`pingcli pingone authorize application-roles permissions list`](references/cmd-pingcli-pingone-authorize-application-roles-permissions-list.md) — List all application role permissions
+          - [`pingcli pingone authorize application-roles permissions template`](references/cmd-pingcli-pingone-authorize-application-roles-permissions-template.md) — Generate an application role permission JSON template
+        - [`pingcli pingone authorize application-roles replace`](references/cmd-pingcli-pingone-authorize-application-roles-replace.md) — Update an application role
+        - [`pingcli pingone authorize application-roles template`](references/cmd-pingcli-pingone-authorize-application-roles-template.md) — Generate an application role JSON template
+      - [`pingcli pingone authorize decision-endpoints`](references/cmd-pingcli-pingone-authorize-decision-endpoints.md) — Decision Endpoints
+        - [`pingcli pingone authorize decision-endpoints apply`](references/cmd-pingcli-pingone-authorize-decision-endpoints-apply.md) — Create or update a decision endpoint
+        - [`pingcli pingone authorize decision-endpoints create`](references/cmd-pingcli-pingone-authorize-decision-endpoints-create.md) — Create a new decision endpoint
+        - [`pingcli pingone authorize decision-endpoints delete`](references/cmd-pingcli-pingone-authorize-decision-endpoints-delete.md) — Delete a decision endpoint
+        - [`pingcli pingone authorize decision-endpoints get`](references/cmd-pingcli-pingone-authorize-decision-endpoints-get.md) — Read a specific decision endpoint
+        - [`pingcli pingone authorize decision-endpoints list`](references/cmd-pingcli-pingone-authorize-decision-endpoints-list.md) — List all decision endpoints
+        - [`pingcli pingone authorize decision-endpoints replace`](references/cmd-pingcli-pingone-authorize-decision-endpoints-replace.md) — Update a decision endpoint
+        - [`pingcli pingone authorize decision-endpoints template`](references/cmd-pingcli-pingone-authorize-decision-endpoints-template.md) — Generate a decision endpoint JSON template
+      - [`pingcli pingone authorize permissions`](references/cmd-pingcli-pingone-authorize-permissions.md) — Application Resource Permissions
+        - [`pingcli pingone authorize permissions apply`](references/cmd-pingcli-pingone-authorize-permissions-apply.md) — Create or update an application resource permission
+        - [`pingcli pingone authorize permissions create`](references/cmd-pingcli-pingone-authorize-permissions-create.md) — Create a new application resource permission
+        - [`pingcli pingone authorize permissions delete`](references/cmd-pingcli-pingone-authorize-permissions-delete.md) — Delete an application resource permission
+        - [`pingcli pingone authorize permissions get`](references/cmd-pingcli-pingone-authorize-permissions-get.md) — Read a specific application resource permission
+        - [`pingcli pingone authorize permissions list`](references/cmd-pingcli-pingone-authorize-permissions-list.md) — List all application resource permissions
+        - [`pingcli pingone authorize permissions replace`](references/cmd-pingcli-pingone-authorize-permissions-replace.md) — Update an application resource permission
+        - [`pingcli pingone authorize permissions template`](references/cmd-pingcli-pingone-authorize-permissions-template.md) — Generate an application resource permission JSON template
+    - [`pingcli pingone bill-of-materials`](references/cmd-pingcli-pingone-bill-of-materials.md) — Bill of Materials
+      - [`pingcli pingone bill-of-materials apply`](references/cmd-pingcli-pingone-bill-of-materials-apply.md) — Update bill of materials
+      - [`pingcli pingone bill-of-materials get`](references/cmd-pingcli-pingone-bill-of-materials-get.md) — Read bill of materials
+      - [`pingcli pingone bill-of-materials replace`](references/cmd-pingcli-pingone-bill-of-materials-replace.md) — Update bill of materials
+      - [`pingcli pingone bill-of-materials template`](references/cmd-pingcli-pingone-bill-of-materials-template.md) — Generate a bill of materials JSON template
+    - [`pingcli pingone branding-settings`](references/cmd-pingcli-pingone-branding-settings.md) — Branding Settings
+      - [`pingcli pingone branding-settings apply`](references/cmd-pingcli-pingone-branding-settings-apply.md) — Update branding settings
+      - [`pingcli pingone branding-settings get`](references/cmd-pingcli-pingone-branding-settings-get.md) — Read branding settings
+      - [`pingcli pingone branding-settings replace`](references/cmd-pingcli-pingone-branding-settings-replace.md) — Update branding settings
+      - [`pingcli pingone branding-settings template`](references/cmd-pingcli-pingone-branding-settings-template.md) — Generate a branding settings JSON template
+    - [`pingcli pingone certificates`](references/cmd-pingcli-pingone-certificates.md) — Certificates
+      - [`pingcli pingone certificates applications`](references/cmd-pingcli-pingone-certificates-applications.md) — Certificate Applications
+        - [`pingcli pingone certificates applications list`](references/cmd-pingcli-pingone-certificates-applications-list.md) — List certificate applications
+      - [`pingcli pingone certificates create`](references/cmd-pingcli-pingone-certificates-create.md) — Upload a new certificate
+      - [`pingcli pingone certificates delete`](references/cmd-pingcli-pingone-certificates-delete.md) — Delete a certificate
+      - [`pingcli pingone certificates get`](references/cmd-pingcli-pingone-certificates-get.md) — Read a specific certificate
+      - [`pingcli pingone certificates list`](references/cmd-pingcli-pingone-certificates-list.md) — List all certificates
+    - [`pingcli pingone credentials`](references/cmd-pingcli-pingone-credentials.md) — Administration tools for the PingOne Credentials universal service.
+      - [`pingcli pingone credentials digital-wallet-applications`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications.md) — Digital Wallet Applications
+        - [`pingcli pingone credentials digital-wallet-applications apply`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-apply.md) — Create or update a digital wallet application
+        - [`pingcli pingone credentials digital-wallet-applications create`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-create.md) — Create a new digital wallet application
+        - [`pingcli pingone credentials digital-wallet-applications delete`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-delete.md) — Delete a digital wallet application
+        - [`pingcli pingone credentials digital-wallet-applications get`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-get.md) — Read a specific digital wallet application
+        - [`pingcli pingone credentials digital-wallet-applications list`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-list.md) — List all digital wallet applications
+        - [`pingcli pingone credentials digital-wallet-applications replace`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-replace.md) — Replace a digital wallet application
+        - [`pingcli pingone credentials digital-wallet-applications template`](references/cmd-pingcli-pingone-credentials-digital-wallet-applications-template.md) — Generate a digital wallet application JSON template
+      - [`pingcli pingone credentials issuer-profile`](references/cmd-pingcli-pingone-credentials-issuer-profile.md) — Credential Issuer Profile
+        - [`pingcli pingone credentials issuer-profile apply`](references/cmd-pingcli-pingone-credentials-issuer-profile-apply.md) — Update the credential issuer profile
+        - [`pingcli pingone credentials issuer-profile get`](references/cmd-pingcli-pingone-credentials-issuer-profile-get.md) — Read the credential issuer profile
+        - [`pingcli pingone credentials issuer-profile replace`](references/cmd-pingcli-pingone-credentials-issuer-profile-replace.md) — Update the credential issuer profile
+        - [`pingcli pingone credentials issuer-profile template`](references/cmd-pingcli-pingone-credentials-issuer-profile-template.md) — Generate a credential issuer profile JSON template
+      - [`pingcli pingone credentials types`](references/cmd-pingcli-pingone-credentials-types.md) — Credential Types
+        - [`pingcli pingone credentials types apply`](references/cmd-pingcli-pingone-credentials-types-apply.md) — Create or update a credential type
+        - [`pingcli pingone credentials types create`](references/cmd-pingcli-pingone-credentials-types-create.md) — Create a new credential type
+        - [`pingcli pingone credentials types delete`](references/cmd-pingcli-pingone-credentials-types-delete.md) — Delete a credential type
+        - [`pingcli pingone credentials types get`](references/cmd-pingcli-pingone-credentials-types-get.md) — Read a specific credential type
+        - [`pingcli pingone credentials types issuance-rules`](references/cmd-pingcli-pingone-credentials-types-issuance-rules.md) — Credential Issuance Rules
+          - [`pingcli pingone credentials types issuance-rules create`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-create.md) — Create a new credential issuance rule
+          - [`pingcli pingone credentials types issuance-rules delete`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-delete.md) — Delete a credential issuance rule
+          - [`pingcli pingone credentials types issuance-rules get`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-get.md) — Read a specific credential issuance rule
+          - [`pingcli pingone credentials types issuance-rules list`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-list.md) — List all credential issuance rules
+          - [`pingcli pingone credentials types issuance-rules replace`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-replace.md) — Replace a credential issuance rule
+          - [`pingcli pingone credentials types issuance-rules template`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-template.md) — Generate a credential issuance rule JSON template
+          - [`pingcli pingone credentials types issuance-rules usage-counts`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-usage-counts.md) — Read credential issuance rule usage counts
+          - [`pingcli pingone credentials types issuance-rules usage-details`](references/cmd-pingcli-pingone-credentials-types-issuance-rules-usage-details.md) — Read credential issuance rule usage details
+        - [`pingcli pingone credentials types list`](references/cmd-pingcli-pingone-credentials-types-list.md) — List all credential types
+        - [`pingcli pingone credentials types replace`](references/cmd-pingcli-pingone-credentials-types-replace.md) — Replace a credential type
+        - [`pingcli pingone credentials types template`](references/cmd-pingcli-pingone-credentials-types-template.md) — Generate a credential type JSON template
+        - [`pingcli pingone credentials types versions`](references/cmd-pingcli-pingone-credentials-types-versions.md) — Credential Type Versions
+          - [`pingcli pingone credentials types versions get`](references/cmd-pingcli-pingone-credentials-types-versions-get.md) — Read a specific credential type version
+          - [`pingcli pingone credentials types versions list`](references/cmd-pingcli-pingone-credentials-types-versions-list.md) — List all credential type versions
+      - [`pingcli pingone credentials user-credentials`](references/cmd-pingcli-pingone-credentials-user-credentials.md) — User Credentials
+        - [`pingcli pingone credentials user-credentials create`](references/cmd-pingcli-pingone-credentials-user-credentials-create.md) — Create a new user credential
+        - [`pingcli pingone credentials user-credentials get`](references/cmd-pingcli-pingone-credentials-user-credentials-get.md) — Read a specific user credential
+        - [`pingcli pingone credentials user-credentials provisioned-credentials`](references/cmd-pingcli-pingone-credentials-user-credentials-provisioned-credentials.md) — List provisioned credentials for a user credential
+        - [`pingcli pingone credentials user-credentials replace`](references/cmd-pingcli-pingone-credentials-user-credentials-replace.md) — Replace a user credential
+        - [`pingcli pingone credentials user-credentials template`](references/cmd-pingcli-pingone-credentials-user-credentials-template.md) — Generate a user credential JSON template
+      - [`pingcli pingone credentials user-digital-wallets`](references/cmd-pingcli-pingone-credentials-user-digital-wallets.md) — User Digital Wallets
+        - [`pingcli pingone credentials user-digital-wallets create`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-create.md) — Create a new user digital wallet
+        - [`pingcli pingone credentials user-digital-wallets delete`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-delete.md) — Delete a user digital wallet
+        - [`pingcli pingone credentials user-digital-wallets get`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-get.md) — Read a specific user digital wallet
+        - [`pingcli pingone credentials user-digital-wallets list`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-list.md) — List all user digital wallets
+        - [`pingcli pingone credentials user-digital-wallets provisioned-credentials`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-provisioned-credentials.md) — List provisioned credentials for a user digital wallet
+        - [`pingcli pingone credentials user-digital-wallets replace`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-replace.md) — Replace a user digital wallet
+        - [`pingcli pingone credentials user-digital-wallets template`](references/cmd-pingcli-pingone-credentials-user-digital-wallets-template.md) — Generate a user digital wallet JSON template
+    - [`pingcli pingone custom-admin-roles`](references/cmd-pingcli-pingone-custom-admin-roles.md) — Custom Admin Roles
+      - [`pingcli pingone custom-admin-roles apply`](references/cmd-pingcli-pingone-custom-admin-roles-apply.md) — Create or update a custom admin role
+      - [`pingcli pingone custom-admin-roles create`](references/cmd-pingcli-pingone-custom-admin-roles-create.md) — Create a new custom admin role
+      - [`pingcli pingone custom-admin-roles delete`](references/cmd-pingcli-pingone-custom-admin-roles-delete.md) — Delete a custom admin role
+      - [`pingcli pingone custom-admin-roles get`](references/cmd-pingcli-pingone-custom-admin-roles-get.md) — Read a specific custom admin role
+      - [`pingcli pingone custom-admin-roles list`](references/cmd-pingcli-pingone-custom-admin-roles-list.md) — List all custom admin roles
+      - [`pingcli pingone custom-admin-roles replace`](references/cmd-pingcli-pingone-custom-admin-roles-replace.md) — Update a custom admin role
+      - [`pingcli pingone custom-admin-roles template`](references/cmd-pingcli-pingone-custom-admin-roles-template.md) — Generate a custom admin role JSON template
+    - [`pingcli pingone custom-domains`](references/cmd-pingcli-pingone-custom-domains.md) — Custom Domains
+      - [`pingcli pingone custom-domains create`](references/cmd-pingcli-pingone-custom-domains-create.md) — Create a new custom domain
+      - [`pingcli pingone custom-domains delete`](references/cmd-pingcli-pingone-custom-domains-delete.md) — Delete a custom domain
+      - [`pingcli pingone custom-domains get`](references/cmd-pingcli-pingone-custom-domains-get.md) — Read a specific custom domain
+      - [`pingcli pingone custom-domains import-certificate`](references/cmd-pingcli-pingone-custom-domains-import-certificate.md) — Import an SSL certificate for a custom domain
+      - [`pingcli pingone custom-domains list`](references/cmd-pingcli-pingone-custom-domains-list.md) — List all custom domains
+      - [`pingcli pingone custom-domains template`](references/cmd-pingcli-pingone-custom-domains-template.md) — Generate a custom domain JSON template
+      - [`pingcli pingone custom-domains verify`](references/cmd-pingcli-pingone-custom-domains-verify.md) — Verify a custom domain
+    - [`pingcli pingone davinci`](references/cmd-pingcli-pingone-davinci.md) — Administration tools for the PingOne DaVinci universal service.
+      - [`pingcli pingone davinci applications`](references/cmd-pingcli-pingone-davinci-applications.md) — DaVinci Applications
+        - [`pingcli pingone davinci applications apply`](references/cmd-pingcli-pingone-davinci-applications-apply.md) — Create or update a DaVinci application
+        - [`pingcli pingone davinci applications create`](references/cmd-pingcli-pingone-davinci-applications-create.md) — Create a new DaVinci application
+        - [`pingcli pingone davinci applications delete`](references/cmd-pingcli-pingone-davinci-applications-delete.md) — Delete a DaVinci application
+        - [`pingcli pingone davinci applications flow-policies`](references/cmd-pingcli-pingone-davinci-applications-flow-policies.md) — DaVinci Flow Policies
+          - [`pingcli pingone davinci applications flow-policies apply`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-apply.md) — Create or update a DaVinci flow policy
+          - [`pingcli pingone davinci applications flow-policies create`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-create.md) — Create a new DaVinci flow policy
+          - [`pingcli pingone davinci applications flow-policies delete`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-delete.md) — Delete a DaVinci flow policy
+          - [`pingcli pingone davinci applications flow-policies events`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-events.md) — DaVinci Flow Policy Events
+            - [`pingcli pingone davinci applications flow-policies events list`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-events-list.md) — List DaVinci flow policy events
+          - [`pingcli pingone davinci applications flow-policies get`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-get.md) — Read a DaVinci flow policy
+          - [`pingcli pingone davinci applications flow-policies list`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-list.md) — List DaVinci flow policies
+          - [`pingcli pingone davinci applications flow-policies replace`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-replace.md) — Update a DaVinci flow policy
+          - [`pingcli pingone davinci applications flow-policies template`](references/cmd-pingcli-pingone-davinci-applications-flow-policies-template.md) — Generate a DaVinci flow policy JSON template
+        - [`pingcli pingone davinci applications get`](references/cmd-pingcli-pingone-davinci-applications-get.md) — Read a DaVinci application
+        - [`pingcli pingone davinci applications list`](references/cmd-pingcli-pingone-davinci-applications-list.md) — List DaVinci applications
+        - [`pingcli pingone davinci applications replace`](references/cmd-pingcli-pingone-davinci-applications-replace.md) — Update a DaVinci application
+        - [`pingcli pingone davinci applications rotate-key`](references/cmd-pingcli-pingone-davinci-applications-rotate-key.md) — Rotate a DaVinci application API key
+        - [`pingcli pingone davinci applications rotate-secret`](references/cmd-pingcli-pingone-davinci-applications-rotate-secret.md) — Rotate a DaVinci application OAuth secret
+        - [`pingcli pingone davinci applications template`](references/cmd-pingcli-pingone-davinci-applications-template.md) — Generate a DaVinci application JSON template
+      - [`pingcli pingone davinci connector-instances`](references/cmd-pingcli-pingone-davinci-connector-instances.md) — DaVinci Connector Instances
+        - [`pingcli pingone davinci connector-instances apply`](references/cmd-pingcli-pingone-davinci-connector-instances-apply.md) — Create or update a DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances clone`](references/cmd-pingcli-pingone-davinci-connector-instances-clone.md) — Clone a DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances create`](references/cmd-pingcli-pingone-davinci-connector-instances-create.md) — Create a new DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances delete`](references/cmd-pingcli-pingone-davinci-connector-instances-delete.md) — Delete a DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances get`](references/cmd-pingcli-pingone-davinci-connector-instances-get.md) — Read a DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances list`](references/cmd-pingcli-pingone-davinci-connector-instances-list.md) — List DaVinci connector instances
+        - [`pingcli pingone davinci connector-instances replace`](references/cmd-pingcli-pingone-davinci-connector-instances-replace.md) — Update a DaVinci connector instance
+        - [`pingcli pingone davinci connector-instances template`](references/cmd-pingcli-pingone-davinci-connector-instances-template.md) — Generate a DaVinci connector instance JSON template
+      - [`pingcli pingone davinci connectors`](references/cmd-pingcli-pingone-davinci-connectors.md) — DaVinci Connector Catalog
+        - [`pingcli pingone davinci connectors details`](references/cmd-pingcli-pingone-davinci-connectors-details.md) — Read DaVinci connector details
+        - [`pingcli pingone davinci connectors get`](references/cmd-pingcli-pingone-davinci-connectors-get.md) — Read a DaVinci connector
+        - [`pingcli pingone davinci connectors list`](references/cmd-pingcli-pingone-davinci-connectors-list.md) — List DaVinci connectors
+      - [`pingcli pingone davinci flows`](references/cmd-pingcli-pingone-davinci-flows.md) — DaVinci Flows
+        - [`pingcli pingone davinci flows apply`](references/cmd-pingcli-pingone-davinci-flows-apply.md) — Create or update a DaVinci flow
+        - [`pingcli pingone davinci flows clone`](references/cmd-pingcli-pingone-davinci-flows-clone.md) — Clone a DaVinci flow
+        - [`pingcli pingone davinci flows create`](references/cmd-pingcli-pingone-davinci-flows-create.md) — Create a new DaVinci flow
+        - [`pingcli pingone davinci flows delete`](references/cmd-pingcli-pingone-davinci-flows-delete.md) — Delete a DaVinci flow
+        - [`pingcli pingone davinci flows deploy`](references/cmd-pingcli-pingone-davinci-flows-deploy.md) — Deploy a DaVinci flow
+        - [`pingcli pingone davinci flows enabled`](references/cmd-pingcli-pingone-davinci-flows-enabled.md) — DaVinci Flow Enabled
+          - [`pingcli pingone davinci flows enabled apply`](references/cmd-pingcli-pingone-davinci-flows-enabled-apply.md) — Update DaVinci flow enabled state
+          - [`pingcli pingone davinci flows enabled get`](references/cmd-pingcli-pingone-davinci-flows-enabled-get.md) — Read DaVinci flow enabled state
+          - [`pingcli pingone davinci flows enabled replace`](references/cmd-pingcli-pingone-davinci-flows-enabled-replace.md) — Update DaVinci flow enabled state
+          - [`pingcli pingone davinci flows enabled template`](references/cmd-pingcli-pingone-davinci-flows-enabled-template.md) — Generate a DaVinci flow enabled JSON template
+        - [`pingcli pingone davinci flows get`](references/cmd-pingcli-pingone-davinci-flows-get.md) — Read a DaVinci flow
+        - [`pingcli pingone davinci flows list`](references/cmd-pingcli-pingone-davinci-flows-list.md) — List DaVinci flows
+        - [`pingcli pingone davinci flows replace`](references/cmd-pingcli-pingone-davinci-flows-replace.md) — Update a DaVinci flow
+        - [`pingcli pingone davinci flows template`](references/cmd-pingcli-pingone-davinci-flows-template.md) — Generate a DaVinci flow JSON template
+        - [`pingcli pingone davinci flows versions`](references/cmd-pingcli-pingone-davinci-flows-versions.md) — DaVinci Flow Versions
+          - [`pingcli pingone davinci flows versions delete`](references/cmd-pingcli-pingone-davinci-flows-versions-delete.md) — Delete a DaVinci flow version
+          - [`pingcli pingone davinci flows versions details`](references/cmd-pingcli-pingone-davinci-flows-versions-details.md) — Get DaVinci flow version details
+          - [`pingcli pingone davinci flows versions get`](references/cmd-pingcli-pingone-davinci-flows-versions-get.md) — Read a DaVinci flow version
+          - [`pingcli pingone davinci flows versions list`](references/cmd-pingcli-pingone-davinci-flows-versions-list.md) — List DaVinci flow versions
+          - [`pingcli pingone davinci flows versions set-alias`](references/cmd-pingcli-pingone-davinci-flows-versions-set-alias.md) — Set the alias for a DaVinci flow version
+      - [`pingcli pingone davinci variables`](references/cmd-pingcli-pingone-davinci-variables.md) — DaVinci Variables
+        - [`pingcli pingone davinci variables apply`](references/cmd-pingcli-pingone-davinci-variables-apply.md) — Create or update a DaVinci variable
+        - [`pingcli pingone davinci variables create`](references/cmd-pingcli-pingone-davinci-variables-create.md) — Create a new DaVinci variable
+        - [`pingcli pingone davinci variables delete`](references/cmd-pingcli-pingone-davinci-variables-delete.md) — Delete a DaVinci variable
+        - [`pingcli pingone davinci variables get`](references/cmd-pingcli-pingone-davinci-variables-get.md) — Read a DaVinci variable
+        - [`pingcli pingone davinci variables list`](references/cmd-pingcli-pingone-davinci-variables-list.md) — List DaVinci variables
+        - [`pingcli pingone davinci variables replace`](references/cmd-pingcli-pingone-davinci-variables-replace.md) — Update a DaVinci variable
+        - [`pingcli pingone davinci variables template`](references/cmd-pingcli-pingone-davinci-variables-template.md) — Generate a DaVinci variable JSON template
+    - [`pingcli pingone email-domains`](references/cmd-pingcli-pingone-email-domains.md) — Email Domains
+      - [`pingcli pingone email-domains create`](references/cmd-pingcli-pingone-email-domains-create.md) — Create a new trusted email domain
+      - [`pingcli pingone email-domains delete`](references/cmd-pingcli-pingone-email-domains-delete.md) — Delete a trusted email domain
+      - [`pingcli pingone email-domains get`](references/cmd-pingcli-pingone-email-domains-get.md) — Read a specific trusted email domain
+      - [`pingcli pingone email-domains list`](references/cmd-pingcli-pingone-email-domains-list.md) — List all trusted email domains
+      - [`pingcli pingone email-domains template`](references/cmd-pingcli-pingone-email-domains-template.md) — Generate a trusted email domain JSON template
+      - [`pingcli pingone email-domains trusted-email-addresses`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses.md) — Trusted Email Addresses
+        - [`pingcli pingone email-domains trusted-email-addresses create`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-create.md) — Create a new trusted email address
+        - [`pingcli pingone email-domains trusted-email-addresses delete`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-delete.md) — Delete a trusted email address
+        - [`pingcli pingone email-domains trusted-email-addresses get`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-get.md) — Read a specific trusted email address
+        - [`pingcli pingone email-domains trusted-email-addresses list`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-list.md) — List all trusted email addresses
+        - [`pingcli pingone email-domains trusted-email-addresses resend-verification-code`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-resend-verification-code.md) — Resend the verification code to a trusted email address
+        - [`pingcli pingone email-domains trusted-email-addresses template`](references/cmd-pingcli-pingone-email-domains-trusted-email-addresses-template.md) — Generate a trusted email address JSON template
+    - [`pingcli pingone environments`](references/cmd-pingcli-pingone-environments.md) — Environments
+      - [`pingcli pingone environments apply`](references/cmd-pingcli-pingone-environments-apply.md) — Create or update an environment
+      - [`pingcli pingone environments create`](references/cmd-pingcli-pingone-environments-create.md) — Create a new environment
+      - [`pingcli pingone environments delete`](references/cmd-pingcli-pingone-environments-delete.md) — Delete environment
+      - [`pingcli pingone environments get`](references/cmd-pingcli-pingone-environments-get.md) — Get environment
+      - [`pingcli pingone environments list`](references/cmd-pingcli-pingone-environments-list.md) — List all environments
+      - [`pingcli pingone environments replace`](references/cmd-pingcli-pingone-environments-replace.md) — Update environment
+      - [`pingcli pingone environments template`](references/cmd-pingcli-pingone-environments-template.md) — Generate an environment JSON template
+    - [`pingcli pingone flow-policies`](references/cmd-pingcli-pingone-flow-policies.md) — Flow policies
+      - [`pingcli pingone flow-policies get`](references/cmd-pingcli-pingone-flow-policies-get.md) — Read a specific flow policy
+      - [`pingcli pingone flow-policies list`](references/cmd-pingcli-pingone-flow-policies-list.md) — List all flow policies
+    - [`pingcli pingone forms`](references/cmd-pingcli-pingone-forms.md) — Forms
+      - [`pingcli pingone forms apply`](references/cmd-pingcli-pingone-forms-apply.md) — Create or update a form
+      - [`pingcli pingone forms create`](references/cmd-pingcli-pingone-forms-create.md) — Create a new form
+      - [`pingcli pingone forms delete`](references/cmd-pingcli-pingone-forms-delete.md) — Delete a form
+      - [`pingcli pingone forms get`](references/cmd-pingcli-pingone-forms-get.md) — Read a specific form
+      - [`pingcli pingone forms list`](references/cmd-pingcli-pingone-forms-list.md) — List all forms
+      - [`pingcli pingone forms replace`](references/cmd-pingcli-pingone-forms-replace.md) — Update a form
+      - [`pingcli pingone forms template`](references/cmd-pingcli-pingone-forms-template.md) — Generate a form JSON template
+    - [`pingcli pingone gateways`](references/cmd-pingcli-pingone-gateways.md) — Gateways
+      - [`pingcli pingone gateways apply`](references/cmd-pingcli-pingone-gateways-apply.md) — Create or update a gateway
+      - [`pingcli pingone gateways create`](references/cmd-pingcli-pingone-gateways-create.md) — Create a new gateway
+      - [`pingcli pingone gateways credentials`](references/cmd-pingcli-pingone-gateways-credentials.md) — Gateway credentials
+        - [`pingcli pingone gateways credentials create`](references/cmd-pingcli-pingone-gateways-credentials-create.md) — Create a new gateway credential
+        - [`pingcli pingone gateways credentials delete`](references/cmd-pingcli-pingone-gateways-credentials-delete.md) — Delete a gateway credential
+        - [`pingcli pingone gateways credentials get`](references/cmd-pingcli-pingone-gateways-credentials-get.md) — Read a specific gateway credential
+        - [`pingcli pingone gateways credentials list`](references/cmd-pingcli-pingone-gateways-credentials-list.md) — List all gateway credentials
+      - [`pingcli pingone gateways delete`](references/cmd-pingcli-pingone-gateways-delete.md) — Delete a gateway
+      - [`pingcli pingone gateways get`](references/cmd-pingcli-pingone-gateways-get.md) — Read a specific gateway
+      - [`pingcli pingone gateways instances`](references/cmd-pingcli-pingone-gateways-instances.md) — Gateway instances
+        - [`pingcli pingone gateways instances get`](references/cmd-pingcli-pingone-gateways-instances-get.md) — Read a specific gateway instance
+        - [`pingcli pingone gateways instances list`](references/cmd-pingcli-pingone-gateways-instances-list.md) — List all gateway instances
+      - [`pingcli pingone gateways list`](references/cmd-pingcli-pingone-gateways-list.md) — List all gateways
+      - [`pingcli pingone gateways replace`](references/cmd-pingcli-pingone-gateways-replace.md) — Replace a gateway
+      - [`pingcli pingone gateways role-assignments`](references/cmd-pingcli-pingone-gateways-role-assignments.md) — Gateway Role Assignments
+        - [`pingcli pingone gateways role-assignments create`](references/cmd-pingcli-pingone-gateways-role-assignments-create.md) — Create a new gateway role assignment
+        - [`pingcli pingone gateways role-assignments delete`](references/cmd-pingcli-pingone-gateways-role-assignments-delete.md) — Delete a gateway role assignment
+        - [`pingcli pingone gateways role-assignments get`](references/cmd-pingcli-pingone-gateways-role-assignments-get.md) — Read a specific gateway role assignment
+        - [`pingcli pingone gateways role-assignments list`](references/cmd-pingcli-pingone-gateways-role-assignments-list.md) — List all gateway role assignments
+        - [`pingcli pingone gateways role-assignments template`](references/cmd-pingcli-pingone-gateways-role-assignments-template.md) — Generate a gateway role assignment JSON template
+      - [`pingcli pingone gateways template`](references/cmd-pingcli-pingone-gateways-template.md) — Generate a gateway JSON template
+    - [`pingcli pingone groups`](references/cmd-pingcli-pingone-groups.md) — Groups
+      - [`pingcli pingone groups apply`](references/cmd-pingcli-pingone-groups-apply.md) — Create or update a group
+      - [`pingcli pingone groups create`](references/cmd-pingcli-pingone-groups-create.md) — Create a new group
+      - [`pingcli pingone groups delete`](references/cmd-pingcli-pingone-groups-delete.md) — Delete a group
+      - [`pingcli pingone groups get`](references/cmd-pingcli-pingone-groups-get.md) — Read a specific group
+      - [`pingcli pingone groups list`](references/cmd-pingcli-pingone-groups-list.md) — List all groups
+      - [`pingcli pingone groups nestings`](references/cmd-pingcli-pingone-groups-nestings.md) — Group Nestings
+        - [`pingcli pingone groups nestings create`](references/cmd-pingcli-pingone-groups-nestings-create.md) — Create a new group nesting
+        - [`pingcli pingone groups nestings delete`](references/cmd-pingcli-pingone-groups-nestings-delete.md) — Delete a group nesting
+        - [`pingcli pingone groups nestings get`](references/cmd-pingcli-pingone-groups-nestings-get.md) — Read a specific group nesting
+        - [`pingcli pingone groups nestings list`](references/cmd-pingcli-pingone-groups-nestings-list.md) — List all group nestings
+        - [`pingcli pingone groups nestings template`](references/cmd-pingcli-pingone-groups-nestings-template.md) — Generate a group nesting JSON template
+      - [`pingcli pingone groups replace`](references/cmd-pingcli-pingone-groups-replace.md) — Update a group
+      - [`pingcli pingone groups role-assignments`](references/cmd-pingcli-pingone-groups-role-assignments.md) — Group Role Assignments
+        - [`pingcli pingone groups role-assignments create`](references/cmd-pingcli-pingone-groups-role-assignments-create.md) — Create a new group role assignment
+        - [`pingcli pingone groups role-assignments delete`](references/cmd-pingcli-pingone-groups-role-assignments-delete.md) — Delete a group role assignment
+        - [`pingcli pingone groups role-assignments get`](references/cmd-pingcli-pingone-groups-role-assignments-get.md) — Read a specific group role assignment
+        - [`pingcli pingone groups role-assignments list`](references/cmd-pingcli-pingone-groups-role-assignments-list.md) — List all group role assignments
+        - [`pingcli pingone groups role-assignments template`](references/cmd-pingcli-pingone-groups-role-assignments-template.md) — Generate a group role assignment JSON template
+      - [`pingcli pingone groups template`](references/cmd-pingcli-pingone-groups-template.md) — Generate a group JSON template
+    - [`pingcli pingone identity-providers`](references/cmd-pingcli-pingone-identity-providers.md) — Identity Providers
+      - [`pingcli pingone identity-providers apply`](references/cmd-pingcli-pingone-identity-providers-apply.md) — Create or update an identity provider
+      - [`pingcli pingone identity-providers attributes`](references/cmd-pingcli-pingone-identity-providers-attributes.md) — Identity Provider Attributes
+        - [`pingcli pingone identity-providers attributes apply`](references/cmd-pingcli-pingone-identity-providers-attributes-apply.md) — Create or update an identity provider attribute
+        - [`pingcli pingone identity-providers attributes create`](references/cmd-pingcli-pingone-identity-providers-attributes-create.md) — Create a new identity provider attribute
+        - [`pingcli pingone identity-providers attributes delete`](references/cmd-pingcli-pingone-identity-providers-attributes-delete.md) — Delete an identity provider attribute
+        - [`pingcli pingone identity-providers attributes get`](references/cmd-pingcli-pingone-identity-providers-attributes-get.md) — Read a specific identity provider attribute
+        - [`pingcli pingone identity-providers attributes list`](references/cmd-pingcli-pingone-identity-providers-attributes-list.md) — List all identity provider attributes
+        - [`pingcli pingone identity-providers attributes replace`](references/cmd-pingcli-pingone-identity-providers-attributes-replace.md) — Replace an identity provider attribute
+        - [`pingcli pingone identity-providers attributes template`](references/cmd-pingcli-pingone-identity-providers-attributes-template.md) — Generate an identity provider attribute JSON template
+      - [`pingcli pingone identity-providers create`](references/cmd-pingcli-pingone-identity-providers-create.md) — Create a new identity provider
+      - [`pingcli pingone identity-providers delete`](references/cmd-pingcli-pingone-identity-providers-delete.md) — Delete an identity provider
+      - [`pingcli pingone identity-providers get`](references/cmd-pingcli-pingone-identity-providers-get.md) — Read a specific identity provider
+      - [`pingcli pingone identity-providers list`](references/cmd-pingcli-pingone-identity-providers-list.md) — List all identity providers
+      - [`pingcli pingone identity-providers replace`](references/cmd-pingcli-pingone-identity-providers-replace.md) — Replace an identity provider
+      - [`pingcli pingone identity-providers template`](references/cmd-pingcli-pingone-identity-providers-template.md) — Generate an identity provider JSON template
+    - [`pingcli pingone images`](references/cmd-pingcli-pingone-images.md) — Images
+      - [`pingcli pingone images create`](references/cmd-pingcli-pingone-images-create.md) — Upload a new image
+      - [`pingcli pingone images delete`](references/cmd-pingcli-pingone-images-delete.md) — Delete an image
+      - [`pingcli pingone images get`](references/cmd-pingcli-pingone-images-get.md) — Read a specific image
+    - [`pingcli pingone init`](references/cmd-pingcli-pingone-init.md) — Initialize Ping CLI for the PingOne management APIs.
+    - [`pingcli pingone integrations`](references/cmd-pingcli-pingone-integrations.md) — Integrations
+      - [`pingcli pingone integrations get`](references/cmd-pingcli-pingone-integrations-get.md) — Read a specific integration
+      - [`pingcli pingone integrations list`](references/cmd-pingcli-pingone-integrations-list.md) — List all integrations
+      - [`pingcli pingone integrations versions`](references/cmd-pingcli-pingone-integrations-versions.md) — Integration Versions
+        - [`pingcli pingone integrations versions attributes`](references/cmd-pingcli-pingone-integrations-versions-attributes.md) — Integration Version Attributes
+          - [`pingcli pingone integrations versions attributes get`](references/cmd-pingcli-pingone-integrations-versions-attributes-get.md) — Read a specific integration version attribute
+          - [`pingcli pingone integrations versions attributes list`](references/cmd-pingcli-pingone-integrations-versions-attributes-list.md) — List all integration version attributes
+        - [`pingcli pingone integrations versions get`](references/cmd-pingcli-pingone-integrations-versions-get.md) — Read a specific integration version
+        - [`pingcli pingone integrations versions list`](references/cmd-pingcli-pingone-integrations-versions-list.md) — List all integration versions
+    - [`pingcli pingone keys`](references/cmd-pingcli-pingone-keys.md) — Keys
+      - [`pingcli pingone keys applications`](references/cmd-pingcli-pingone-keys-applications.md) — Key Applications
+        - [`pingcli pingone keys applications list`](references/cmd-pingcli-pingone-keys-applications-list.md) — List key applications
+      - [`pingcli pingone keys apply`](references/cmd-pingcli-pingone-keys-apply.md) — Create or update a key
+      - [`pingcli pingone keys create`](references/cmd-pingcli-pingone-keys-create.md) — Create a new key
+      - [`pingcli pingone keys create-with-pkcs12`](references/cmd-pingcli-pingone-keys-create-with-pkcs12.md) — Create a key pair from a PKCS12 file
+      - [`pingcli pingone keys delete`](references/cmd-pingcli-pingone-keys-delete.md) — Delete a key
+      - [`pingcli pingone keys get`](references/cmd-pingcli-pingone-keys-get.md) — Read a specific key
+      - [`pingcli pingone keys get-csr`](references/cmd-pingcli-pingone-keys-get-csr.md) — Export the CSR for a key
+      - [`pingcli pingone keys import-csr-response`](references/cmd-pingcli-pingone-keys-import-csr-response.md) — Import a CA-signed certificate response for a key
+      - [`pingcli pingone keys list`](references/cmd-pingcli-pingone-keys-list.md) — List all keys
+      - [`pingcli pingone keys replace`](references/cmd-pingcli-pingone-keys-replace.md) — Update a key
+      - [`pingcli pingone keys template`](references/cmd-pingcli-pingone-keys-template.md) — Generate a key JSON template
+    - [`pingcli pingone languages`](references/cmd-pingcli-pingone-languages.md) — Languages
+      - [`pingcli pingone languages agreement-revisions`](references/cmd-pingcli-pingone-languages-agreement-revisions.md) — Agreement Language Revisions
+        - [`pingcli pingone languages agreement-revisions create`](references/cmd-pingcli-pingone-languages-agreement-revisions-create.md) — Create a new agreement language revision
+        - [`pingcli pingone languages agreement-revisions delete`](references/cmd-pingcli-pingone-languages-agreement-revisions-delete.md) — Delete an agreement language revision
+        - [`pingcli pingone languages agreement-revisions get`](references/cmd-pingcli-pingone-languages-agreement-revisions-get.md) — Read a specific agreement language revision
+        - [`pingcli pingone languages agreement-revisions list`](references/cmd-pingcli-pingone-languages-agreement-revisions-list.md) — List all agreement language revisions
+        - [`pingcli pingone languages agreement-revisions template`](references/cmd-pingcli-pingone-languages-agreement-revisions-template.md) — Generate an agreement language revision JSON template
+      - [`pingcli pingone languages apply`](references/cmd-pingcli-pingone-languages-apply.md) — Create or update a language
+      - [`pingcli pingone languages create`](references/cmd-pingcli-pingone-languages-create.md) — Create a new language
+      - [`pingcli pingone languages delete`](references/cmd-pingcli-pingone-languages-delete.md) — Delete a language
+      - [`pingcli pingone languages get`](references/cmd-pingcli-pingone-languages-get.md) — Read a specific language
+      - [`pingcli pingone languages list`](references/cmd-pingcli-pingone-languages-list.md) — List all languages
+      - [`pingcli pingone languages replace`](references/cmd-pingcli-pingone-languages-replace.md) — Update a language
+      - [`pingcli pingone languages status`](references/cmd-pingcli-pingone-languages-status.md) — Language Localization Statuses
+        - [`pingcli pingone languages status create`](references/cmd-pingcli-pingone-languages-status-create.md) — Create a new language localization status
+        - [`pingcli pingone languages status delete`](references/cmd-pingcli-pingone-languages-status-delete.md) — Delete a language localization status
+        - [`pingcli pingone languages status get`](references/cmd-pingcli-pingone-languages-status-get.md) — Read a specific language localization status
+        - [`pingcli pingone languages status replace`](references/cmd-pingcli-pingone-languages-status-replace.md) — Update a language localization status
+        - [`pingcli pingone languages status template`](references/cmd-pingcli-pingone-languages-status-template.md) — Generate a language localization status JSON template
+      - [`pingcli pingone languages template`](references/cmd-pingcli-pingone-languages-template.md) — Generate a language JSON template
+    - [`pingcli pingone licenses`](references/cmd-pingcli-pingone-licenses.md) — PingOne Licenses
+      - [`pingcli pingone licenses get`](references/cmd-pingcli-pingone-licenses-get.md) — Read a specific license
+      - [`pingcli pingone licenses list`](references/cmd-pingcli-pingone-licenses-list.md) — List all licenses
+      - [`pingcli pingone licenses names`](references/cmd-pingcli-pingone-licenses-names.md) — Manage PingOne license names
+        - [`pingcli pingone licenses names apply`](references/cmd-pingcli-pingone-licenses-names-apply.md) — Update license name
+        - [`pingcli pingone licenses names get`](references/cmd-pingcli-pingone-licenses-names-get.md) — Read license name
+        - [`pingcli pingone licenses names replace`](references/cmd-pingcli-pingone-licenses-names-replace.md) — Update license name
+        - [`pingcli pingone licenses names template`](references/cmd-pingcli-pingone-licenses-names-template.md) — Generate a license name JSON template
+    - [`pingcli pingone mfa`](references/cmd-pingcli-pingone-mfa.md) — Administration tools for the PingOne MFA universal service.
+      - [`pingcli pingone mfa device-policies`](references/cmd-pingcli-pingone-mfa-device-policies.md) — MFA Device Policies
+        - [`pingcli pingone mfa device-policies apply`](references/cmd-pingcli-pingone-mfa-device-policies-apply.md) — Create or update an MFA device policy
+        - [`pingcli pingone mfa device-policies create`](references/cmd-pingcli-pingone-mfa-device-policies-create.md) — Create a new MFA device policy
+        - [`pingcli pingone mfa device-policies delete`](references/cmd-pingcli-pingone-mfa-device-policies-delete.md) — Delete an MFA device policy
+        - [`pingcli pingone mfa device-policies get`](references/cmd-pingcli-pingone-mfa-device-policies-get.md) — Read a specific MFA device policy
+        - [`pingcli pingone mfa device-policies list`](references/cmd-pingcli-pingone-mfa-device-policies-list.md) — List all MFA device policies
+        - [`pingcli pingone mfa device-policies replace`](references/cmd-pingcli-pingone-mfa-device-policies-replace.md) — Update an MFA device policy
+        - [`pingcli pingone mfa device-policies template`](references/cmd-pingcli-pingone-mfa-device-policies-template.md) — Generate an MFA device policy JSON template
+      - [`pingcli pingone mfa fido2-policies`](references/cmd-pingcli-pingone-mfa-fido2-policies.md) — FIDO2 Policies
+        - [`pingcli pingone mfa fido2-policies apply`](references/cmd-pingcli-pingone-mfa-fido2-policies-apply.md) — Create or update a FIDO2 policy
+        - [`pingcli pingone mfa fido2-policies create`](references/cmd-pingcli-pingone-mfa-fido2-policies-create.md) — Create a new FIDO2 policy
+        - [`pingcli pingone mfa fido2-policies delete`](references/cmd-pingcli-pingone-mfa-fido2-policies-delete.md) — Delete a FIDO2 policy
+        - [`pingcli pingone mfa fido2-policies get`](references/cmd-pingcli-pingone-mfa-fido2-policies-get.md) — Read a specific FIDO2 policy
+        - [`pingcli pingone mfa fido2-policies list`](references/cmd-pingcli-pingone-mfa-fido2-policies-list.md) — List all FIDO2 policies
+        - [`pingcli pingone mfa fido2-policies replace`](references/cmd-pingcli-pingone-mfa-fido2-policies-replace.md) — Update a FIDO2 policy
+        - [`pingcli pingone mfa fido2-policies template`](references/cmd-pingcli-pingone-mfa-fido2-policies-template.md) — Generate a FIDO2 policy JSON template
+      - [`pingcli pingone mfa settings`](references/cmd-pingcli-pingone-mfa-settings.md) — MFA Settings
+        - [`pingcli pingone mfa settings apply`](references/cmd-pingcli-pingone-mfa-settings-apply.md) — Update MFA settings
+        - [`pingcli pingone mfa settings delete`](references/cmd-pingcli-pingone-mfa-settings-delete.md) — Reset MFA settings to defaults
+        - [`pingcli pingone mfa settings get`](references/cmd-pingcli-pingone-mfa-settings-get.md) — Read MFA settings
+        - [`pingcli pingone mfa settings replace`](references/cmd-pingcli-pingone-mfa-settings-replace.md) — Update MFA settings
+        - [`pingcli pingone mfa settings template`](references/cmd-pingcli-pingone-mfa-settings-template.md) — Generate an MFA settings JSON template
+      - [`pingcli pingone mfa user-devices`](references/cmd-pingcli-pingone-mfa-user-devices.md) — User MFA Devices
+        - [`pingcli pingone mfa user-devices delete`](references/cmd-pingcli-pingone-mfa-user-devices-delete.md) — Delete a user MFA device
+        - [`pingcli pingone mfa user-devices get`](references/cmd-pingcli-pingone-mfa-user-devices-get.md) — Read a specific user MFA device
+        - [`pingcli pingone mfa user-devices list`](references/cmd-pingcli-pingone-mfa-user-devices-list.md) — List all user MFA devices
+        - [`pingcli pingone mfa user-devices send-logs`](references/cmd-pingcli-pingone-mfa-user-devices-send-logs.md) — Request log collection from a user MFA device
+        - [`pingcli pingone mfa user-devices update-nickname`](references/cmd-pingcli-pingone-mfa-user-devices-update-nickname.md) — Update the nickname of a user MFA device
+    - [`pingcli pingone notification-policies`](references/cmd-pingcli-pingone-notification-policies.md) — Notification Policies
+      - [`pingcli pingone notification-policies apply`](references/cmd-pingcli-pingone-notification-policies-apply.md) — Create or update a notification policy
+      - [`pingcli pingone notification-policies create`](references/cmd-pingcli-pingone-notification-policies-create.md) — Create a new notification policy
+      - [`pingcli pingone notification-policies delete`](references/cmd-pingcli-pingone-notification-policies-delete.md) — Delete a notification policy
+      - [`pingcli pingone notification-policies get`](references/cmd-pingcli-pingone-notification-policies-get.md) — Read a specific notification policy
+      - [`pingcli pingone notification-policies list`](references/cmd-pingcli-pingone-notification-policies-list.md) — List all notification policies
+      - [`pingcli pingone notification-policies replace`](references/cmd-pingcli-pingone-notification-policies-replace.md) — Update a notification policy
+      - [`pingcli pingone notification-policies template`](references/cmd-pingcli-pingone-notification-policies-template.md) — Generate a notification policy JSON template
+    - [`pingcli pingone notification-templates`](references/cmd-pingcli-pingone-notification-templates.md) — Notification Templates
+      - [`pingcli pingone notification-templates contents`](references/cmd-pingcli-pingone-notification-templates-contents.md) — Notification Template Contents
+        - [`pingcli pingone notification-templates contents apply`](references/cmd-pingcli-pingone-notification-templates-contents-apply.md) — Create or update a notification template content
+        - [`pingcli pingone notification-templates contents create`](references/cmd-pingcli-pingone-notification-templates-contents-create.md) — Create a new notification template content
+        - [`pingcli pingone notification-templates contents delete`](references/cmd-pingcli-pingone-notification-templates-contents-delete.md) — Delete a notification template content
+        - [`pingcli pingone notification-templates contents get`](references/cmd-pingcli-pingone-notification-templates-contents-get.md) — Read a specific notification template content
+        - [`pingcli pingone notification-templates contents list`](references/cmd-pingcli-pingone-notification-templates-contents-list.md) — List all notification template contents
+        - [`pingcli pingone notification-templates contents replace`](references/cmd-pingcli-pingone-notification-templates-contents-replace.md) — Replace a notification template content
+        - [`pingcli pingone notification-templates contents template`](references/cmd-pingcli-pingone-notification-templates-contents-template.md) — Generate a notification template content JSON template
+      - [`pingcli pingone notification-templates get`](references/cmd-pingcli-pingone-notification-templates-get.md) — Read a specific notification template
+      - [`pingcli pingone notification-templates list`](references/cmd-pingcli-pingone-notification-templates-list.md) — List all notification templates
+    - [`pingcli pingone notifications-settings`](references/cmd-pingcli-pingone-notifications-settings.md) — Notifications Settings
+      - [`pingcli pingone notifications-settings apply`](references/cmd-pingcli-pingone-notifications-settings-apply.md) — Update notifications settings
+      - [`pingcli pingone notifications-settings delete`](references/cmd-pingcli-pingone-notifications-settings-delete.md) — Delete notifications settings
+      - [`pingcli pingone notifications-settings email-delivery-settings`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings.md) — Notifications Settings SMTP
+        - [`pingcli pingone notifications-settings email-delivery-settings apply`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings-apply.md) — Update notifications settings SMTP
+        - [`pingcli pingone notifications-settings email-delivery-settings delete`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings-delete.md) — Delete notifications settings SMTP
+        - [`pingcli pingone notifications-settings email-delivery-settings get`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings-get.md) — Read notifications settings SMTP
+        - [`pingcli pingone notifications-settings email-delivery-settings replace`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings-replace.md) — Update notifications settings SMTP
+        - [`pingcli pingone notifications-settings email-delivery-settings template`](references/cmd-pingcli-pingone-notifications-settings-email-delivery-settings-template.md) — Generate a notifications settings SMTP JSON template
+      - [`pingcli pingone notifications-settings get`](references/cmd-pingcli-pingone-notifications-settings-get.md) — Read notifications settings
+      - [`pingcli pingone notifications-settings phone-delivery-settings`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings.md) — Phone Delivery Settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings apply`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-apply.md) — Create or update phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings create`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-create.md) — Create phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings delete`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-delete.md) — Delete phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings get`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-get.md) — Read phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings list`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-list.md) — List phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings replace`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-replace.md) — Replace phone delivery settings
+        - [`pingcli pingone notifications-settings phone-delivery-settings template`](references/cmd-pingcli-pingone-notifications-settings-phone-delivery-settings-template.md) — Generate a phone delivery settings JSON template
+      - [`pingcli pingone notifications-settings replace`](references/cmd-pingcli-pingone-notifications-settings-replace.md) — Update notifications settings
+      - [`pingcli pingone notifications-settings template`](references/cmd-pingcli-pingone-notifications-settings-template.md) — Generate a notifications settings JSON template
+    - [`pingcli pingone organizations`](references/cmd-pingcli-pingone-organizations.md) — PingOne Organizations
+      - [`pingcli pingone organizations get`](references/cmd-pingcli-pingone-organizations-get.md) — Read a specific organization
+      - [`pingcli pingone organizations list`](references/cmd-pingcli-pingone-organizations-list.md) — List all organizations
+    - [`pingcli pingone password-policies`](references/cmd-pingcli-pingone-password-policies.md) — Password Policies
+      - [`pingcli pingone password-policies apply`](references/cmd-pingcli-pingone-password-policies-apply.md) — Create or update a password policy
+      - [`pingcli pingone password-policies create`](references/cmd-pingcli-pingone-password-policies-create.md) — Create a new password policy
+      - [`pingcli pingone password-policies delete`](references/cmd-pingcli-pingone-password-policies-delete.md) — Delete a password policy
+      - [`pingcli pingone password-policies get`](references/cmd-pingcli-pingone-password-policies-get.md) — Read a specific password policy
+      - [`pingcli pingone password-policies list`](references/cmd-pingcli-pingone-password-policies-list.md) — List all password policies
+      - [`pingcli pingone password-policies replace`](references/cmd-pingcli-pingone-password-policies-replace.md) — Update a password policy
+      - [`pingcli pingone password-policies template`](references/cmd-pingcli-pingone-password-policies-template.md) — Generate a password policy JSON template
+    - [`pingcli pingone populations`](references/cmd-pingcli-pingone-populations.md) — Populations
+      - [`pingcli pingone populations apply`](references/cmd-pingcli-pingone-populations-apply.md) — Create or update a population
+      - [`pingcli pingone populations create`](references/cmd-pingcli-pingone-populations-create.md) — Create a new population
+      - [`pingcli pingone populations default-identity-provider`](references/cmd-pingcli-pingone-populations-default-identity-provider.md) — Population Default Identity Provider
+        - [`pingcli pingone populations default-identity-provider apply`](references/cmd-pingcli-pingone-populations-default-identity-provider-apply.md) — Update population default identity provider
+        - [`pingcli pingone populations default-identity-provider get`](references/cmd-pingcli-pingone-populations-default-identity-provider-get.md) — Read population default identity provider
+        - [`pingcli pingone populations default-identity-provider replace`](references/cmd-pingcli-pingone-populations-default-identity-provider-replace.md) — Update population default identity provider
+        - [`pingcli pingone populations default-identity-provider template`](references/cmd-pingcli-pingone-populations-default-identity-provider-template.md) — Generate a population default identity provider JSON template
+      - [`pingcli pingone populations delete`](references/cmd-pingcli-pingone-populations-delete.md) — Delete a population
+      - [`pingcli pingone populations get`](references/cmd-pingcli-pingone-populations-get.md) — Read a specific population
+      - [`pingcli pingone populations list`](references/cmd-pingcli-pingone-populations-list.md) — List all populations
+      - [`pingcli pingone populations replace`](references/cmd-pingcli-pingone-populations-replace.md) — Update a population
+      - [`pingcli pingone populations template`](references/cmd-pingcli-pingone-populations-template.md) — Generate a population JSON template
+    - [`pingcli pingone propagation-plans`](references/cmd-pingcli-pingone-propagation-plans.md) — Identity Propagation Plans
+      - [`pingcli pingone propagation-plans apply`](references/cmd-pingcli-pingone-propagation-plans-apply.md) — Create or update an identity propagation plan
+      - [`pingcli pingone propagation-plans create`](references/cmd-pingcli-pingone-propagation-plans-create.md) — Create a new identity propagation plan
+      - [`pingcli pingone propagation-plans delete`](references/cmd-pingcli-pingone-propagation-plans-delete.md) — Delete an identity propagation plan
+      - [`pingcli pingone propagation-plans get`](references/cmd-pingcli-pingone-propagation-plans-get.md) — Read a specific identity propagation plan
+      - [`pingcli pingone propagation-plans list`](references/cmd-pingcli-pingone-propagation-plans-list.md) — List all identity propagation plans
+      - [`pingcli pingone propagation-plans replace`](references/cmd-pingcli-pingone-propagation-plans-replace.md) — Update an identity propagation plan
+      - [`pingcli pingone propagation-plans template`](references/cmd-pingcli-pingone-propagation-plans-template.md) — Generate an identity propagation plan JSON template
+    - [`pingcli pingone protect`](references/cmd-pingcli-pingone-protect.md) — Administration tools for the PingOne Protect universal service.
+      - [`pingcli pingone protect risk-policy-sets`](references/cmd-pingcli-pingone-protect-risk-policy-sets.md) — Risk Policy Sets
+        - [`pingcli pingone protect risk-policy-sets apply`](references/cmd-pingcli-pingone-protect-risk-policy-sets-apply.md) — Create or update a risk policy set
+        - [`pingcli pingone protect risk-policy-sets create`](references/cmd-pingcli-pingone-protect-risk-policy-sets-create.md) — Create a new risk policy set
+        - [`pingcli pingone protect risk-policy-sets delete`](references/cmd-pingcli-pingone-protect-risk-policy-sets-delete.md) — Delete a risk policy set
+        - [`pingcli pingone protect risk-policy-sets get`](references/cmd-pingcli-pingone-protect-risk-policy-sets-get.md) — Read a specific risk policy set
+        - [`pingcli pingone protect risk-policy-sets list`](references/cmd-pingcli-pingone-protect-risk-policy-sets-list.md) — List all risk policy sets
+        - [`pingcli pingone protect risk-policy-sets replace`](references/cmd-pingcli-pingone-protect-risk-policy-sets-replace.md) — Replace a risk policy set
+        - [`pingcli pingone protect risk-policy-sets template`](references/cmd-pingcli-pingone-protect-risk-policy-sets-template.md) — Generate a risk policy set JSON template
+      - [`pingcli pingone protect risk-predictors`](references/cmd-pingcli-pingone-protect-risk-predictors.md) — Risk Predictors
+        - [`pingcli pingone protect risk-predictors apply`](references/cmd-pingcli-pingone-protect-risk-predictors-apply.md) — Create or update a risk predictor
+        - [`pingcli pingone protect risk-predictors create`](references/cmd-pingcli-pingone-protect-risk-predictors-create.md) — Create a new risk predictor
+        - [`pingcli pingone protect risk-predictors delete`](references/cmd-pingcli-pingone-protect-risk-predictors-delete.md) — Delete a risk predictor
+        - [`pingcli pingone protect risk-predictors get`](references/cmd-pingcli-pingone-protect-risk-predictors-get.md) — Read a specific risk predictor
+        - [`pingcli pingone protect risk-predictors list`](references/cmd-pingcli-pingone-protect-risk-predictors-list.md) — List all risk predictors
+        - [`pingcli pingone protect risk-predictors replace`](references/cmd-pingcli-pingone-protect-risk-predictors-replace.md) — Replace a risk predictor
+        - [`pingcli pingone protect risk-predictors template`](references/cmd-pingcli-pingone-protect-risk-predictors-template.md) — Generate a risk predictor JSON template
+    - [`pingcli pingone rate-limit-ip-configs`](references/cmd-pingcli-pingone-rate-limit-ip-configs.md) — Rate Limit IP Configurations
+      - [`pingcli pingone rate-limit-ip-configs create`](references/cmd-pingcli-pingone-rate-limit-ip-configs-create.md) — Create a new rate limit IP configuration
+      - [`pingcli pingone rate-limit-ip-configs delete`](references/cmd-pingcli-pingone-rate-limit-ip-configs-delete.md) — Delete a rate limit IP configuration
+      - [`pingcli pingone rate-limit-ip-configs get`](references/cmd-pingcli-pingone-rate-limit-ip-configs-get.md) — Read a specific rate limit IP configuration
+      - [`pingcli pingone rate-limit-ip-configs list`](references/cmd-pingcli-pingone-rate-limit-ip-configs-list.md) — List all rate limit IP configurations
+      - [`pingcli pingone rate-limit-ip-configs template`](references/cmd-pingcli-pingone-rate-limit-ip-configs-template.md) — Generate a rate limit IP configuration JSON template
+    - [`pingcli pingone recaptcha-v2-config`](references/cmd-pingcli-pingone-recaptcha-v2-config.md) — RecaptchaV2 Config
+      - [`pingcli pingone recaptcha-v2-config apply`](references/cmd-pingcli-pingone-recaptcha-v2-config-apply.md) — Update reCAPTCHA v2 configuration
+      - [`pingcli pingone recaptcha-v2-config delete`](references/cmd-pingcli-pingone-recaptcha-v2-config-delete.md) — Delete reCAPTCHA v2 configuration
+      - [`pingcli pingone recaptcha-v2-config get`](references/cmd-pingcli-pingone-recaptcha-v2-config-get.md) — Read reCAPTCHA v2 configuration
+      - [`pingcli pingone recaptcha-v2-config replace`](references/cmd-pingcli-pingone-recaptcha-v2-config-replace.md) — Update reCAPTCHA v2 configuration
+      - [`pingcli pingone recaptcha-v2-config template`](references/cmd-pingcli-pingone-recaptcha-v2-config-template.md) — Generate a reCAPTCHA v2 configuration JSON template
+    - [`pingcli pingone resources`](references/cmd-pingcli-pingone-resources.md) — Resources
+      - [`pingcli pingone resources application-permissions`](references/cmd-pingcli-pingone-resources-application-permissions.md) — Application Permissions
+        - [`pingcli pingone resources application-permissions list`](references/cmd-pingcli-pingone-resources-application-permissions-list.md) — List all application permissions
+      - [`pingcli pingone resources application-resources`](references/cmd-pingcli-pingone-resources-application-resources.md) — Application Resources
+        - [`pingcli pingone resources application-resources apply`](references/cmd-pingcli-pingone-resources-application-resources-apply.md) — Create or update an application resource
+        - [`pingcli pingone resources application-resources create`](references/cmd-pingcli-pingone-resources-application-resources-create.md) — Create a new application resource
+        - [`pingcli pingone resources application-resources delete`](references/cmd-pingcli-pingone-resources-application-resources-delete.md) — Delete an application resource
+        - [`pingcli pingone resources application-resources get`](references/cmd-pingcli-pingone-resources-application-resources-get.md) — Read a specific application resource
+        - [`pingcli pingone resources application-resources list`](references/cmd-pingcli-pingone-resources-application-resources-list.md) — List all application resources
+        - [`pingcli pingone resources application-resources replace`](references/cmd-pingcli-pingone-resources-application-resources-replace.md) — Update an application resource
+        - [`pingcli pingone resources application-resources template`](references/cmd-pingcli-pingone-resources-application-resources-template.md) — Generate an application resource JSON template
+      - [`pingcli pingone resources apply`](references/cmd-pingcli-pingone-resources-apply.md) — Create or update a resource
+      - [`pingcli pingone resources attributes`](references/cmd-pingcli-pingone-resources-attributes.md) — Resource Attributes
+        - [`pingcli pingone resources attributes apply`](references/cmd-pingcli-pingone-resources-attributes-apply.md) — Create or update a resource attribute
+        - [`pingcli pingone resources attributes create`](references/cmd-pingcli-pingone-resources-attributes-create.md) — Create a new resource attribute
+        - [`pingcli pingone resources attributes delete`](references/cmd-pingcli-pingone-resources-attributes-delete.md) — Delete a resource attribute
+        - [`pingcli pingone resources attributes get`](references/cmd-pingcli-pingone-resources-attributes-get.md) — Read a specific resource attribute
+        - [`pingcli pingone resources attributes list`](references/cmd-pingcli-pingone-resources-attributes-list.md) — List all resource attributes
+        - [`pingcli pingone resources attributes replace`](references/cmd-pingcli-pingone-resources-attributes-replace.md) — Update a resource attribute
+        - [`pingcli pingone resources attributes template`](references/cmd-pingcli-pingone-resources-attributes-template.md) — Generate a resource attribute JSON template
+      - [`pingcli pingone resources create`](references/cmd-pingcli-pingone-resources-create.md) — Create a new resource
+      - [`pingcli pingone resources delete`](references/cmd-pingcli-pingone-resources-delete.md) — Delete a resource
+      - [`pingcli pingone resources get`](references/cmd-pingcli-pingone-resources-get.md) — Read a specific resource
+      - [`pingcli pingone resources list`](references/cmd-pingcli-pingone-resources-list.md) — List all resources
+      - [`pingcli pingone resources replace`](references/cmd-pingcli-pingone-resources-replace.md) — Update a resource
+      - [`pingcli pingone resources scopes`](references/cmd-pingcli-pingone-resources-scopes.md) — Resource Scopes
+        - [`pingcli pingone resources scopes apply`](references/cmd-pingcli-pingone-resources-scopes-apply.md) — Create or update a resource scope
+        - [`pingcli pingone resources scopes create`](references/cmd-pingcli-pingone-resources-scopes-create.md) — Create a new resource scope
+        - [`pingcli pingone resources scopes delete`](references/cmd-pingcli-pingone-resources-scopes-delete.md) — Delete a resource scope
+        - [`pingcli pingone resources scopes get`](references/cmd-pingcli-pingone-resources-scopes-get.md) — Read a specific resource scope
+        - [`pingcli pingone resources scopes list`](references/cmd-pingcli-pingone-resources-scopes-list.md) — List all resource scopes
+        - [`pingcli pingone resources scopes replace`](references/cmd-pingcli-pingone-resources-scopes-replace.md) — Update a resource scope
+        - [`pingcli pingone resources scopes template`](references/cmd-pingcli-pingone-resources-scopes-template.md) — Generate a resource scope JSON template
+      - [`pingcli pingone resources secret`](references/cmd-pingcli-pingone-resources-secret.md) — Resource Client Secret
+        - [`pingcli pingone resources secret delete-previous`](references/cmd-pingcli-pingone-resources-secret-delete-previous.md) — Delete the previous resource client secret
+        - [`pingcli pingone resources secret get`](references/cmd-pingcli-pingone-resources-secret-get.md) — Read a resource client secret
+        - [`pingcli pingone resources secret rotate`](references/cmd-pingcli-pingone-resources-secret-rotate.md) — Rotate a resource client secret
+        - [`pingcli pingone resources secret template`](references/cmd-pingcli-pingone-resources-secret-template.md) — Generate a resource client secret rotate template
+      - [`pingcli pingone resources template`](references/cmd-pingcli-pingone-resources-template.md) — Generate a resource JSON template
+    - [`pingcli pingone roles`](references/cmd-pingcli-pingone-roles.md) — PingOne built-in admin roles
+      - [`pingcli pingone roles get`](references/cmd-pingcli-pingone-roles-get.md) — Read a specific PingOne built-in admin role
+      - [`pingcli pingone roles list`](references/cmd-pingcli-pingone-roles-list.md) — List all PingOne built-in admin roles
+    - [`pingcli pingone schemas`](references/cmd-pingcli-pingone-schemas.md) — Schemas
+      - [`pingcli pingone schemas attributes`](references/cmd-pingcli-pingone-schemas-attributes.md) — Schema Attributes
+        - [`pingcli pingone schemas attributes apply`](references/cmd-pingcli-pingone-schemas-attributes-apply.md) — Create or update a schema attribute
+        - [`pingcli pingone schemas attributes create`](references/cmd-pingcli-pingone-schemas-attributes-create.md) — Create a new schema attribute
+        - [`pingcli pingone schemas attributes delete`](references/cmd-pingcli-pingone-schemas-attributes-delete.md) — Delete a schema attribute
+        - [`pingcli pingone schemas attributes get`](references/cmd-pingcli-pingone-schemas-attributes-get.md) — Read a specific schema attribute
+        - [`pingcli pingone schemas attributes list`](references/cmd-pingcli-pingone-schemas-attributes-list.md) — List all schema attributes
+        - [`pingcli pingone schemas attributes replace`](references/cmd-pingcli-pingone-schemas-attributes-replace.md) — Update a schema attribute
+        - [`pingcli pingone schemas attributes template`](references/cmd-pingcli-pingone-schemas-attributes-template.md) — Generate a schema attribute JSON template
+      - [`pingcli pingone schemas get`](references/cmd-pingcli-pingone-schemas-get.md) — Read a specific schema
+      - [`pingcli pingone schemas list`](references/cmd-pingcli-pingone-schemas-list.md) — List all schemas
+    - [`pingcli pingone sign-on-policies`](references/cmd-pingcli-pingone-sign-on-policies.md) — Sign-On Policies
+      - [`pingcli pingone sign-on-policies actions`](references/cmd-pingcli-pingone-sign-on-policies-actions.md) — Sign-On Policy Actions
+        - [`pingcli pingone sign-on-policies actions create`](references/cmd-pingcli-pingone-sign-on-policies-actions-create.md) — Create a new sign-on policy action
+        - [`pingcli pingone sign-on-policies actions delete`](references/cmd-pingcli-pingone-sign-on-policies-actions-delete.md) — Delete a sign-on policy action
+        - [`pingcli pingone sign-on-policies actions get`](references/cmd-pingcli-pingone-sign-on-policies-actions-get.md) — Read a specific sign-on policy action
+        - [`pingcli pingone sign-on-policies actions list`](references/cmd-pingcli-pingone-sign-on-policies-actions-list.md) — List all sign-on policy actions
+        - [`pingcli pingone sign-on-policies actions replace`](references/cmd-pingcli-pingone-sign-on-policies-actions-replace.md) — Update a sign-on policy action
+        - [`pingcli pingone sign-on-policies actions template`](references/cmd-pingcli-pingone-sign-on-policies-actions-template.md) — Generate a sign-on policy action JSON template
+      - [`pingcli pingone sign-on-policies apply`](references/cmd-pingcli-pingone-sign-on-policies-apply.md) — Create or update a sign-on policy
+      - [`pingcli pingone sign-on-policies create`](references/cmd-pingcli-pingone-sign-on-policies-create.md) — Create a new sign-on policy
+      - [`pingcli pingone sign-on-policies delete`](references/cmd-pingcli-pingone-sign-on-policies-delete.md) — Delete a sign-on policy
+      - [`pingcli pingone sign-on-policies get`](references/cmd-pingcli-pingone-sign-on-policies-get.md) — Read a specific sign-on policy
+      - [`pingcli pingone sign-on-policies list`](references/cmd-pingcli-pingone-sign-on-policies-list.md) — List all sign-on policies
+      - [`pingcli pingone sign-on-policies replace`](references/cmd-pingcli-pingone-sign-on-policies-replace.md) — Update a sign-on policy
+      - [`pingcli pingone sign-on-policies template`](references/cmd-pingcli-pingone-sign-on-policies-template.md) — Generate a sign-on policy JSON template
+    - [`pingcli pingone total-identities`](references/cmd-pingcli-pingone-total-identities.md) — Total identity counts
+      - [`pingcli pingone total-identities list`](references/cmd-pingcli-pingone-total-identities-list.md) — List total identity counts
+    - [`pingcli pingone users`](references/cmd-pingcli-pingone-users.md) — Users
+      - [`pingcli pingone users application-role-assignments`](references/cmd-pingcli-pingone-users-application-role-assignments.md) — User Application Role Assignments
+        - [`pingcli pingone users application-role-assignments create`](references/cmd-pingcli-pingone-users-application-role-assignments-create.md) — Create a new user application role assignment
+        - [`pingcli pingone users application-role-assignments delete`](references/cmd-pingcli-pingone-users-application-role-assignments-delete.md) — Delete a user application role assignment
+        - [`pingcli pingone users application-role-assignments list`](references/cmd-pingcli-pingone-users-application-role-assignments-list.md) — List all user application role assignments
+        - [`pingcli pingone users application-role-assignments template`](references/cmd-pingcli-pingone-users-application-role-assignments-template.md) — Generate a user application role assignment JSON template
+      - [`pingcli pingone users apply`](references/cmd-pingcli-pingone-users-apply.md) — Create or update a user
+      - [`pingcli pingone users create`](references/cmd-pingcli-pingone-users-create.md) — Create a new user
+      - [`pingcli pingone users delete`](references/cmd-pingcli-pingone-users-delete.md) — Delete a user
+      - [`pingcli pingone users enabled`](references/cmd-pingcli-pingone-users-enabled.md) — User Enabled
+        - [`pingcli pingone users enabled apply`](references/cmd-pingcli-pingone-users-enabled-apply.md) — Update user enabled state
+        - [`pingcli pingone users enabled get`](references/cmd-pingcli-pingone-users-enabled-get.md) — Read user enabled state
+        - [`pingcli pingone users enabled replace`](references/cmd-pingcli-pingone-users-enabled-replace.md) — Update user enabled state
+        - [`pingcli pingone users enabled template`](references/cmd-pingcli-pingone-users-enabled-template.md) — Generate a user enabled JSON template
+      - [`pingcli pingone users get`](references/cmd-pingcli-pingone-users-get.md) — Read a specific user
+      - [`pingcli pingone users identity-provider`](references/cmd-pingcli-pingone-users-identity-provider.md) — User Identity Provider
+        - [`pingcli pingone users identity-provider apply`](references/cmd-pingcli-pingone-users-identity-provider-apply.md) — Update user identity provider
+        - [`pingcli pingone users identity-provider get`](references/cmd-pingcli-pingone-users-identity-provider-get.md) — Read user identity provider
+        - [`pingcli pingone users identity-provider replace`](references/cmd-pingcli-pingone-users-identity-provider-replace.md) — Update user identity provider
+        - [`pingcli pingone users identity-provider template`](references/cmd-pingcli-pingone-users-identity-provider-template.md) — Generate a user identity provider JSON template
+      - [`pingcli pingone users list`](references/cmd-pingcli-pingone-users-list.md) — List all users
+      - [`pingcli pingone users population`](references/cmd-pingcli-pingone-users-population.md) — User Population
+        - [`pingcli pingone users population apply`](references/cmd-pingcli-pingone-users-population-apply.md) — Update user population
+        - [`pingcli pingone users population get`](references/cmd-pingcli-pingone-users-population-get.md) — Read user population
+        - [`pingcli pingone users population replace`](references/cmd-pingcli-pingone-users-population-replace.md) — Update user population
+        - [`pingcli pingone users population template`](references/cmd-pingcli-pingone-users-population-template.md) — Generate a user population JSON template
+      - [`pingcli pingone users replace`](references/cmd-pingcli-pingone-users-replace.md) — Update a user
+      - [`pingcli pingone users role-assignments`](references/cmd-pingcli-pingone-users-role-assignments.md) — User Role Assignments
+        - [`pingcli pingone users role-assignments create`](references/cmd-pingcli-pingone-users-role-assignments-create.md) — Create a new user role assignment
+        - [`pingcli pingone users role-assignments delete`](references/cmd-pingcli-pingone-users-role-assignments-delete.md) — Delete a user role assignment
+        - [`pingcli pingone users role-assignments get`](references/cmd-pingcli-pingone-users-role-assignments-get.md) — Read a specific user role assignment
+        - [`pingcli pingone users role-assignments list`](references/cmd-pingcli-pingone-users-role-assignments-list.md) — List all user role assignments
+        - [`pingcli pingone users role-assignments template`](references/cmd-pingcli-pingone-users-role-assignments-template.md) — Generate a user role assignment JSON template
+      - [`pingcli pingone users template`](references/cmd-pingcli-pingone-users-template.md) — Generate a user JSON template
+    - [`pingcli pingone verify`](references/cmd-pingcli-pingone-verify.md) — Administration tools for the PingOne Verify universal service.
+      - [`pingcli pingone verify policies`](references/cmd-pingcli-pingone-verify-policies.md) — Verify Policies
+        - [`pingcli pingone verify policies apply`](references/cmd-pingcli-pingone-verify-policies-apply.md) — Create or update a verify policy
+        - [`pingcli pingone verify policies create`](references/cmd-pingcli-pingone-verify-policies-create.md) — Create a new verify policy
+        - [`pingcli pingone verify policies delete`](references/cmd-pingcli-pingone-verify-policies-delete.md) — Delete a verify policy
+        - [`pingcli pingone verify policies get`](references/cmd-pingcli-pingone-verify-policies-get.md) — Read a specific verify policy
+        - [`pingcli pingone verify policies list`](references/cmd-pingcli-pingone-verify-policies-list.md) — List all verify policies
+        - [`pingcli pingone verify policies replace`](references/cmd-pingcli-pingone-verify-policies-replace.md) — Replace a verify policy
+        - [`pingcli pingone verify policies template`](references/cmd-pingcli-pingone-verify-policies-template.md) — Generate a verify policy JSON template
+    - [`pingcli pingone webhooks`](references/cmd-pingcli-pingone-webhooks.md) — Webhooks
+      - [`pingcli pingone webhooks apply`](references/cmd-pingcli-pingone-webhooks-apply.md) — Create or update a webhook
+      - [`pingcli pingone webhooks create`](references/cmd-pingcli-pingone-webhooks-create.md) — Create a new webhook
+      - [`pingcli pingone webhooks delete`](references/cmd-pingcli-pingone-webhooks-delete.md) — Delete a webhook
+      - [`pingcli pingone webhooks get`](references/cmd-pingcli-pingone-webhooks-get.md) — Read a specific webhook
+      - [`pingcli pingone webhooks list`](references/cmd-pingcli-pingone-webhooks-list.md) — List all webhooks
+      - [`pingcli pingone webhooks replace`](references/cmd-pingcli-pingone-webhooks-replace.md) — Update a webhook
+      - [`pingcli pingone webhooks template`](references/cmd-pingcli-pingone-webhooks-template.md) — Generate a webhook JSON template
+  - [`pingcli protect`](references/cmd-pingcli-protect.md) — Administration tools for the PingOne Protect universal service.
+    - [`pingcli protect risk-policy-sets`](references/cmd-pingcli-protect-risk-policy-sets.md) — Risk Policy Sets
+      - [`pingcli protect risk-policy-sets apply`](references/cmd-pingcli-protect-risk-policy-sets-apply.md) — Create or update a risk policy set
+      - [`pingcli protect risk-policy-sets create`](references/cmd-pingcli-protect-risk-policy-sets-create.md) — Create a new risk policy set
+      - [`pingcli protect risk-policy-sets delete`](references/cmd-pingcli-protect-risk-policy-sets-delete.md) — Delete a risk policy set
+      - [`pingcli protect risk-policy-sets get`](references/cmd-pingcli-protect-risk-policy-sets-get.md) — Read a specific risk policy set
+      - [`pingcli protect risk-policy-sets list`](references/cmd-pingcli-protect-risk-policy-sets-list.md) — List all risk policy sets
+      - [`pingcli protect risk-policy-sets replace`](references/cmd-pingcli-protect-risk-policy-sets-replace.md) — Replace a risk policy set
+      - [`pingcli protect risk-policy-sets template`](references/cmd-pingcli-protect-risk-policy-sets-template.md) — Generate a risk policy set JSON template
+    - [`pingcli protect risk-predictors`](references/cmd-pingcli-protect-risk-predictors.md) — Risk Predictors
+      - [`pingcli protect risk-predictors apply`](references/cmd-pingcli-protect-risk-predictors-apply.md) — Create or update a risk predictor
+      - [`pingcli protect risk-predictors create`](references/cmd-pingcli-protect-risk-predictors-create.md) — Create a new risk predictor
+      - [`pingcli protect risk-predictors delete`](references/cmd-pingcli-protect-risk-predictors-delete.md) — Delete a risk predictor
+      - [`pingcli protect risk-predictors get`](references/cmd-pingcli-protect-risk-predictors-get.md) — Read a specific risk predictor
+      - [`pingcli protect risk-predictors list`](references/cmd-pingcli-protect-risk-predictors-list.md) — List all risk predictors
+      - [`pingcli protect risk-predictors replace`](references/cmd-pingcli-protect-risk-predictors-replace.md) — Replace a risk predictor
+      - [`pingcli protect risk-predictors template`](references/cmd-pingcli-protect-risk-predictors-template.md) — Generate a risk predictor JSON template
+  - [`pingcli verify`](references/cmd-pingcli-verify.md) — Administration tools for the PingOne Verify universal service.
+    - [`pingcli verify policies`](references/cmd-pingcli-verify-policies.md) — Verify Policies
+      - [`pingcli verify policies apply`](references/cmd-pingcli-verify-policies-apply.md) — Create or update a verify policy
+      - [`pingcli verify policies create`](references/cmd-pingcli-verify-policies-create.md) — Create a new verify policy
+      - [`pingcli verify policies delete`](references/cmd-pingcli-verify-policies-delete.md) — Delete a verify policy
+      - [`pingcli verify policies get`](references/cmd-pingcli-verify-policies-get.md) — Read a specific verify policy
+      - [`pingcli verify policies list`](references/cmd-pingcli-verify-policies-list.md) — List all verify policies
+      - [`pingcli verify policies replace`](references/cmd-pingcli-verify-policies-replace.md) — Replace a verify policy
+      - [`pingcli verify policies template`](references/cmd-pingcli-verify-policies-template.md) — Generate a verify policy JSON template

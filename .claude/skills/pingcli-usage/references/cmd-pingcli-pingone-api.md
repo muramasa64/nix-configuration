@@ -1,0 +1,68 @@
+# `pingcli pingone api`
+Send a custom REST API request to the management API of PingOne.
+
+## Synopsis
+
+Send a custom REST API request to the management API of PingOne
+
+The custom REST API request is most powerful when product connection details have been configured in the CLI configuration file.
+
+The command offers a cURL-like experience to interact with the Ping products and services, with authentication and environment details dynamically filled by the CLI.
+
+```
+pingcli pingone api [flags] API_URI
+```
+
+## Examples
+
+```
+Send a custom API request to the configured PingOne tenant, making a GET request against the /environments endpoint.
+    pingcli pingone api environments
+
+  Send a custom API request to the configured PingOne tenant, making a GET request to retrieve JSON configuration for a specific environment.
+    pingcli pingone api --http-method GET --output-format json environments/$MY_ENVIRONMENT_ID
+
+  Send a custom API request to the configured PingOne tenant, making a POST request to create a new environment with JSON data sourced from a file.
+    pingcli pingone api --http-method POST --data ./my-environment.json environments
+
+  Send a custom API request to the configured PingOne tenant, making a POST request using a custom header to create users with JSON data sourced from a file.
+    pingcli pingone api --http-method POST --header "Content-Type: application/vnd.pingidentity.user.import+json" --data ./users.json environments/$MY_ENVIRONMENT_ID/users
+
+  Send a custom API request to the configured PingOne tenant, making a POST request to create a new environment using raw JSON data.
+    pingcli pingone api --http-method POST --data-raw '{"name": "My environment"}' environments
+
+  Send a custom API request to the configured PingOne tenant, making a DELETE request to remove an application attribute mapping.
+    pingcli pingone api --http-method DELETE environments/$MY_ENVIRONMENT_ID/applications/$MY_APPLICATION_ID/attributes/$MY_ATTRIBUTE_MAPPING_ID
+```
+
+## Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-h, --help` | `` | help for api |
+| `-f, --fail` | `` | Return non-zero exit code when HTTP custom API request returns a failure status code. |
+| `-m, --http-method string` | `` | The HTTP method to use for the request. (default GET) Options are: DELETE, GET, PATCH, POST, PUT. Example: 'POST' |
+| `-r, --header []string` | `` | A custom header to send in the request. Example: --header "Content-Type: application/vnd.pingidentity.user.import+json" |
+| `--data string` | `` | The file containing data to send in the request.  Example: './data.json' |
+| `--data-raw string` | `` | The raw data to send in the request.  Example: '{"name": "My environment"}' |
+
+
+## Inherited Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-C, --config string` | `` | The relative or full path to a custom Ping CLI configuration file. (default $HOME/.pingcli/config.yaml) |
+| `-D, --detailed-exitcode` | `` | Enable detailed exit code output. (default false) 0 - pingcli command succeeded with no errors or warnings. 1 - pingcli command failed with errors. 2 - pingcli command succeeded with warnings. |
+| `-O, --output-format string` | `` | Specify the console output format. (default text) Options are: json, ndjson, ndjson-typed, ndjson-wrapped, text. |
+| `-P, --profile string` | `` | The name of a configuration profile to use. |
+| `--debug` | `` | Enable debug output for error messages, including stack traces and transaction IDs. (default false) |
+| `--log-file string` | `` | Write logs to a file at the given path. File logging is disabled when not set. |
+| `--log-file-level string` | `` | Set the file log level. Options are: DEBUG, INFO, WARN, ERROR. (default DEBUG) |
+| `--log-level string` | `` | Set the console log level. Options are: DEBUG, INFO, WARN, ERROR. (default WARN) |
+| `--no-color` | `` | Disable text output in color. (default false) |
+| `--query string` | `` | JMESPath expression to filter JSON output. Requires -O json, ndjson, ndjson-typed, or ndjson-wrapped. Example: --query 'data[?enabled].name' |
+
+
+## Parent Command
+
+- [`pingcli pingone`](cmd-pingcli-pingone.md) — Administration tools for the PingOne platform.

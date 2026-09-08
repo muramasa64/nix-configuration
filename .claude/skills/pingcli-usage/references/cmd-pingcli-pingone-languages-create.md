@@ -1,0 +1,56 @@
+# `pingcli pingone languages create`
+Create a new language
+
+## Synopsis
+
+Create a new language in a PingOne environment
+
+```
+pingcli pingone languages create [flags]
+```
+
+## Examples
+
+```
+# Create a new language from a JSON file
+  pingcli pingone languages create --environment-id <env-id> --from-file language.json
+
+  # Create a new language from stdin
+  pingcli pingone languages create --environment-id <env-id> --from-file - < language.json
+
+  # Create from a JSON file, overriding the enabled state
+  pingcli pingone languages create --environment-id <env-id> --from-file language.json --enabled=false
+```
+
+## Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-h, --help` | `` | help for create |
+| `-e, --environment-id string` | `` | The PingOne environment ID |
+| `-f, --from-file string` | `` | Path to a JSON file containing the request body, or "-" to read from stdin. |
+| `--default` | `` | Whether this is the default language for the environment |
+| `--enabled` | `` | Whether this language is enabled in the environment |
+| `--locale string` | `` | The locale code for the language (e.g. en, fr, de) |
+| `--name string` | `` | The display name of the language |
+
+
+## Inherited Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-C, --config string` | `` | The relative or full path to a custom Ping CLI configuration file. (default $HOME/.pingcli/config.yaml) |
+| `-D, --detailed-exitcode` | `` | Enable detailed exit code output. (default false) 0 - pingcli command succeeded with no errors or warnings. 1 - pingcli command failed with errors. 2 - pingcli command succeeded with warnings. |
+| `-O, --output-format string` | `` | Specify the console output format. (default text) Options are: json, ndjson, ndjson-typed, ndjson-wrapped, text. |
+| `-P, --profile string` | `` | The name of a configuration profile to use. |
+| `--debug` | `` | Enable debug output for error messages, including stack traces and transaction IDs. (default false) |
+| `--log-file string` | `` | Write logs to a file at the given path. File logging is disabled when not set. |
+| `--log-file-level string` | `` | Set the file log level. Options are: DEBUG, INFO, WARN, ERROR. (default DEBUG) |
+| `--log-level string` | `` | Set the console log level. Options are: DEBUG, INFO, WARN, ERROR. (default WARN) |
+| `--no-color` | `` | Disable text output in color. (default false) |
+| `--query string` | `` | JMESPath expression to filter JSON output. Requires -O json, ndjson, ndjson-typed, or ndjson-wrapped. Example: --query 'data[?enabled].name' |
+
+
+## Parent Command
+
+- [`pingcli pingone languages`](cmd-pingcli-pingone-languages.md) — Languages

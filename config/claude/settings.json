@@ -52,7 +52,8 @@
     "typescript-lsp@claude-plugins-official": true,
     "i-have-adhd@i-have-adhd": true,
     "notion-workspace-plugin@notion-plugin-marketplace": true,
-    "eli5@claude-community": true
+    "eli5@claude-community": true,
+    "oi-owarasero@oi-owarasero": true
   },
   "extraKnownMarketplaces": {
     "i-have-adhd": {
@@ -71,6 +72,12 @@
       "source": {
         "source": "github",
         "repo": "anthropics/claude-plugins-community"
+      }
+    },
+    "oi-owarasero": {
+      "source": {
+        "source": "github",
+        "repo": "nwiizo/oi-owarasero"
       }
     }
   },
