@@ -17,6 +17,10 @@
         name = "arto-app/tap";
         trusted = true;
       }
+      {
+        name = "mac-brow-app/tap";
+        trusted = true;
+      }
     ];
     brews = [
       "mac-cleanup-go"
@@ -24,6 +28,7 @@
     casks = [
       "arto"
       "bitwarden"
+      "brow"
       "firefox"
       "firefox@developer-edition"
       "firefox@nightly"
