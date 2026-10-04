@@ -137,6 +137,9 @@
         };
       };
     };
+    "com.apple.MobileSMS" = {
+      "PlaySoundsKey" = false;
+    };
   };
 
   security.pam.services.sudo_local.touchIdAuth = true; # sudoをパスワードではなくTouch IDで承認する
