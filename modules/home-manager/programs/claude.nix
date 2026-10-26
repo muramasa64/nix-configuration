@@ -10,4 +10,6 @@
     source = ../../../config/claude/skills;
     recursive = true;
   };
+
+  home.file.".claude/.i-have-adhd-always".text = "";
 }
