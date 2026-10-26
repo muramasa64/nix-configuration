@@ -37,11 +37,15 @@
       };
 
       revsets = {
-        log = "present(immutable_heads()..@) | ancestors(immutable_heads().., 3) | present(trunk()) | present(bookmarks())";
+        log = "present(immutable_heads()..@) | ancestors(immutable_heads().., 3) | present(trunk()) | present(tracked_remote_bookmarks())";
       };
 
       revset-aliases = {
         "immutable_heads()" = "builtin_immutable_heads() | (trunk().. & ~mine())";
+      };
+
+      colors = {
+        tags = "ansi-color-8";
       };
     };
   };
