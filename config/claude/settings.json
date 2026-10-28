@@ -113,5 +113,10 @@
       "**Org-specific CLIs**: None configured",
       "routine under /Users/isobe/work/shinji-slide/ prefix"
     ]
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
   }
 }
